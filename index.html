@@ -1,0 +1,336 @@
+<!-- 
+
+        Damian Strojek @damianStrojek
+        Patryk Sikora @
+        
+        Environment to test Security of Web Applications
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Materialize - Compiled and minified CSS-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+    <!-- Font Awesome Icon - CSS-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" href="/assets/img/icon.png" />
+    <title>Security of Web Apps</title>
+  </head>
+
+  <body>
+    <!-- Navigation Menu-->
+    <!-- Nav class 1 -->
+    <nav class="hide-on-small-only">
+      <ul class="side-nav fixed section table-of-contents">
+
+        <li class="bold">
+          <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+              class="mdi-social-person small"></i><span>About</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Tools section" href="#tools" class="waves-effect waves-dark teal-text"><i
+              class="mdi-action-dashboard small"></i><span>Tools</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the First Module" href="#firstmodule"
+            class="waves-effect waves-dark teal-text"><i
+              class="mdi-action-verified-user small"></i><span>First Module</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Second Module" href="#secondmodule" class="waves-effect waves-dark teal-text"><i
+              class="mdi-action-input small"></i><span>Second Module</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+              class="mdi-content-mail small"></i><span>Contact</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Nav class 2 -->
+    <nav class="hide-on-large only trigger z-depth-1">
+      <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+        class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <div class="name-title">
+        <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Security</a><span class="black-text">Web Applications</span>
+      </div>
+    </nav>
+
+    <!-- Nav class 3 -->
+    <nav class="hide-on-large only">
+      <ul id="slide-out" class="side-nav">
+        <li class="bold">
+          <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+              class="mdi-social-person small"></i><span>About</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Tools section" href="#tools" class="waves-effect waves-dark teal-text"><i
+              class="mdi-forklift small"></i><span>Tools</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the First Module" href="#firstmodule"
+            class="waves-effect waves-dark teal-text"><i
+              class="mdi-action-trending-up small"></i><span>First Module</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Second Module" href="#secondmodule" class="waves-effect waves-dark teal-text"><i
+              class="mdi-av-my-library-books small"></i><span>Second Module</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+              class="mdi-content-mail small"></i><span>Contact</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content-->
+    <main>
+      <!-- First Section: Heading lines and image-->
+      <section id="intro" class="section scrollspy full-height">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="col-md-9">
+            <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+              <div class="caption">
+                <h2>Security of <span class="teal">Web Applications</span></h2>
+                <h5 style="color:#fff"><span class="typing" style="font-weight: 500; color:#1e2a35"></span></h5>
+                <h5>Environment that allows you to experiment with the security of web applications by emulating popular types of their vulnerabilities and interacting with them in a controlled manner.</h5>
+              </div>
+              <div class="social">
+                <a href="https://github.com/damianStrojek/Security-Testing-of-Web-Applications" target="_blank">
+                  <button class="icon-btn github">
+                    <i class="fa fa-github"></i>
+                  </button>
+                </a>
+              </div>
+              <div class='buttons'>
+                <a href="#about" class="readme">Read More</a>
+                <a href="#contact" class="contactme">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Second Section: About the project -->
+      <section id="about" class="section scrollspy">
+        <h3 class="page-title white-text teal">About the project</h3>
+        <div class="container flow-text">     
+          <p>
+            Lorem ipsum
+          </p>
+          <p>
+            Lorem ipsum
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </p>
+          <p>
+            Lorem ipsum
+          </p>
+        </div>
+      </section>
+
+      <!-- Third Section: Tools needed to perform tests -->
+      <section id="tools" class="section scrollspy">
+        <h3 class="page-title white-text teal">Tools</h3>
+        <div class="container">
+          <!-- Tools -->
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Tools</h4>
+              <div class="row text-center">
+
+                <div class="col s4 m2">
+                  <img alt="Microsoft Visual Studio and Studio Code" src="/assets/img/visual-studio-logo.png" class="responsive-img" />Visual Studio
+                </div>
+                <div class="col s4 m2">
+                  <img alt="Burp Suite" src="/assets/img/nmap-logo.png" class="responsive-img" />nmap, rustscan
+                </div>
+                <div class="col s4 m2">
+                  <img alt="Burp Suite" src="/assets/img/burp-suite-logo.png" class="responsive-img" />Burp Suite, ZAP
+                </div>
+
+                <div class="col s4 m2 hide-on-mobile">
+                  <img alt="Wireshark" src="/assets/img/wireshark-logo.png" class="responsive-img" />Wireshark
+                </div>
+                <div class="col s4 m2 hide-on-mobile">
+                  <img alt="Metasploit" src="/assets/img/metasploit-logo.png" class="responsive-img" />Metasploit
+                </div>
+                <div class="col s4 m2 hide-on-mobile">
+                  <img alt="Splunk" src="/assets/img/splunk-logo.png" class="responsive-img" />Splunk
+                </div>
+
+              </div>
+
+              <div class="row text-center show-on-mobile">
+
+                <div class="col s4 m2">
+                  <img alt="Wireshark" src="/assets/img/wireshark-logo.png" class="responsive-img" />Wireshark
+                </div>
+                <div class="col s4 m2">
+                  <img alt="Metasploit" src="/assets/img/metasploit-logo.png" class="responsive-img" />Metasploit
+                </div>
+                <div class="col s4 m2">
+                  <img alt="Splunk" src="/assets/img/splunk-logo.png" class="responsive-img" />Splunk
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Other -->
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Other</h4>
+              <div class="row text-center">
+
+                <div class="col s4 m2">
+                  <img alt="Git" src="/assets/img/git-logo.png" class="responsive-img" />Git
+                </div>
+                <div class="col s4 m2">
+                  <img alt="Microsoft Azure Cloud" src="/assets/img/azure-logo.png" class="responsive-img" />Azure
+                </div>
+                <div class="col s4 m2">
+                  <img alt="Microsoft Defender" src="/assets/img/microsoft-defender-logo.png" class="responsive-img" />Microsoft Defender
+                </div>
+
+                <div class="col s4 m2 hide-on-mobile">
+                  <img alt="MITRE ATT&CK" src="/assets/img/mitre-logo.webp" class="responsive-img" />MITRE ATT&CK
+                </div>
+                <div class="col s4 m2 hide-on-mobile">
+                  <img alt="OWASP" src="/assets/img/owasp-logo.png" class="responsive-img" />OWASP
+                </div>
+                <div class="col s4 m2 hide-on-mobile">
+                  <img alt="Qualys" src="/assets/img/qualys-cert-logo.png" class="responsive-img" />Qualys
+                </div>
+              </div>
+
+              <div class="row text-center show-on-mobile">
+                
+                <div class="col s4 m2">
+                  <img alt="MITRE ATT&CK" src="/assets/img/mitre-logo.webp" class="responsive-img" />MITRE ATT&CK
+                </div>
+                <div class="col s4 m2">
+                  <img alt="OWASP" src="/assets/img/owasp-logo.png" class="responsive-img" />OWASP
+                </div>
+                <div class="col s4 m2">
+                  <img alt="Qualys" src="/assets/img/qualys-cert-logo.png" class="responsive-img" />Qualys
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- Module Section -->
+      <section id="firstmodule" class="section scrollspy">
+        <h3 class="page-title white-text teal">First Module</h3>
+        <div class="container flow-text">     
+          <p>
+            Lorem ipsum
+          </p>
+          <p>
+            Lorem ipsum
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </p>
+          <p>
+            Lorem ipsum
+          </p>
+        </div>
+      </section>
+
+      <!-- Module Section -->
+      <section id="secondmodule" class="section scrollspy">
+        <h3 class="page-title white-text teal">Second Module</h3>
+        <div class="container flow-text">
+          <p>
+            Lorem ipsum
+          </p>
+          <p>
+            Lorem ipsum
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </p>
+          <p>
+            Lorem ipsum
+          </p>
+        </div>
+      </section>
+
+      <!-- Last Section: Contact -->
+      <section id="contact" class="section scrollspy full-height">
+        <h3 class="page-title white-text teal">Contact</h3>
+        <div class="container">
+
+          <p>
+            <a aria-label="View Damian on LinkedIn" href="http://linkedin.com/in/damianstrojek" target="_blank"
+              data-position="top" data-tooltip="View Damian on LinkedIn"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-linkedin"></i><a 
+              aria-label="Patryk on LinkedIn" href="http://linkedin.com/in/damianstrojek" class="hoverline" 
+              target="_blank">linkedin.com/in/damianstrojek</a>
+            </a>
+          </p>
+
+          <p>
+            <a aria-label="View Damian on GitHub" href="http://github.com/damianStrojek" target="_blank"
+              data-position="top" data-tooltip="View Damian on GitHub"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="Damian on Github" href="http://github.com/damianStrojek" class="hoverline"
+              target="_blank">github.com/damianStrojek</a>
+            </a>
+          </p>
+
+          <p>
+            <a aria-label="View Patryk on LinkedIn" href="http://linkedin.com/in/patryksikora" target="_blank"
+              data-position="top" data-tooltip="View Damian on LinkedIn"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-linkedin"></i><a 
+              aria-label="Patryk on LinkedIn" href="http://linkedin.com/in/patryksikora"
+              class="hoverline" target="_blank">linkedin.com/in/patryksikora</a>
+            </a>
+          </p>
+
+          <p>
+            <a aria-label="View Patryk on GitHub" href="http://github.com/patryksikora" target="_blank"
+              data-position="top" data-tooltip="View Patryk on GitHub"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="Patryk on Github" href="http://github.com/patryksikora" class="hoverline"
+              target="_blank">github.com/patryksikora</a>
+            </a>
+          </p>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- typed.js -->
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script type="text/javascript">
+      var typed = new Typed('.typing',{
+        strings: ["Cybersecurity", "Penetration Tests", "Hacking", "Exploiting"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 50
+      });
+    </script>
+  </body>
+</html>

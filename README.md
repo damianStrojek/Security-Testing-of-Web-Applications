@@ -6,9 +6,14 @@ The aim of the project is to create an environment that will allow conducting ex
 
 The environment allows for the implementation of various methods of attack, defense and detection of vulnerabilities. The created product is to be characterized by an extensible architecture, allowing for the addition of new modules enabling the emulation of new vulnerabilities and the use of new detection, attack and defense tools.
 
-## Installation
+## Deployment
 
-*[TO-DO]*
+To deploy the environment you need to `clone` this repository and host it using one of many ways.
+
+```python
+# Hosting HTTP server on port 80
+python3 -m http.server 80
+```
 
 ## Usage
 
