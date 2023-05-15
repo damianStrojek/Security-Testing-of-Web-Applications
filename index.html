@@ -1,7 +1,7 @@
 <!-- 
 
         Damian Strojek @damianStrojek
-        Patryk Sikora @
+        Patryk Sikora @PatrickTheSadge
         
         Environment to test Security of Web Applications
 
@@ -29,6 +29,12 @@
     <nav class="hide-on-small-only">
       <ul class="side-nav fixed section table-of-contents">
 
+        <li class="logo">
+          <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+            class="brand-logo grey-blue-text">
+            <img src="/assets/img/icon.png" class="img-responsive nav-pic" alt="avatar">
+          </a>
+        </li>
         <li class="bold">
           <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
               class="mdi-social-person small"></i><span>About</span></a>
@@ -40,11 +46,11 @@
         <li class="bold">
           <a aria-label="Navigate to the First Module" href="#firstmodule"
             class="waves-effect waves-dark teal-text"><i
-              class="mdi-action-verified-user small"></i><span>First Module</span></a>
+              class="mdi-action-verified-user small"></i><span>Brute Force</span></a>
         </li>
         <li class="bold">
           <a aria-label="Navigate to the Second Module" href="#secondmodule" class="waves-effect waves-dark teal-text"><i
-              class="mdi-action-input small"></i><span>Second Module</span></a>
+              class="mdi-action-input small"></i><span>Directory Traverse</span></a>
         </li>
         <li class="bold">
           <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
@@ -76,11 +82,11 @@
         <li class="bold">
           <a aria-label="Navigate to the First Module" href="#firstmodule"
             class="waves-effect waves-dark teal-text"><i
-              class="mdi-action-trending-up small"></i><span>First Module</span></a>
+              class="mdi-action-trending-up small"></i><span>Brute Force</span></a>
         </li>
         <li class="bold">
           <a aria-label="Navigate to the Second Module" href="#secondmodule" class="waves-effect waves-dark teal-text"><i
-              class="mdi-av-my-library-books small"></i><span>Second Module</span></a>
+              class="mdi-av-my-library-books small"></i><span>Directory Traverse</span></a>
         </li>
         <li class="bold">
           <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
@@ -150,9 +156,6 @@
               <div class="row text-center">
 
                 <div class="col s4 m2">
-                  <img alt="Microsoft Visual Studio and Studio Code" src="/assets/img/visual-studio-logo.png" class="responsive-img" />Visual Studio
-                </div>
-                <div class="col s4 m2">
                   <img alt="Burp Suite" src="/assets/img/nmap-logo.png" class="responsive-img" />nmap, rustscan
                 </div>
                 <div class="col s4 m2">
@@ -165,9 +168,6 @@
                 <div class="col s4 m2 hide-on-mobile">
                   <img alt="Metasploit" src="/assets/img/metasploit-logo.png" class="responsive-img" />Metasploit
                 </div>
-                <div class="col s4 m2 hide-on-mobile">
-                  <img alt="Splunk" src="/assets/img/splunk-logo.png" class="responsive-img" />Splunk
-                </div>
 
               </div>
 
@@ -178,9 +178,6 @@
                 </div>
                 <div class="col s4 m2">
                   <img alt="Metasploit" src="/assets/img/metasploit-logo.png" class="responsive-img" />Metasploit
-                </div>
-                <div class="col s4 m2">
-                  <img alt="Splunk" src="/assets/img/splunk-logo.png" class="responsive-img" />Splunk
                 </div>
 
               </div>
@@ -194,37 +191,8 @@
               <h4 class="brown-text light">Other</h4>
               <div class="row text-center">
 
-                <div class="col s4 m2">
-                  <img alt="Git" src="/assets/img/git-logo.png" class="responsive-img" />Git
-                </div>
-                <div class="col s4 m2">
-                  <img alt="Microsoft Azure Cloud" src="/assets/img/azure-logo.png" class="responsive-img" />Azure
-                </div>
-                <div class="col s4 m2">
-                  <img alt="Microsoft Defender" src="/assets/img/microsoft-defender-logo.png" class="responsive-img" />Microsoft Defender
-                </div>
-
-                <div class="col s4 m2 hide-on-mobile">
-                  <img alt="MITRE ATT&CK" src="/assets/img/mitre-logo.webp" class="responsive-img" />MITRE ATT&CK
-                </div>
                 <div class="col s4 m2 hide-on-mobile">
                   <img alt="OWASP" src="/assets/img/owasp-logo.png" class="responsive-img" />OWASP
-                </div>
-                <div class="col s4 m2 hide-on-mobile">
-                  <img alt="Qualys" src="/assets/img/qualys-cert-logo.png" class="responsive-img" />Qualys
-                </div>
-              </div>
-
-              <div class="row text-center show-on-mobile">
-                
-                <div class="col s4 m2">
-                  <img alt="MITRE ATT&CK" src="/assets/img/mitre-logo.webp" class="responsive-img" />MITRE ATT&CK
-                </div>
-                <div class="col s4 m2">
-                  <img alt="OWASP" src="/assets/img/owasp-logo.png" class="responsive-img" />OWASP
-                </div>
-                <div class="col s4 m2">
-                  <img alt="Qualys" src="/assets/img/qualys-cert-logo.png" class="responsive-img" />Qualys
                 </div>
 
               </div>
@@ -237,32 +205,21 @@
 
       <!-- Module Section -->
       <section id="firstmodule" class="section scrollspy">
-        <h3 class="page-title white-text teal">First Module</h3>
-        <div class="container flow-text">     
+        <h3 class="page-title white-text teal">Brute Force Password</h3>
+        <div class="container flow-text">
           <p>
-            Lorem ipsum
+            In cryptography, a <b>brute-force attack</b> consists of an attacker submitting many passwords or passphrases with the hope of eventually guessing correctly. The attacker systematically checks all possible passwords and passphrases until the correct one is found.
           </p>
           <p>
-            Lorem ipsum
-            <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-            </ul>
-          </p>
-          <p>
-            Lorem ipsum
+            
           </p>
         </div>
       </section>
 
       <!-- Module Section -->
       <section id="secondmodule" class="section scrollspy">
-        <h3 class="page-title white-text teal">Second Module</h3>
+        <h3 class="page-title white-text teal">Directory Traverse</h3>
         <div class="container flow-text">
-          <p>
-            Lorem ipsum
-          </p>
           <p>
             Lorem ipsum
             <ul>
@@ -310,11 +267,11 @@
           </p>
 
           <p>
-            <a aria-label="View Patryk on GitHub" href="http://github.com/patryksikora" target="_blank"
+            <a aria-label="View Patryk on GitHub" href="http://github.com/PatrickTheSadge" target="_blank"
               data-position="top" data-tooltip="View Patryk on GitHub"
               class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Patryk on Github" href="http://github.com/patryksikora" class="hoverline"
-              target="_blank">github.com/patryksikora</a>
+              aria-label="Patryk on Github" href="http://github.com/PatrickTheSadge" class="hoverline"
+              target="_blank">github.com/PatrickTheSadge</a>
             </a>
           </p>
 
