@@ -1,0 +1,302 @@
+<!-- 
+
+        Damian Strojek @damianStrojek
+        Patryk Sikora @PatrickTheSadge
+        
+        Environment to test Security of Web Applications
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Materialize - Compiled and minified CSS-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+    <!-- Font Awesome Icon - CSS-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" href="/assets/img/icon.png" />
+    <title>Security of Web Apps</title>
+  </head>
+
+  <body>
+    <!-- Navigation Menu-->
+    <!-- Nav class 1 -->
+    <nav class="hide-on-small-only">
+      <ul class="side-nav fixed section table-of-contents">
+
+        <li class="logo">
+          <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+            class="brand-logo grey-blue-text">
+            <img src="/assets/img/icon.png" class="img-responsive nav-pic" alt="avatar">
+          </a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+              class="mdi-social-person small"></i><span>About</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Tools section" href="#tools" class="waves-effect waves-dark teal-text"><i
+              class="mdi-action-dashboard small"></i><span>Tools</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the First Module" href="#firstmodule"
+            class="waves-effect waves-dark teal-text"><i
+              class="mdi-action-verified-user small"></i><span>Brute Force</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Second Module" href="#secondmodule" class="waves-effect waves-dark teal-text"><i
+              class="mdi-action-input small"></i><span>Directory Traverse</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+              class="mdi-content-mail small"></i><span>Contact</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Nav class 2 -->
+    <nav class="hide-on-large only trigger z-depth-1">
+      <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+        class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <div class="name-title">
+        <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Security</a><span class="black-text">Web Applications</span>
+      </div>
+    </nav>
+
+    <!-- Nav class 3 -->
+    <nav class="hide-on-large only">
+      <ul id="slide-out" class="side-nav">
+        <li class="bold">
+          <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+              class="mdi-social-person small"></i><span>About</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Tools section" href="#tools" class="waves-effect waves-dark teal-text"><i
+              class="mdi-forklift small"></i><span>Tools</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the First Module" href="#firstmodule"
+            class="waves-effect waves-dark teal-text"><i
+              class="mdi-action-trending-up small"></i><span>Brute Force</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Second Module" href="#secondmodule" class="waves-effect waves-dark teal-text"><i
+              class="mdi-av-my-library-books small"></i><span>Directory Traverse</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+              class="mdi-content-mail small"></i><span>Contact</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content-->
+    <main>
+      <!-- First Section: Heading lines and image-->
+      <section id="intro" class="section scrollspy full-height">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="col-md-9">
+            <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+              <div class="caption">
+                <h2>Security of <span class="teal">Web Applications</span></h2>
+                <h5 style="color:#fff"><span class="typing" style="font-weight: 500; color:#1e2a35"></span></h5>
+                <h5>Environment that allows you to experiment with the security of web applications by emulating popular types of their vulnerabilities and interacting with them in a controlled manner.</h5>
+              </div>
+              <div class="social">
+                <a href="https://github.com/damianStrojek/Security-Testing-of-Web-Applications" target="_blank">
+                  <button class="icon-btn github">
+                    <i class="fa fa-github"></i>
+                  </button>
+                </a>
+              </div>
+              <div class='buttons'>
+                <a href="#about" class="readme">Read More</a>
+                <a href="#contact" class="contactme">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Second Section: About the project -->
+      <section id="about" class="section scrollspy">
+        <h3 class="page-title white-text teal">About the project</h3>
+        <div class="container flow-text">     
+          <p>
+            This project is carried out by Damian Strojek and Patryk Sikora in the academic years 2023-2024 at the Gdańsk University of Technology in Poland. A didactic system for testing the security of web applications enables various types of security tests to be carried out. This system allows to simulate attacks on web applications and test their resistance to this type of attacks. This work aims to provide practical guidance and tools for web application security professionals. At the same time, it is an implementation part of the diploma thesis under the same title.
+          </p>
+          <p>
+            Nowadays, web applications are one of the most important communication and information exchange tools on the web. However, with their increasing popularity, the risk of cyber attacks also increases, which in turn increases the need to ensure the security of web applications.
+          </p>
+        </div>
+      </section>
+
+      <!-- Third Section: Tools needed to perform tests -->
+      <section id="tools" class="section scrollspy">
+        <h3 class="page-title white-text teal">Tools</h3>
+        <div class="container">
+          <!-- Tools -->
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Tools</h4>
+              <div class="row text-center">
+
+                <div class="col s4 m2">
+                  <img alt="Burp Suite" src="/assets/img/nmap-logo.png" class="responsive-img" />NMAP
+                </div>
+                <div class="col s4 m2">
+                  <img alt="Burp Suite" src="/assets/img/burp-suite-logo.png" class="responsive-img" />Burp Suite, ZAP
+                </div>
+
+                <div class="col s4 m2 hide-on-mobile">
+                  <img alt="Wireshark" src="/assets/img/wireshark-logo.png" class="responsive-img" />Wireshark
+                </div>
+                <div class="col s4 m2 hide-on-mobile">
+                  <img alt="Metasploit" src="/assets/img/metasploit-logo.png" class="responsive-img" />Metasploit
+                </div>
+
+              </div>
+
+              <div class="row text-center show-on-mobile">
+
+                <div class="col s4 m2">
+                  <img alt="Wireshark" src="/assets/img/wireshark-logo.png" class="responsive-img" />Wireshark
+                </div>
+                <div class="col s4 m2">
+                  <img alt="Metasploit" src="/assets/img/metasploit-logo.png" class="responsive-img" />Metasploit
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Other -->
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Other</h4>
+              <div class="row text-center">
+
+                <div class="col s4 m2 hide-on-mobile">
+                  <img alt="OWASP" src="/assets/img/owasp-logo.png" class="responsive-img" />OWASP
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- Module Section -->
+      <section id="firstmodule" class="section scrollspy">
+        <h3 class="page-title white-text teal">Brute Force Attack</h3>
+        <div class="container flow-text">
+          <p>
+            In cryptography, a <b>brute-force attack</b> consists of an attacker submitting many passwords or passphrases with the hope of eventually guessing correctly. The attacker systematically checks all possible passwords and passphrases until the correct one is found.
+          </p>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <div class="row text-center">
+                <div class="col s4 m6" style="margin-top: 6%;">
+                  Following module contains theory behind exploiting a brute-force attack, as well as vulnerable login pages.
+                </div>
+                <div class="col s4 m6">
+                  <a class="module-link" href="./modules/module-1/theory.html"><img alt="Brute-Force" src="/assets/img/brute-force.png" class="responsive-img"/><br>Brute-Force</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Module Section -->
+      <section id="secondmodule" class="section scrollspy">
+        <h3 class="page-title white-text teal">Directory Traversal Attack</h3>
+        <div class="container flow-text">
+          <p>
+            A <b>directory traversal (or path traversal)</b> is a form of insecure direct object reference where insufficient security validation or sanitization of user-supplied file names can be exploited, such that characters representing "traverse to parent directory" are passed through to the operating system's file system API. An affected application can be exploited to gain unauthorized access to the file system.
+          </p>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <div class="row text-center">
+                <div class="col s4 m6" style="margin-top: 6%;">
+                  Following module contains several types of directory traversal exploits - each of them is unique and gives access to different type of data.
+                </div>
+                <div class="col s4 m6">
+                  <a class="module-link" href="./modules/module-2/theory.html"><img alt="Brute-Force" src="/assets/img/directory-traverse.jpg" class="responsive-img"/><br>Directory Traverse</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Last Section: Contact -->
+      <section id="contact" class="section scrollspy full-height">
+        <h3 class="page-title white-text teal">Contact</h3>
+        <div class="container">
+
+          <p>
+            <a aria-label="View Damian on LinkedIn" href="http://linkedin.com/in/damianstrojek" target="_blank"
+              data-position="top" data-tooltip="View Damian on LinkedIn"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-linkedin"></i><a 
+              aria-label="Patryk on LinkedIn" href="http://linkedin.com/in/damianstrojek" class="hoverline" 
+              target="_blank">linkedin.com/in/damianstrojek</a>
+            </a>
+          </p>
+
+          <p>
+            <a aria-label="View Damian on GitHub" href="http://github.com/damianStrojek" target="_blank"
+              data-position="top" data-tooltip="View Damian on GitHub"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="Damian on Github" href="http://github.com/damianStrojek" class="hoverline"
+              target="_blank">github.com/damianStrojek</a>
+            </a>
+          </p>
+
+          <p>
+            <a aria-label="View Patryk on LinkedIn" href="http://linkedin.com/in/patryksikora" target="_blank"
+              data-position="top" data-tooltip="View Damian on LinkedIn"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-linkedin"></i><a 
+              aria-label="Patryk on LinkedIn" href="http://linkedin.com/in/patryksikora"
+              class="hoverline" target="_blank">linkedin.com/in/patryksikora</a>
+            </a>
+          </p>
+
+          <p>
+            <a aria-label="View Patryk on GitHub" href="http://github.com/PatrickTheSadge" target="_blank"
+              data-position="top" data-tooltip="View Patryk on GitHub"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="Patryk on Github" href="http://github.com/PatrickTheSadge" class="hoverline"
+              target="_blank">github.com/PatrickTheSadge</a>
+            </a>
+          </p>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- typed.js -->
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script type="text/javascript">
+      var typed = new Typed('.typing',{
+        strings: ["Cybersecurity", "Penetration Tests", "Hacking", "Exploiting"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 50
+      });
+    </script>
+  </body>
+</html>
