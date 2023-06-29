@@ -19,8 +19,8 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <!-- Custom Styles-->
   <link rel="stylesheet" href="./../../assets/css/style.css" />
-  <link rel="icon" href="./../../assets/img/directory-traverse.png" />
-  <title>Directory Traversal Attacks</title>
+  <link rel="icon" href="./../../assets/img/sqli.png" />
+  <title>SQLi Attacks</title>
 </head>
 <body>
 <!-- Navigation Menu-->
@@ -29,7 +29,7 @@
     <li class="logo">
       <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
       class="brand-logo grey-blue-text">
-      <img src="./../../assets/img/directory-traverse.png" class="img-responsive nav-pic" alt="avatar">
+      <img src="./../../assets/img/sqli-logo.png" class="img-responsive nav-pic" alt="avatar">
       </a>
     </li>
     <li class="bold">
@@ -61,10 +61,11 @@
 
 <!-- First Section: Introduction -->
 <section id="introduction" class="section scrollspy">
-  <h3 class="page-title white-text teal">Directory Traversal Attacks</h3>
+  <h3 class="page-title white-text teal">SQL Injection Attacks</h3>
   <div class="container flow-text">     
     <p>
-      Properly controlling access to web content is crucial for running a secure web server. <b>Directory traversal or Path Traversal</b> is an HTTP attack that allows attackers to access restricted directories and execute commands outside of the web server's root directory.
+      <b>SQL injection (SQLi)</b> is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. It generally allows an attacker to view data that they are not normally able to retrieve. This might include data belonging to other users, or any other data that the application itself is able to access. In many cases, an attacker can modify or delete this data, causing persistent changes to the application's content or behavior.
+      In some situations, an attacker can escalate a SQL injection attack to compromise the underlying server or other back-end infrastructure, or perform a denial-of-service attack.
     </p>
   </div>
 </section>
@@ -101,6 +102,7 @@
   <div class="container">
   <div class="row">
     <!-- First testing website -->
+    <!-- Really simple payloads are working for this form -->
     <div class="col s12 m4">
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
@@ -108,7 +110,7 @@
           <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
-          <span class="card-title teal-text hoverline">Common Directories</span>
+          <span class="card-title teal-text hoverline">Basic SQL Injection</span>
           <p>
           Description underneath
           </p>
@@ -117,6 +119,7 @@
     </div>
 
     <!-- Second testing website -->
+    <!-- Need to use advanced payloads, maybe some automation -->
     <div class="col s12 m4">
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
@@ -124,7 +127,24 @@
           <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
-          <span class="card-title teal-text hoverline">PHP and TXT Files</span>
+          <span class="card-title teal-text hoverline">Advanced SQL Injection</span>
+          <p>
+          Description underneath
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third testing website -->
+    <!-- https://null-byte.wonderhowto.com/how-to/use-sql-injection-run-os-commands-get-shell-0191405/ -->
+    <div class="col s12 m4">
+      <div class="card medium">
+        <div class="card-image waves-effect waves-block waves-light">
+          <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
+          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title teal-text hoverline">Execute Shell Commands with SQLi</span>
           <p>
           Description underneath
           </p>
