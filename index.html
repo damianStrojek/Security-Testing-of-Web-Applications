@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
     <!-- Font Awesome Icon - CSS-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
     <!-- Custom Styles-->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" href="/assets/img/icon.png" />
@@ -53,6 +54,10 @@
               class="mdi-file-folder-open small"></i><span>Directory Traverse</span></a>
         </li>
         <li class="bold">
+          <a aria-label="Navigate to the Third Module" href="#thirdmodule" class="waves-effect waves-dark teal-text"><i
+              class="mdi mdi-needle small"></i><span>SQLi</span></a>
+        </li>
+        <li class="bold">
           <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
               class="mdi-maps-local-phone small"></i><span>Contact</span></a>
         </li>
@@ -87,6 +92,10 @@
         <li class="bold">
           <a aria-label="Navigate to the Second Module" href="#secondmodule" class="waves-effect waves-dark teal-text"><i
               class="mdi-av-my-library-books small"></i><span>Directory Traverse</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Third Module" href="#thirdmodule" class="waves-effect waves-dark teal-text"><i
+              class="mdi mdi-needle small"></i><span>SQLi</span></a>
         </li>
         <li class="bold">
           <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
@@ -236,6 +245,30 @@
                 </div>
                 <div class="col s4 m6">
                   <a class="module-link" href="./modules/module-2/theory.html"><img alt="Brute-Force" src="/assets/img/directory-traverse.jpg" class="responsive-img"/><br>Directory Traverse</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Module Section -->
+      <section id="thirdmodule" class="section scrollspy">
+        <h3 class="page-title white-text teal">SQL Injection Attack</h3>
+        <div class="container flow-text">
+          <p>
+            <b>SQL injection (SQLi)</b> is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. It generally allows an attacker to view data that they are not normally able to retrieve. In some situations, an attacker can escalate a SQL injection attack to compromise the underlying server or other back-end infrastructure, or perform a denial-of-service attack.
+          </p>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <div class="row text-center">
+                <div class="col s4 m6" style="margin-top: 6%;">
+                  Following module contains several types of SQL Injection exploits - each of them is unique and uses different type of payload.
+                </div>
+                <div class="col s4 m6">
+                  <a class="module-link" href="./modules/module-3/theory.html"><img alt="SQLi" src="/assets/img/sqli.png" class="responsive-img"/><br>SQLi</a>
                 </div>
               </div>
             </div>

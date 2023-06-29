@@ -6,4 +6,4 @@ Each template has it's own fields that should be replaced with the proper inform
 
 ## Icons
 
-Icons in navigation bar are available in <a href="https://www.jq22.com/demo/Materialize201705231801/css-icons.html" target="_blank">this repository</a>.
+Icons in navigation bar are available in <a href="https://www.jq22.com/demo/Materialize201705231801/css-icons.html" target="_blank">this</a> and <a href="https://pictogrammers.com/library/mdi/" target="_blank">this</a> repository.
