@@ -1,60 +1,59 @@
 <!-- 
 
-        Damian Strojek @damianStrojek
-        Patryk Sikora @PatrickTheSadge
-        
-        Environment to test Security of Web Applications
+  Copyright (C) 2023-2024 Damian Strojek, Patryk Sikora
+
+  Security Testing Environment for Web Applications
+  Realised as part of engineering degree for Gdansk University of Technology
 
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <!-- Materialize - Compiled and minified CSS-->
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-        <!-- Font Awesome Icon - CSS-->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-        <!-- Custom Styles-->
-        <link rel="stylesheet" href="./../../assets/css/style.css" />
-        <link rel="icon" href="./../../assets/img/theory.png" />
-        <title>THEORY TEMPLATE</title>
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="./../../assets/css/style.css" />
+  <link rel="icon" href="./../../assets/img/directory-traverse.png" />
+  <title>Directory Traversal Attacks</title>
 </head>
 <body>
 <!-- Navigation Menu-->
 <nav class="hide-on-small-only">
-        <ul class="side-nav fixed section table-of-contents">
-
-                <li class="logo">
-                        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-                        class="brand-logo grey-blue-text">
-                        <img src="./../../assets/img/theory.png" class="img-responsive nav-pic" alt="avatar">
-                        </a>
-                </li>
-                <li class="bold">
-                        <a aria-label="Navigate to the Introduction section" href="#introduction" class="waves-effect waves-dark teal-text"><i
-                        class="mdi-action-language small"></i><span>Introduction</span></a>
-                </li>
-                <li class="bold">
-                        <a aria-label="Navigate to the Technology section" href="#technology" class="waves-effect waves-dark teal-text"><i
-                        class="mdi-action-search small"></i><span>Technology</span></a>
-                </li>
-                <li class="bold">
-                        <a aria-label="Navigate to the Vulnerability section" href="#vulnerability"
-                        class="waves-effect waves-dark teal-text"><i
-                        class="mdi-action-settings-ethernet small"></i><span>Vulnerability</span></a>
-                </li>
-                <li class="bold">
-                        <a aria-label="Navigate to the Testing section" href="#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
-                        class="mdi-action-extension small"></i><span>Testing</span></a>
-                </li>
-                <li class="bold">
-                        <a aria-label="Back to the Main website" href="./../../index.html" class="waves-effect waves-dark teal-text"><i
-                        class="mdi-action-home small"></i><span>Back to Main Site</span></a>
-                </li>
-        </ul>
+  <ul class="side-nav fixed section table-of-contents">
+    <li class="logo">
+      <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+      class="brand-logo grey-blue-text">
+      <img src="./../../assets/img/directory-traverse.png" class="img-responsive nav-pic" alt="avatar">
+      </a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Introduction section" href="#introduction" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-language small"></i><span>Introduction</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Technology section" href="#technology" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-search small"></i><span>Technology</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Vulnerability section" href="#vulnerability"
+      class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-settings-ethernet small"></i><span>Vulnerability</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Testing section" href="#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-extension small"></i><span>Testing</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Back to the Main website" href="./../../index.html" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-home small"></i><span>Back to Main Site</span></a>
+    </li>
+  </ul>
 </nav>
 
 <!-- Main Content-->
@@ -62,96 +61,79 @@
 
 <!-- First Section: Introduction -->
 <section id="introduction" class="section scrollspy">
-        <h3 class="page-title white-text teal">Template for theory</h3>
-        <div class="container flow-text">     
-                <p>
-                This project is carried out by Damian Strojek and Patryk Sikora in the academic years 2023-2024 at the Gdańsk University of Technology in Poland. A didactic system for testing the security of web applications enables various types of security tests to be carried out. This system allows to simulate attacks on web applications and test their resistance to this type of attacks. This work aims to provide practical guidance and tools for web application security professionals. At the same time, it is an implementation part of the diploma thesis under the same title.
-                </p>
-                <p>
-                Nowadays, web applications are one of the most important communication and information exchange tools on the web. However, with their increasing popularity, the risk of cyber attacks also increases, which in turn increases the need to ensure the security of web applications.
-                </p>
-        </div>
+  <h3 class="page-title white-text teal">Directory Traversal Attacks</h3>
+  <div class="container flow-text">     
+    <p>
+      Properly controlling access to web content is crucial for running a secure web server. <b>Directory traversal or Path Traversal</b> is an HTTP attack that allows attackers to access restricted directories and execute commands outside of the web server's root directory.
+    </p>
+  </div>
 </section>
 
 <!-- Second Section: About the technology -->
 <section id="technology" class="section scrollspy">
-        <h3 class="page-title white-text teal">Template for theory</h3>
-        <div class="container flow-text">     
-                <p>
-                This project is carried out by Damian Strojek and Patryk Sikora in the academic years 2023-2024 at the Gdańsk University of Technology in Poland.
-                </p>
-                <p>
-                Nowadays, web applications are one of the most important communication and information exchange tools on the web.
-                </p>
-        </div>
+  <h3 class="page-title white-text teal">Template for theory</h3>
+  <div class="container flow-text">     
+    <p>
+      -
+    </p>
+    <p>
+      -
+    </p>
+  </div>
 </section>
 
 <!-- Third Section: About the vulnerability -->
 <section id="vulnerability" class="section scrollspy">
-        <h3 class="page-title white-text teal">Template for theory</h3>
-        <div class="container flow-text">     
-                <p>
-                This project is carried out by Damian Strojek and Patryk Sikora in the academic years 2023-2024 at the Gdańsk University of Technology in Poland.
-                </p>
-                <p>
-                Nowadays, web applications are one of the most important communication and information exchange tools on the web.
-                </p>
-        </div>
+  <h3 class="page-title white-text teal">Template for theory</h3>
+  <div class="container flow-text">     
+    <p>
+      -
+    </p>
+    <p>
+      -
+    </p>
+  </div>
 </section>
 
 <!-- Fourth Section: Links to vulnerable websites -->
 <section id="vulnerable-websites" class="section scrollspy">
-        <h3 class="page-title white-text teal">Vulnerable websites for testing</h3>
-        
-        <div class="container">
-        <div class="row">
-                <!-- First testing website -->
-                <div class="col s12 m4">
-                        <div class="card medium">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                        <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
-                                </div>
-                                <div class="card-content">
-                                        <span class="card-title teal-text hoverline">Website nr 1</span>
-                                        <p>
-                                        Description underneath
-                                        </p>
-                                </div>
-                        </div>
-                </div>
-
-                <!-- Second testing website -->
-                <div class="col s12 m4">
-                        <div class="card medium">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                        <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
-                                </div>
-                                <div class="card-content">
-                                        <span class="card-title teal-text hoverline">Website nr 2</span>
-                                        <p>
-                                        Description underneath
-                                        </p>
-                                </div>
-                        </div>
-                </div>
-
-                <!-- Third testing website -->
-                <div class="col s12 m4">
-                        <div class="card medium">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                        <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
-                                </div>
-                                <div class="card-content">
-                                        <span class="card-title teal-text hoverline">Website nr 3</span>
-                                        <p>
-                                        Description underneath
-                                        </p>
-                                </div>
-                        </div>
-                </div>
-
+  <h3 class="page-title white-text teal">Vulnerable websites for testing</h3>
+  <div class="container">
+  <div class="row">
+    <!-- First testing website -->
+    <div class="col s12 m4">
+      <div class="card medium">
+        <div class="card-image waves-effect waves-block waves-light">
+          <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
+          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
         </div>
+        <div class="card-content">
+          <span class="card-title teal-text hoverline">Common Directories</span>
+          <p>
+          Description underneath
+          </p>
         </div>
+      </div>
+    </div>
+
+    <!-- Second testing website -->
+    <div class="col s12 m4">
+      <div class="card medium">
+        <div class="card-image waves-effect waves-block waves-light">
+          <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
+          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title teal-text hoverline">PHP and TXT Files</span>
+          <p>
+          Description underneath
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
 </section>
 
 </main>
@@ -162,16 +144,16 @@
 <!-- Materialize - Compiled and minified JavaScript-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
 <script>
-        // Materialize - Initializers
-        $(document).ready(function () {
-        $(".scrollspy").scrollSpy()
-        // Initialize collapse button
-        $(".button-collapse").sideNav({
-                menuWidth: 190, // Default is 240
-                edge: "left", // Choose the horizontal origin
-                closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-        })
-        })
+  // Materialize - Initializers
+  $(document).ready(function () {
+  $(".scrollspy").scrollSpy()
+  // Initialize collapse button
+  $(".button-collapse").sideNav({
+    menuWidth: 190, // Default is 240
+    edge: "left", // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  })
+  })
 </script>
 
 </body>

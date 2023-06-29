@@ -1,7 +1,9 @@
 /* 
 
-      Damian Strojek @damianStrojek
-      Patryk Sikora @PatrickTheSadge
+  Copyright (C) 2023-2024 Damian Strojek, Patryk Sikora
+
+  Security Testing Environment for Web Applications
+  Realised as part of engineering degree for Gdansk University of Technology
 
 */
 
@@ -144,6 +146,7 @@
   color: #001EA0;/*change*/
   background-color: white;
 }
+
 /* main body */
 
 /* body-color */

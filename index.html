@@ -1,9 +1,25 @@
 <!-- 
 
-        Damian Strojek @damianStrojek
-        Patryk Sikora @PatrickTheSadge
-        
-        Environment to test Security of Web Applications
+  Copyright (C) 2023-2024 Damian Strojek, Patryk Sikora
+
+  Security Testing Environment for Web Applications
+  Realised as part of engineering degree for Gdansk University of Technology in Poland
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+  Contact Damian via damian.piotr.strojek@gmail.com or LinkedIn @damianstrojek.
+  Contact Patryk via LinkedIn @patryksikora
 
 -->
 <!DOCTYPE html>
@@ -47,7 +63,7 @@
         <li class="bold">
           <a aria-label="Navigate to the First Module" href="#firstmodule"
             class="waves-effect waves-dark teal-text"><i
-              class="mdi-notification-sync-problem small"></i><span>Brute Force</span></a>
+              class="mdi-notification-sync-problem small"></i><span>Brute-Force</span></a>
         </li>
         <li class="bold">
           <a aria-label="Navigate to the Second Module" href="#secondmodule" class="waves-effect waves-dark teal-text"><i
@@ -87,7 +103,7 @@
         <li class="bold">
           <a aria-label="Navigate to the First Module" href="#firstmodule"
             class="waves-effect waves-dark teal-text"><i
-              class="mdi-action-trending-up small"></i><span>Brute Force</span></a>
+              class="mdi-action-trending-up small"></i><span>Brute-Force</span></a>
         </li>
         <li class="bold">
           <a aria-label="Navigate to the Second Module" href="#secondmodule" class="waves-effect waves-dark teal-text"><i
@@ -157,32 +173,20 @@
               <div class="row text-center">
 
                 <div class="col s4 m2">
-                  <img alt="Burp Suite" src="/assets/img/nmap-logo.png" class="responsive-img" />NMAP
+                  <img alt="NMAP" src="/assets/img/nmap-logo.png" class="responsive-img" />NMAP
                 </div>
                 <div class="col s4 m2">
                   <img alt="Burp Suite" src="/assets/img/burp-suite-logo.png" class="responsive-img" />Burp Suite, ZAP
                 </div>
-
-                <div class="col s4 m2 hide-on-mobile">
-                  <img alt="Wireshark" src="/assets/img/wireshark-logo.png" class="responsive-img" />Wireshark
+                
+                <div class="col s4 m2">
+                  <img alt="GoBuster" src="/assets/img/gobuster.svg" class="responsive-img" />GoBuster
                 </div>
-                <div class="col s4 m2 hide-on-mobile">
-                  <img alt="Metasploit" src="/assets/img/metasploit-logo.png" class="responsive-img" />Metasploit
+                <div class="col s4 m2">
+                  <img alt="John" src="/assets/img/john.png" class="responsive-img" />John the Ripper
                 </div>
 
               </div>
-
-              <div class="row text-center show-on-mobile">
-
-                <div class="col s4 m2">
-                  <img alt="Wireshark" src="/assets/img/wireshark-logo.png" class="responsive-img" />Wireshark
-                </div>
-                <div class="col s4 m2">
-                  <img alt="Metasploit" src="/assets/img/metasploit-logo.png" class="responsive-img" />Metasploit
-                </div>
-
-              </div>
-
             </div>
           </div>
 
@@ -192,21 +196,20 @@
               <h4 class="brown-text light">Other</h4>
               <div class="row text-center">
 
-                <div class="col s4 m2 hide-on-mobile">
+                <div class="col s4 m2">
                   <img alt="OWASP" src="/assets/img/owasp-logo.png" class="responsive-img" />OWASP
                 </div>
 
               </div>
-
             </div>
           </div>
-          
         </div>
       </section>
 
-      <!-- Module Section -->
+      <!-- Fourth Section - Modules -->
+      <!-- First Module -->
       <section id="firstmodule" class="section scrollspy">
-        <h3 class="page-title white-text teal">Brute Force Attack</h3>
+        <h3 class="page-title white-text teal">Brute-Force Attacks</h3>
         <div class="container flow-text">
           <p>
             In cryptography, a <b>brute-force attack</b> consists of an attacker submitting many passwords or passphrases with the hope of eventually guessing correctly. The attacker systematically checks all possible passwords and passphrases until the correct one is found.
@@ -228,9 +231,9 @@
         </div>
       </section>
 
-      <!-- Module Section -->
+      <!-- Second Module -->
       <section id="secondmodule" class="section scrollspy">
-        <h3 class="page-title white-text teal">Directory Traversal Attack</h3>
+        <h3 class="page-title white-text teal">Directory Traversal Attacks</h3>
         <div class="container flow-text">
           <p>
             A <b>directory traversal (or path traversal)</b> is a form of insecure direct object reference where insufficient security validation or sanitization of user-supplied file names can be exploited, such that characters representing "traverse to parent directory" are passed through to the operating system's file system API. An affected application can be exploited to gain unauthorized access to the file system.
@@ -244,7 +247,7 @@
                   Following module contains several types of directory traversal exploits - each of them is unique and gives access to different type of data.
                 </div>
                 <div class="col s4 m6">
-                  <a class="module-link" href="./modules/module-2/theory.html"><img alt="Brute-Force" src="/assets/img/directory-traverse.jpg" class="responsive-img"/><br>Directory Traverse</a>
+                  <a class="module-link" href="./modules/module-2/theory.html"><img alt="Brute-Force" src="/assets/img/directory-traverse.png" class="responsive-img"/><br>Directory Traverse</a>
                 </div>
               </div>
             </div>
@@ -252,9 +255,9 @@
         </div>
       </section>
 
-      <!-- Module Section -->
+      <!-- Third Module -->
       <section id="thirdmodule" class="section scrollspy">
-        <h3 class="page-title white-text teal">SQL Injection Attack</h3>
+        <h3 class="page-title white-text teal">SQL Injection Attacks</h3>
         <div class="container flow-text">
           <p>
             <b>SQL injection (SQLi)</b> is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. It generally allows an attacker to view data that they are not normally able to retrieve. In some situations, an attacker can escalate a SQL injection attack to compromise the underlying server or other back-end infrastructure, or perform a denial-of-service attack.
@@ -301,7 +304,7 @@
 
           <p>
             <a aria-label="View Patryk on LinkedIn" href="http://linkedin.com/in/patryksikora" target="_blank"
-              data-position="top" data-tooltip="View Damian on LinkedIn"
+              data-position="top" data-tooltip="View Patryk on LinkedIn"
               class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-linkedin"></i><a 
               aria-label="Patryk on LinkedIn" href="http://linkedin.com/in/patryksikora"
               class="hoverline" target="_blank">Patryk Sikora LinkedIn</a>
