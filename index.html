@@ -41,20 +41,20 @@
         </li>
         <li class="bold">
           <a aria-label="Navigate to the Tools section" href="#tools" class="waves-effect waves-dark teal-text"><i
-              class="mdi-action-dashboard small"></i><span>Tools</span></a>
+              class="mdi-hardware-memory small"></i><span>Tools</span></a>
         </li>
         <li class="bold">
           <a aria-label="Navigate to the First Module" href="#firstmodule"
             class="waves-effect waves-dark teal-text"><i
-              class="mdi-action-verified-user small"></i><span>Brute Force</span></a>
+              class="mdi-notification-sync-problem small"></i><span>Brute Force</span></a>
         </li>
         <li class="bold">
           <a aria-label="Navigate to the Second Module" href="#secondmodule" class="waves-effect waves-dark teal-text"><i
-              class="mdi-action-input small"></i><span>Directory Traverse</span></a>
+              class="mdi-file-folder-open small"></i><span>Directory Traverse</span></a>
         </li>
         <li class="bold">
           <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-              class="mdi-content-mail small"></i><span>Contact</span></a>
+              class="mdi-maps-local-phone small"></i><span>Contact</span></a>
         </li>
       </ul>
     </nav>
@@ -253,7 +253,7 @@
               data-position="top" data-tooltip="View Damian on LinkedIn"
               class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-linkedin"></i><a 
               aria-label="Patryk on LinkedIn" href="http://linkedin.com/in/damianstrojek" class="hoverline" 
-              target="_blank">linkedin.com/in/damianstrojek</a>
+              target="_blank">Damian Strojek LinkedIn</a>
             </a>
           </p>
 
@@ -262,7 +262,7 @@
               data-position="top" data-tooltip="View Damian on GitHub"
               class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
               aria-label="Damian on Github" href="http://github.com/damianStrojek" class="hoverline"
-              target="_blank">github.com/damianStrojek</a>
+              target="_blank">Damian Strojek GitHub</a>
             </a>
           </p>
 
@@ -271,7 +271,7 @@
               data-position="top" data-tooltip="View Damian on LinkedIn"
               class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-linkedin"></i><a 
               aria-label="Patryk on LinkedIn" href="http://linkedin.com/in/patryksikora"
-              class="hoverline" target="_blank">linkedin.com/in/patryksikora</a>
+              class="hoverline" target="_blank">Patryk Sikora LinkedIn</a>
             </a>
           </p>
 
@@ -280,7 +280,7 @@
               data-position="top" data-tooltip="View Patryk on GitHub"
               class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
               aria-label="Patryk on Github" href="http://github.com/PatrickTheSadge" class="hoverline"
-              target="_blank">github.com/PatrickTheSadge</a>
+              target="_blank">Patryk Sikora GitHub</a>
             </a>
           </p>
 
@@ -297,6 +297,24 @@
         typeSpeed: 100,
         backSpeed: 50
       });
+    </script>
+
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Materialize - Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script>
+      // Materialize - Initializers
+      $(document).ready(function () {
+        $(".scrollspy").scrollSpy()
+        // Initialize collapse button
+        $(".button-collapse").sideNav({
+          menuWidth: 190, // Default is 240
+          edge: "left", // Choose the horizontal origin
+          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        })
+      })
     </script>
   </body>
 </html>
