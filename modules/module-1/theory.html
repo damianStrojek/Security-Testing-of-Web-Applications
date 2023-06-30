@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
   <!-- Font Awesome Icon - CSS-->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Material Design Icons -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
   <!-- Custom Styles-->
   <link rel="stylesheet" href="./../../assets/css/style.css" />
   <link rel="icon" href="./../../assets/img/brute-force.png" />
@@ -37,13 +39,17 @@
       class="mdi-action-language small"></i><span>Introduction</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Navigate to the Technology section" href="#technology" class="waves-effect waves-dark teal-text"><i
-      class="mdi-action-search small"></i><span>Technology</span></a>
+      <a aria-label="Navigate to the Login Pages section" href="#login-pages" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-lock-clock small"></i><span>Login Pages</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Navigate to the Vulnerability section" href="#vulnerability"
+      <a aria-label="Navigate to the Encrypted Keys section" href="#keys" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-key-chain small"></i><span>Encrypted Keys</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Hidden Pages section" href="#hidden-pages"
       class="waves-effect waves-dark teal-text"><i
-      class="mdi-action-settings-ethernet small"></i><span>Vulnerability</span></a>
+      class="mdi mdi-eye-off small"></i><span>Hidden Pages</span></a>
     </li>
     <li class="bold">
       <a aria-label="Navigate to the Testing section" href="#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
@@ -68,12 +74,64 @@
       These attacks are done by "brute force" meaning they use excessive forceful attempts to try and "force" their way into your private account(s).
       This is an old attack method, but it's still effective and popular with hackers. Because depending on the length and complexity of the password, cracking it can take anywhere from a few seconds to many years.
     </p>
+    <p>
+      <b>Simple brute force attacks:</b> hackers attempt to logically guess your credentials — completely unassisted from software tools or other means. These can reveal extremely simple passwords and PINs. For example, a password that is set as “guest12345”.
+      <br>
+      <b>Dictionary attacks:</b> in a standard attack, a hacker chooses a target and runs possible passwords against that username. These are known as dictionary attacks. Dictionary attacks are the most basic tool in brute force attacks. While not necessarily being brute force attacks in themselves, these are often used as an important component for password cracking. Some hackers run through unabridged dictionaries and augment words with special characters and numerals or use special dictionaries of words, but this type of sequential attack is cumbersome.
+      <br>
+      <b>Hybrid brute force attacks:</b> these hackers blend outside means with their logical guesses to attempt a break-in. A hybrid attack usually mixes dictionary and brute force attacks. These attacks are used to figure out combo passwords that mix common words with random characters. A brute force attack example of this nature would include passwords such as NewYork1993 or Spike1234.
+    </p>
   </div>
 </section>
 
-<!-- Second Section: About the technology -->
-<section id="technology" class="section scrollspy">
-  <h3 class="page-title white-text teal">Template for theory</h3>
+<!-- Second Section: Brute-Force Login Pages -->
+<section id="login-pages" class="section scrollspy">
+  <h3 class="page-title white-text teal">Hacking Login Pages</h3>
+  <div class="container flow-text">     
+    <p>
+      <b>Hydra</b> is a tool used to brute-force usernames and passwords to different services such as FTP, ssh, telnet, MS SQL, etc. Brute force can be used to try different usernames and passwords against a target to identify the correct credentials.
+    </p>
+    <p>
+      If you are using Windows, I would recommend using a virtual box and installing Linux. Personally, I don't recommend using Windows if you want to be a professional penetration tester.
+      <br>
+      If we have the username and password that we expect a system to have, we can use Hydra to test it.
+      <pre>
+        <code> $ hydra -l [username] -p [password] [server] [service] </code>
+      </pre>
+      Let's assume we have a user named “molly” with a password of “butterfly” hosted at 10.10.137.76. Here is how we can use Hydra to test the credentials for SSH:
+      <pre>
+        <code> $ hydra -l molly -p butterfly 10.10.137.76 ssh </code>
+      </pre>
+      If it works, here is what the result will look like:
+      <div>
+        <img src="assets/img/hydra-example-1.png" class="img-modules" alt="hydra example">
+      </div>
+    </p>
+    <p>
+      Let's look at how to perform a dictionary attack. In real-world scenarios, this is what we will be using Hydra regularly for. I am going to use the <a href="https://github.com/teamstealthsec/wordlists" target="_blank">Rockyou wordlist</a> for this example along with the `admin` username.
+    </p>
+    <p>
+      To use hydra for login page attacks you need to have username (or list of usernames), password (or list of password), name of the hosting server, localization of login form, body of login request, and error message that pop-ups when your credentials are invalid.
+      <div>
+        <img src="assets/img/hydra-example-2.png" class="img-modules" alt="hydra example">
+      </div>
+      The syntax with proper information should look as follows:
+      <pre>
+        <code> $ hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.10.43 https-post-form 
+"/db/index.php:password=^PASS^&remember=yes&login=Log+In&proc_login=true:
+Incorrect password" </code>
+      </pre>
+      After running the command, we uncover the password after just a couple minutes.
+      <div>
+        <img src="assets/img/hydra-example-3.png" class="img-modules" alt="hydra example">
+      </div>
+    </p>
+  </div>
+</section>
+
+<!-- Third Section: Brute-Force Encrypted Keys -->
+<section id="keys" class="section scrollspy">
+  <h3 class="page-title white-text teal">Hacking Encrypted Files</h3>
   <div class="container flow-text">     
     <p>
       -
@@ -84,12 +142,12 @@
   </div>
 </section>
 
-<!-- Third Section: About the vulnerability -->
-<section id="vulnerability" class="section scrollspy">
-  <h3 class="page-title white-text teal">Template for theory</h3>
+<!-- Fourth Section: Hidden Pages -->
+<section id="hidden-pages" class="section scrollspy">
+  <h3 class="page-title white-text teal">Finding a Hidden Web Page</h3>
   <div class="container flow-text">     
     <p>
-      -
+      <b>Gobuster</b> is one of the most powerful and speed brute-force tools that doesn't need a runtime. It uses a directory scanner programmed by Go language; it's faster and more flexible than interpreted script.
     </p>
     <p>
       -
