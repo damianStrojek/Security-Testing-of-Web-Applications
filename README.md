@@ -1,4 +1,4 @@
-# Security Testing Environment for Web Applications
+# Environment for Security Tests of Web Applications
 
 ## Description
 
