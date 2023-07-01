@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
   <!-- Font Awesome Icon - CSS-->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Material Design Icons -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
   <!-- Custom Styles-->
   <link rel="stylesheet" href="./../../assets/css/style.css" />
   <link rel="icon" href="./../../assets/img/directory-traverse.png" />
@@ -37,13 +39,13 @@
       class="mdi-action-language small"></i><span>Introduction</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Navigate to the Technology section" href="#technology" class="waves-effect waves-dark teal-text"><i
-      class="mdi-action-search small"></i><span>Technology</span></a>
+      <a aria-label="Navigate to the How to check section" href="#how-to-check" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-bug-check-outline small"></i><span>How to Check</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Navigate to the Vulnerability section" href="#vulnerability"
+      <a aria-label="Navigate to the Examples section" href="#examples"
       class="waves-effect waves-dark teal-text"><i
-      class="mdi-action-settings-ethernet small"></i><span>Vulnerability</span></a>
+      class="mdi mdi-test-tube small"></i><span>Examples</span></a>
     </li>
     <li class="bold">
       <a aria-label="Navigate to the Testing section" href="#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
@@ -65,16 +67,33 @@
   <div class="container flow-text">     
     <p>
       Properly controlling access to web content is crucial for running a secure web server. <b>Directory traversal or Path Traversal</b> is an HTTP attack that allows attackers to access restricted directories and execute commands outside of the web server's root directory.
+      <div>
+        <img src="assets/img/directory-traversal-example-1.svg" class="img-modules" alt="hydra example">
+      </div>
+    </p>
+    <p>
+      This type of attack is commonly performed using web browsers. Any server that fails to validate input data from web browsers is vulnerable to a directory traversal attack.
+      <br>
+      Directory traversal is also known as <i>directory climbing, backtracking and file path traversal</i> vulnerabilities. Directory traversal is similar to Structured Query Language injection and cross-site scripting in that they all involve code injection.
+    </p>
+    <p>
+      IT security professionals minimize the risk of a directory traversal with the following techniques:<br>
+      - careful web server programming;<br>
+      - installation of software updates and patches;<br>
+      - filtering of input from browsers;<br>
+      - using vulnerability scanners.
     </p>
   </div>
 </section>
 
-<!-- Second Section: About the technology -->
-<section id="technology" class="section scrollspy">
-  <h3 class="page-title white-text teal">Template for theory</h3>
+<!-- Second Section: How to check -->
+<section id="how-to-check" class="section scrollspy">
+  <h3 class="page-title white-text teal">How to check for directory traversal</h3>
   <div class="container flow-text">     
     <p>
-      -
+      Here are two ways to manually check for directory traversal vulnerabilities:<br>
+      1. <b>Input vector enumeration</b> - Enumeration tells the tester which parts of a web application could be vulnerable to attempts to bypass input validation. The tester identifies parts of an application that accept user input, including POST and GET calls, file uploads and Hypertext Markup Language forms.<br>
+      2. <b>Common patterns</b> - Security pros can look for common patterns in the application's URL structure to identify directory traversal vulnerabilities. If an application uses a querystring parameter to specify the file path, an attacker may be able to manipulate this parameter to access files outside of the intended path. Search engines can also be used to find URLs that are likely to have file names included in them.
     </p>
     <p>
       -
@@ -82,8 +101,8 @@
   </div>
 </section>
 
-<!-- Third Section: About the vulnerability -->
-<section id="vulnerability" class="section scrollspy">
+<!-- Third Section: Examples -->
+<section id="examples" class="section scrollspy">
   <h3 class="page-title white-text teal">Template for theory</h3>
   <div class="container flow-text">     
     <p>
@@ -134,6 +153,7 @@
 
   </div>
   </div>
+  <br><br><br><br>
 </section>
 
 </main>

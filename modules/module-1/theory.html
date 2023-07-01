@@ -134,10 +134,23 @@ Incorrect password" </code>
   <h3 class="page-title white-text teal">Hacking Encrypted Files</h3>
   <div class="container flow-text">     
     <p>
-      -
+      When it comes to brute-forcing encrypted files, <b>John the Reaper</b> is a very useful tool. Alternatively, you can use <a href="https://hashcat.net/wiki/doku.php?id=example_hashes" target="_blank">hashcat</a> which comes in handy when you know what type of encryption you are dealing with.
+      <br>
+      Ssh2john is part of John The Reaper suite. This is a script that basically transforms [RSA/DSA/EC/OPENSSH (SSH private keys)] private key to john format for later cracking using JtR.
     </p>
     <p>
-      -
+      Obviously, if you want to crack something you first need to have it. After you have received an RSA private key you can use the <b>ssh2john</b> script and create a new file with the content of the output.
+      <div>
+        <img src="assets/img/ssh2john-example-1.png" class="img-modules" alt="ssh2john example">
+      </div>
+      Now that we created the new file named id_rsa.john, we need to run john against it. We will use rockyou.txt as the wordlist. The result is secretz101 as the password.
+      <div>
+        <img src="assets/img/ssh2john-example-2.png" class="img-modules" alt="ssh2john example">
+      </div>
+      Knowing already the username of the owner of this private key. We can try to SSH to our target machine. We will use an uncommon port (4655).
+      <div>
+        <img src="assets/img/ssh2john-example-3.png" class="img-modules" alt="ssh2john example">
+      </div>
     </p>
   </div>
 </section>
@@ -148,9 +161,22 @@ Incorrect password" </code>
   <div class="container flow-text">     
     <p>
       <b>Gobuster</b> is one of the most powerful and speed brute-force tools that doesn't need a runtime. It uses a directory scanner programmed by Go language; it's faster and more flexible than interpreted script.
+      <br>
+      If you look at the help command, we can see that Gobuster has a few modes: dir — Directory enumeration mode, dns — Subdomain enumeration mode, fuzz — Fuzzing mode, s3 — S3 enumeration mode, vhost — Vhost enumeration mode.
     </p>
     <p>
-      -
+      Gobuster's directory mode (<b>dir</b>) helps us to look for hidden files and URL paths. This can include images, script files, and almost any file that is exposed to the internet.
+      <pre>
+        <code> $ gobuster dir -u [url] -w [wordlist] </code>
+      </pre>
+      Now let's try the dir mode. Here is the command to look for URLs with the common wordlist.
+      <pre>
+        <code> $ gobuster dir -u 10.10.171.247:80 -w /usr/share/wordlists/dirb/common.txt </code>
+      </pre>
+      And here is the result. We can see that there are some exposed files that we should take a closer look at.
+      <div>
+        <img src="assets/img/gobuster-example-1.png" class="img-modules" alt="ssh2john example">
+      </div>
     </p>
   </div>
 </section>
@@ -213,6 +239,7 @@ Incorrect password" </code>
 
   </div>
   </div>
+  <br><br><br><br>
 </section>
 
 </main>
