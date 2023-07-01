@@ -66,15 +66,18 @@
   <h3 class="page-title white-text teal">Directory Traversal Attacks</h3>
   <div class="container flow-text">     
     <p>
-      Properly controlling access to web content is crucial for running a secure web server. <b>Directory traversal or Path Traversal</b> is an HTTP attack that allows attackers to access restricted directories and execute commands outside of the web server's root directory.
+      Properly controlling access to web content is crucial for running a secure web server. <b>Directory traversal or Path Traversal</b> 
+      is an HTTP attack that allows attackers to access restricted directories and execute commands outside of the web server's root directory.
       <div>
         <img src="assets/img/directory-traversal-example-1.svg" class="img-modules" alt="hydra example">
       </div>
     </p>
     <p>
-      This type of attack is commonly performed using web browsers. Any server that fails to validate input data from web browsers is vulnerable to a directory traversal attack.
+      This type of attack is commonly performed using web browsers. Any server that fails to validate input data from web browsers is 
+      vulnerable to a directory traversal attack.
       <br>
-      Directory traversal is also known as <i>directory climbing, backtracking and file path traversal</i> vulnerabilities. Directory traversal is similar to Structured Query Language injection and cross-site scripting in that they all involve code injection.
+      Directory traversal is also known as <cde>directory climbing, backtracking and file path traversal</cde> vulnerabilities. Directory 
+      traversal is similar to Structured Query Language injection and cross-site scripting in that they all involve code injection.
     </p>
     <p>
       IT security professionals minimize the risk of a directory traversal with the following techniques:<br>
@@ -92,24 +95,67 @@
   <div class="container flow-text">     
     <p>
       Here are two ways to manually check for directory traversal vulnerabilities:<br>
-      1. <b>Input vector enumeration</b> - Enumeration tells the tester which parts of a web application could be vulnerable to attempts to bypass input validation. The tester identifies parts of an application that accept user input, including POST and GET calls, file uploads and Hypertext Markup Language forms.<br>
-      2. <b>Common patterns</b> - Security pros can look for common patterns in the application's URL structure to identify directory traversal vulnerabilities. If an application uses a querystring parameter to specify the file path, an attacker may be able to manipulate this parameter to access files outside of the intended path. Search engines can also be used to find URLs that are likely to have file names included in them.
-    </p>
-    <p>
-      -
+      1. <b>Input vector enumeration</b> - Enumeration tells the tester which parts of a web application could be vulnerable to attempts 
+      to bypass input validation. The tester identifies parts of an application that accept user input, including POST and GET calls, file 
+      uploads and Hypertext Markup Language forms.<br>
+      2. <b>Common patterns</b> - Security pros can look for common patterns in the application's URL structure to identify directory 
+      traversal vulnerabilities. If an application uses a querystring parameter to specify the file path, an attacker may be able to 
+      manipulate this parameter to access files outside of the intended path. Search engines can also be used to find URLs that are 
+      likely to have file names included in them.
     </p>
   </div>
 </section>
 
 <!-- Third Section: Examples -->
 <section id="examples" class="section scrollspy">
-  <h3 class="page-title white-text teal">Template for theory</h3>
+  <h3 class="page-title white-text teal">Examples of directory traversal vulnerability</h3>
   <div class="container flow-text">     
     <p>
-      -
+      Consider a shopping application that displays images of items for sale. Images are loaded via some HTML like the following:
+      <pre>
+        <code> img src="/loadImage?filename=218.png" </code>
+      </pre>
+      The loadImage URL takes a filename parameter and returns the contents of the specified file. The image files themselves are 
+      stored on disk in the location <cde>/var/www/images/</cde>. To return an image, the application appends the requested filename 
+      to this base directory and uses a filesystem API to read the contents of the file. In the above case, the application reads 
+      from the following file path: <cde>/var/www/images/218.png</cde>
+      <br>
+      The application implements no defenses against directory traversal attacks, so an attacker can request the following URL to 
+      retrieve an arbitrary file from the server's filesystem:
+      <pre>
+        <code> https://insecure-website.com/loadImage?filename=../../../etc/passwd </code>
+      </pre>
+      This causes the application to read from the following file path: <cde>/var/www/images/../../../etc/passwd</cde>
+      <br>
+      The sequence <cde>../</cde> is valid within a file path, and means to step up one level in the directory structure. The three 
+      consecutive <cde>../</cde> sequences step up from <cde>/var/www/images/</cde> to the filesystem root, and so the file that is actually 
+      read is: <cde>/etc/passwd</cde>
     </p>
     <p>
-      -
+      Many applications that place user input into file paths implement some kind of defense against path traversal attacks, and 
+      these can often be circumvented.
+      <br>
+      If an application strips or blocks directory traversal sequences from the user-supplied filename, then it might be possible 
+      to bypass the defense using a variety of techniques.
+      <br>
+      1. You might be able to use an absolute path from the filesystem root, such as <cde>filename=/etc/passwd</cde>, to directly reference 
+      a file without using any traversal sequences.
+      <br>
+      2. You might be able to use nested traversal sequences, such as <cde>....//</cde> or <cde>....\/</cde>, which will revert to simple 
+      traversal sequences when the inner sequence is stripped.
+      <br>
+      3. In some contexts, such as in a URL path or the <cde>filename</cde> parameter of a multipart/form-data request, web servers may strip 
+      any directory traversal sequences before passing your input to the application. You can sometimes bypass this kind of sanitization by 
+      URL encoding, or even double URL encoding, the <cde>../</cde> characters, resulting in <cde>%2e%2e%2f</cde> or <cde>%252e%252e%252f</cde> 
+      respectively. Various non-standard encodings, such as <cde>..%c0%af</cde> or <cde>..%ef%bc%8f</cde>, may also do the trick. For Burp 
+      Suite Professional users, Burp Intruder provides a predefined payload list (Fuzzing - path traversal), which contains a variety of 
+      encoded path traversal sequences that you can try.
+      <br>
+      4. If an application requires that the user-supplied filename must start with the expected base folder, such as <cde>/var/www/images</cde>, 
+      then it might be possible to include the required base folder followed by suitable traversal sequences. For example:
+      <pre>
+        <code> filename=/var/www/images/../../../etc/passwd </code>
+      </pre>
     </p>
   </div>
 </section>
@@ -124,7 +170,8 @@
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
           <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
+          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
           <span class="card-title teal-text hoverline">Common Directories</span>
@@ -140,7 +187,8 @@
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
           <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
+          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
           <span class="card-title teal-text hoverline">PHP and TXT Files</span>

@@ -64,6 +64,12 @@ pre code {
   width: 80%;
 }
 
+/* style for codes in text */
+cde {
+  font-style: italic;
+  background-color: #eee;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 .social {
   margin: 0 auto;

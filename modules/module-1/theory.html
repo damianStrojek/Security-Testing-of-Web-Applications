@@ -70,16 +70,26 @@
   <h3 class="page-title white-text teal">Brute-Force Attacks</h3>
   <div class="container flow-text">     
     <p>
-      A <b>brute-force attack</b> uses trial-and-error to guess login info, encryption keys, or find a hidden web page. Hackers work through all possible combinations hoping to guess correctly.
-      These attacks are done by "brute force" meaning they use excessive forceful attempts to try and "force" their way into your private account(s).
-      This is an old attack method, but it's still effective and popular with hackers. Because depending on the length and complexity of the password, cracking it can take anywhere from a few seconds to many years.
+      A <b>brute-force attack</b> uses trial-and-error to guess login info, encryption keys, or find a hidden web page. Hackers work 
+      through all possible combinations hoping to guess correctly.
+      These attacks are done by "brute force" meaning they use excessive forceful attempts to try and "force" their way into your 
+      private account(s).
+      This is an old attack method, but it's still effective and popular with hackers. Because depending on the length and complexity 
+      of the password, cracking it can take anywhere from a few seconds to many years.
     </p>
     <p>
-      <b>Simple brute force attacks:</b> hackers attempt to logically guess your credentials — completely unassisted from software tools or other means. These can reveal extremely simple passwords and PINs. For example, a password that is set as “guest12345”.
+      <b>Simple brute force attacks:</b> hackers attempt to logically guess your credentials — completely unassisted from software 
+      tools or other means. These can reveal extremely simple passwords and PINs. For example, a password that is set as “guest12345”.
       <br>
-      <b>Dictionary attacks:</b> in a standard attack, a hacker chooses a target and runs possible passwords against that username. These are known as dictionary attacks. Dictionary attacks are the most basic tool in brute force attacks. While not necessarily being brute force attacks in themselves, these are often used as an important component for password cracking. Some hackers run through unabridged dictionaries and augment words with special characters and numerals or use special dictionaries of words, but this type of sequential attack is cumbersome.
+      <b>Dictionary attacks:</b> in a standard attack, a hacker chooses a target and runs possible passwords against that username. 
+      These are known as dictionary attacks. Dictionary attacks are the most basic tool in brute force attacks. While not necessarily 
+      being brute force attacks in themselves, these are often used as an important component for password cracking. Some hackers run 
+      through unabridged dictionaries and augment words with special characters and numerals or use special dictionaries of words, 
+      but this type of sequential attack is cumbersome.
       <br>
-      <b>Hybrid brute force attacks:</b> these hackers blend outside means with their logical guesses to attempt a break-in. A hybrid attack usually mixes dictionary and brute force attacks. These attacks are used to figure out combo passwords that mix common words with random characters. A brute force attack example of this nature would include passwords such as NewYork1993 or Spike1234.
+      <b>Hybrid brute force attacks:</b> these hackers blend outside means with their logical guesses to attempt a break-in. A hybrid 
+      attack usually mixes dictionary and brute force attacks. These attacks are used to figure out combo passwords that mix common 
+      words with random characters. A brute force attack example of this nature would include passwords such as NewYork1993 or Spike1234.
     </p>
   </div>
 </section>
@@ -89,16 +99,19 @@
   <h3 class="page-title white-text teal">Hacking Login Pages</h3>
   <div class="container flow-text">     
     <p>
-      <b>Hydra</b> is a tool used to brute-force usernames and passwords to different services such as FTP, ssh, telnet, MS SQL, etc. Brute force can be used to try different usernames and passwords against a target to identify the correct credentials.
+      <b>Hydra</b> is a tool used to brute-force usernames and passwords to different services such as FTP, ssh, telnet, MS SQL, etc. 
+      Brute force can be used to try different usernames and passwords against a target to identify the correct credentials.
     </p>
     <p>
-      If you are using Windows, I would recommend using a virtual box and installing Linux. Personally, I don't recommend using Windows if you want to be a professional penetration tester.
+      If you are using Windows, I would recommend using a virtual box and installing Linux. Personally, I don't recommend using Windows 
+      if you want to be a professional penetration tester.
       <br>
       If we have the username and password that we expect a system to have, we can use Hydra to test it.
       <pre>
         <code> $ hydra -l [username] -p [password] [server] [service] </code>
       </pre>
-      Let's assume we have a user named “molly” with a password of “butterfly” hosted at 10.10.137.76. Here is how we can use Hydra to test the credentials for SSH:
+      Let's assume we have a user named “molly” with a password of “butterfly” hosted at 10.10.137.76. Here is how we can use Hydra 
+      to test the credentials for SSH:
       <pre>
         <code> $ hydra -l molly -p butterfly 10.10.137.76 ssh </code>
       </pre>
@@ -108,10 +121,13 @@
       </div>
     </p>
     <p>
-      Let's look at how to perform a dictionary attack. In real-world scenarios, this is what we will be using Hydra regularly for. I am going to use the <a href="https://github.com/teamstealthsec/wordlists" target="_blank">Rockyou wordlist</a> for this example along with the `admin` username.
+      Let's look at how to perform a dictionary attack. In real-world scenarios, this is what we will be using Hydra regularly for. 
+      I am going to use the <a href="https://github.com/teamstealthsec/wordlists" target="_blank">Rockyou wordlist</a> for this 
+      example along with the `admin` username.
     </p>
     <p>
-      To use hydra for login page attacks you need to have username (or list of usernames), password (or list of password), name of the hosting server, localization of login form, body of login request, and error message that pop-ups when your credentials are invalid.
+      To use hydra for login page attacks you need to have username (or list of usernames), password (or list of password), name of 
+      the hosting server, localization of login form, body of login request, and error message that pop-ups when your credentials are invalid.
       <div>
         <img src="assets/img/hydra-example-2.png" class="img-modules" alt="hydra example">
       </div>
@@ -134,16 +150,21 @@ Incorrect password" </code>
   <h3 class="page-title white-text teal">Hacking Encrypted Files</h3>
   <div class="container flow-text">     
     <p>
-      When it comes to brute-forcing encrypted files, <b>John the Reaper</b> is a very useful tool. Alternatively, you can use <a href="https://hashcat.net/wiki/doku.php?id=example_hashes" target="_blank">hashcat</a> which comes in handy when you know what type of encryption you are dealing with.
+      When it comes to brute-forcing encrypted files, <b>John the Reaper</b> is a very useful tool. Alternatively, you can use 
+      <a href="https://hashcat.net/wiki/doku.php?id=example_hashes" target="_blank">hashcat</a> which comes in handy when you know 
+      what type of encryption you are dealing with.
       <br>
-      Ssh2john is part of John The Reaper suite. This is a script that basically transforms [RSA/DSA/EC/OPENSSH (SSH private keys)] private key to john format for later cracking using JtR.
+      Ssh2john is part of John The Reaper suite. This is a script that basically transforms [RSA/DSA/EC/OPENSSH (SSH private keys)] 
+      private key to john format for later cracking using JtR.
     </p>
     <p>
-      Obviously, if you want to crack something you first need to have it. After you have received an RSA private key you can use the <b>ssh2john</b> script and create a new file with the content of the output.
+      Obviously, if you want to crack something you first need to have it. After you have received an RSA private key you can use 
+      the <b>ssh2john</b> script and create a new file with the content of the output.
       <div>
         <img src="assets/img/ssh2john-example-1.png" class="img-modules" alt="ssh2john example">
       </div>
-      Now that we created the new file named id_rsa.john, we need to run john against it. We will use rockyou.txt as the wordlist. The result is secretz101 as the password.
+      Now that we created the new file named id_rsa.john, we need to run john against it. We will use rockyou.txt as the wordlist. 
+      The result is secretz101 as the password.
       <div>
         <img src="assets/img/ssh2john-example-2.png" class="img-modules" alt="ssh2john example">
       </div>
@@ -160,12 +181,15 @@ Incorrect password" </code>
   <h3 class="page-title white-text teal">Finding a Hidden Web Page</h3>
   <div class="container flow-text">     
     <p>
-      <b>Gobuster</b> is one of the most powerful and speed brute-force tools that doesn't need a runtime. It uses a directory scanner programmed by Go language; it's faster and more flexible than interpreted script.
+      <b>Gobuster</b> is one of the most powerful and speed brute-force tools that doesn't need a runtime. It uses a directory scanner programmed 
+      by Go language; it's faster and more flexible than interpreted script.
       <br>
-      If you look at the help command, we can see that Gobuster has a few modes: dir — Directory enumeration mode, dns — Subdomain enumeration mode, fuzz — Fuzzing mode, s3 — S3 enumeration mode, vhost — Vhost enumeration mode.
+      If you look at the help command, we can see that Gobuster has a few modes: dir — Directory enumeration mode, dns — Subdomain enumeration 
+      mode, fuzz — Fuzzing mode, s3 — S3 enumeration mode, vhost — Vhost enumeration mode.
     </p>
     <p>
-      Gobuster's directory mode (<b>dir</b>) helps us to look for hidden files and URL paths. This can include images, script files, and almost any file that is exposed to the internet.
+      Gobuster's directory mode (<b>dir</b>) helps us to look for hidden files and URL paths. This can include images, script files, and almost 
+      any file that is exposed to the internet.
       <pre>
         <code> $ gobuster dir -u [url] -w [wordlist] </code>
       </pre>
@@ -192,7 +216,8 @@ Incorrect password" </code>
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
           <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
+          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
           <span class="card-title teal-text hoverline">Brute-Force Passwords</span>
@@ -209,7 +234,8 @@ Incorrect password" </code>
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
           <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
+          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
           <span class="card-title teal-text hoverline">Brute-Force Encryption Keys</span>
@@ -226,7 +252,8 @@ Incorrect password" </code>
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
           <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
+          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
           <span class="card-title teal-text hoverline">Brute-Force Websites</span>
