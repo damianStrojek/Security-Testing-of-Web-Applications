@@ -1,0 +1,228 @@
+<!-- 
+
+  Copyright (C) 2023-2024 Damian Strojek, Patryk Sikora
+
+  Security Testing Environment for Web Applications
+  Realised as part of engineering degree for Gdansk University of Technology
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Material Design Icons -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="./../../assets/css/style.css" />
+  <link rel="icon" href="./../../assets/img/theory.png" />
+  <title>Cross-Site Scripting</title>
+</head>
+<body>
+<!-- Navigation Menu-->
+<nav class="hide-on-small-only">
+  <ul class="side-nav fixed section table-of-contents">
+    <li class="logo">
+      <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+      class="brand-logo grey-blue-text">
+      <img src="./../../assets/img/theory.png" class="img-responsive nav-pic" alt="avatar">
+      </a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Introduction section" href="#introduction" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-language small"></i><span>Introduction</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Technology section" href="#technology" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-search small"></i><span>Technology</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Vulnerability section" href="#vulnerability"
+      class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-settings-ethernet small"></i><span>Vulnerability</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Testing section" href="#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-extension small"></i><span>Testing</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Back to the Main website" href="./../../index.html" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-home small"></i><span>Back to Main Site</span></a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Main Content-->
+<main>
+
+<!-- First Section: Introduction -->
+<section id="introduction" class="section scrollspy">
+  <h3 class="page-title white-text teal">Template for theory</h3>
+  <div class="container flow-text">     
+    <p>
+    This project is carried out by Damian Strojek and Patryk Sikora in the academic years 2023-2024 at the Gdańsk University of 
+    Technology in Poland. A didactic system for testing the security of web applications enables various types of security tests 
+    to be carried out. This system allows to simulate attacks on web applications and test their resistance to this type of attacks. 
+    This work aims to provide practical guidance and tools for web application security professionals. At the same time, it is an 
+    implementation part of the diploma thesis under the same title.
+    </p>
+    <p>
+    Nowadays, web applications are one of the most important communication and information exchange tools on the web. However, with 
+    their increasing popularity, the risk of cyber attacks also increases, which in turn increases the need to ensure the security 
+    of web applications.
+    </p>
+  </div>
+</section>
+
+<!-- Second Section: About the technology -->
+<section id="technology" class="section scrollspy">
+  <h3 class="page-title white-text teal">Template for theory</h3>
+  <div class="container flow-text">     
+    <p>
+    This project is carried out by Damian Strojek and Patryk Sikora in the academic years 2023-2024 at the Gdańsk University 
+    of Technology in Poland.
+    </p>
+    <p>
+    Nowadays, web applications are one of the most important communication and information exchange tools on the web.
+    </p>
+  </div>
+</section>
+
+<!-- Third Section: About the vulnerability -->
+<section id="basic-example" class="section scrollspy">
+  <h3 class="page-title white-text teal">Basic Example</h3>
+  <div class="container flow-text">     
+    <p>
+      Let's demonstrate basic XSS with a simple attack against the OffSec WordPress instance. The WordPress installation is running a plugin named Visitors that is vulnerable to stored XSS.1 The plugin's main feature is to log the website's visitor data, including the IP, source, and User-Agent fields.
+      <br>
+      The source code for the plugin can be downloaded from its <a href="https://downloads.wordpress.org/plugin/visitors-app.0.3.zip" target="_blank">website</a>. If we inspect the database.php file, we can verify how the data is stored inside the WordPress database:
+      <div>
+        <img src="assets/img/xss-basic-example-1.png" class="img-modules" alt="xss example">
+      </div>
+      This PHP function is responsible for parsing various HTTP request headers, including the User-Agent, which is saved in the useragent record value.
+      <br>
+      Next, each time a WordPress administrator loads the Visitor plugin, the function will execute the following portion of code from start.php:
+      <div>
+        <img src="assets/img/xss-basic-example-2.png" class="img-modules" alt="xss example">
+      </div>
+    </p>
+    <p>
+      From the above code, we'll notice that the useragent record value is retrieved from the database and inserted plainly in the Table Data (td) HTML tag, without any sort of data sanitization.
+      <br>
+      As the User-Agent header is under user control, we could craft an XSS attack by inserting a script tag invoking the alert() method to generate a pop-up message. Given the immediate visual impact, this method is very commonly used to verify that an application is vulnerable to XSS.
+    </p>
+    <p>
+      With Burp configured as a proxy and Intercept disabled, we can start our attack by first browsing to http://offsecwp/ using Firefox.
+      <br>
+      We'll then go to Burp Proxy > HTTP History, right-click on the request, and select Send to Repeater.
+      <div>
+        <img src="assets/img/xss-basic-example-3.png" class="img-modules" alt="xss example">
+      </div>
+      Moving to the Repeater tab, we can replace the default User-Agent value with the a script tag that includes the alert method, then send the request.
+      <div>
+        <img src="assets/img/xss-basic-example-4.png" class="img-modules" alt="xss example">
+      </div>
+      If the server responds with a 200 OK message, we should be confident that our payload is now stored in the WordPress database.
+      <br>
+      To verify this, let's log in to the admin console at http://offsecwp/wp-login.php using the admin/password credentials.
+      <br>
+      If we navigate to the Visitors plugin console at http://offsecwp/wp-admin/admin.php?page=visitors-app%2Fadmin%2Fstart.php, we are greeted with a pop-up banner showing the number 42, proving that our code injection worked.
+      <div>
+        <img src="assets/img/xss-basic-example-5.png" class="img-modules" alt="xss example">
+      </div>
+    </p>
+    <p>
+      Excellent. We have injected an XSS payload into the web application's database and it will be served to any administrator that loads the plugin. A simple alert window is a somewhat trivial example of what can be done with XSS, so let’s try something more interesting, like creating a new administrative account.
+    </p>
+  </div>
+</section>
+
+<!-- Fourth Section: Links to vulnerable websites -->
+<section id="vulnerable-websites" class="section scrollspy">
+  <h3 class="page-title white-text teal">Vulnerable websites for testing</h3>
+  <div class="container">
+  <div class="row">
+    <!-- First testing website -->
+    <div class="col s12 m4">
+      <div class="card medium">
+        <div class="card-image waves-effect waves-block waves-light">
+          <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
+          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          class="activator" style="height:100%" /></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title teal-text hoverline">Website nr 1</span>
+          <p>
+          Description underneath
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second testing website -->
+    <div class="col s12 m4">
+      <div class="card medium">
+        <div class="card-image waves-effect waves-block waves-light">
+          <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
+          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          class="activator" style="height:100%" /></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title teal-text hoverline">Website nr 2</span>
+          <p>
+          Description underneath
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third testing website -->
+    <div class="col s12 m4">
+      <div class="card medium">
+        <div class="card-image waves-effect waves-block waves-light">
+          <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
+          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          class="activator" style="height:100%" /></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title teal-text hoverline">Website nr 3</span>
+          <p>
+          Description underneath
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <br><br><br><br>
+</section>
+
+</main>
+
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Materialize - Compiled and minified JavaScript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+<script>
+  // Materialize - Initializers
+  $(document).ready(function () {
+  $(".scrollspy").scrollSpy()
+  // Initialize collapse button
+  $(".button-collapse").sideNav({
+    menuWidth: 190, // Default is 240
+    edge: "left", // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  })
+  })
+</script>
+
+</body>
+</html>
