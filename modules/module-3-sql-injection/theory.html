@@ -81,24 +81,34 @@
   <h3 class="page-title white-text teal">SQL</h3>
   <div class="container flow-text">     
     <p>
-      Structured Query Language (SQL) has been developed specifically to manage and interact with data stored inside relational databases.1 SQL can be employed to query, insert, modify, or even delete data and, in some cases, execute operating system commands. Since the SQL instance offers so many administrative privileges, we'll soon observe how arbitrary SQL queries can pose a significant security risk.
+      Structured Query Language (SQL) has been developed specifically to manage and interact with data stored inside relational databases.1
+      SQL can be employed to query, insert, modify, or even delete data and, in some cases, execute operating system commands. Since the SQL 
+      instance offers so many administrative privileges, we'll soon observe how arbitrary SQL queries can pose a significant security risk.
       <br>
-      Modern web applications are usually designed around a user-facing interface referred to as the frontend, which is typically created using different code blocks written in HTML, CSS, and JavaScript.
+      Modern web applications are usually designed around a user-facing interface referred to as the frontend, which is typically created 
+      using different code blocks written in HTML, CSS, and JavaScript.
       <br>
-      After the client interacts with the frontend, it sends data to the backend application layer that is running on the server. A number of different frameworks can be used to construct a backend application, written in various languages including PHP, Java, and Python.
+      After the client interacts with the frontend, it sends data to the backend application layer that is running on the server. A number 
+      of different frameworks can be used to construct a backend application, written in various languages including PHP, Java, and Python.
       <br>
-      Next, the backend code interacts with the data residing in the database in various ways, such as retrieving the password associated with a given username.
+      Next, the backend code interacts with the data residing in the database in various ways, such as retrieving the password associated 
+      with a given username.
       <br>
-      SQL syntax, commands, and functions vary based on which relational database they were made for. MySQL, Microsoft SQL Server, PostgreSQL, and Oracle are the most popular database implementations, and we are going to inspect each variant's characteristics.
+      SQL syntax, commands, and functions vary based on which relational database they were made for. MySQL, Microsoft SQL Server, PostgreSQL, 
+      and Oracle are the most popular database implementations, and we are going to inspect each variant's characteristics.
       <br>
     </p>
     <p>
-      As an example, let's build a simple MySQL query to parse the users table and retrieve a specific user entry. We can use the SELECT statement to instruct the database that we want to retrieve all (*) the records from a specific location defined via the FROM keyword and followed by the target, in this case the users table. Finally, we'll direct the database to filter only for records belonging to the user leon.
+      As an example, let's build a simple MySQL query to parse the users table and retrieve a specific user entry. We can use the SELECT 
+      statement to instruct the database that we want to retrieve all (*) the records from a specific location defined via the FROM keyword 
+      and followed by the target, in this case the users table. Finally, we'll direct the database to filter only for records belonging to 
+      the user leon.
       <br>
       <pre>
         <code>SELECT * FROM users WHERE user_name='leon'</code>
       </pre>
-      To automate functionality, web applications often embed SQL queries within their source code. We can better understand this concept by examining the following backend PHP code portion that is responsible for verifying user-submitted credentials during login:
+      To automate functionality, web applications often embed SQL queries within their source code. We can better understand this concept by 
+      examining the following backend PHP code portion that is responsible for verifying user-submitted credentials during login:
       <pre>
         <code>?php
           $uname = $_POST['uname'];
@@ -108,10 +118,15 @@
           $result = mysqli_query($con, $sql_query);
           ?</code>
       </pre>
-      Highlighted above is a semi-precompiled SQL query that searches the users table for the provided username and its respective password, which are saved into the <cde>uname</cde> and <cde>passwd</cde> variables. The query string is then stored in sql_query and used to perform the query against the local database through the mysqli_query2 function, which saves the result of query in $result.
+      Highlighted above is a semi-precompiled SQL query that searches the users table for the provided username and its respective password, 
+      which are saved into the <cde>uname</cde> and <cde>passwd</cde> variables. The query string is then stored in sql_query and used to 
+      perform the query against the local database through the mysqli_query2 function, which saves the result of query in $result.
       An attacker could insert a SQL statement inside the user or password field to subvert the intended application logic.
       <br>
-      Let's consider an example. When the user types leon, the SQL server searches for the username "leon" and returns the result. In order to search the database, the SQL server runs the query SELECT * FROM users WHERE user_name= leon. If, instead, the user enters "leon '+!@#$", the SQL server will run the query SELECT * FROM users WHERE user_name= leon'+!@#$. Nothing in our code block checks for these special characters, and it's this lack of filtering that causes the vulnerability.
+      Let's consider an example. When the user types leon, the SQL server searches for the username "leon" and returns the result. In order 
+      to search the database, the SQL server runs the query SELECT * FROM users WHERE user_name= leon. If, instead, the user enters 
+      "leon '+!@#$", the SQL server will run the query SELECT * FROM users WHERE user_name= leon'+!@#$. Nothing in our code block checks 
+      for these special characters, and it's this lack of filtering that causes the vulnerability.
     </p>
   </div>
 </section>
@@ -140,7 +155,8 @@
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
           <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
+          <a href="./vulnerable-basic-sqli.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
           <span class="card-title teal-text hoverline">Basic SQL Injection</span>
@@ -157,7 +173,8 @@
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
           <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
+          <a href="./vulnerable-advanced-sqli.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
           <span class="card-title teal-text hoverline">Advanced SQL Injection</span>
@@ -174,7 +191,8 @@
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
           <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./vulnerable-template.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" class="activator" style="height:100%" /></a>
+          <a href="./vulnerable-shell-commands-sqli.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
           <span class="card-title teal-text hoverline">Execute Shell Commands with SQLi</span>

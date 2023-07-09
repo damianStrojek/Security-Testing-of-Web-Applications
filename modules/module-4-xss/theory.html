@@ -1,0 +1,228 @@
+<!-- 
+
+  Copyright (C) 2023-2024 Damian Strojek, Patryk Sikora
+
+  Security Testing Environment for Web Applications
+  Realised as part of engineering degree for Gdansk University of Technology
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Material Design Icons -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="./../../assets/css/style.css" />
+  <link rel="icon" href="./../../assets/img/theory.png" />
+  <title>Cross-Site Scripting</title>
+</head>
+<body>
+<!-- Navigation Menu-->
+<nav class="hide-on-small-only">
+  <ul class="side-nav fixed section table-of-contents">
+    <li class="logo">
+      <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+      class="brand-logo grey-blue-text">
+      <img src="./../../assets/img/theory.png" class="img-responsive nav-pic" alt="avatar">
+      </a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Introduction section" href="#introduction" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-language small"></i><span>Introduction</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Basic Example section" href="#basic-example" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-search small"></i><span>Basic Example</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Testing section" href="#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-extension small"></i><span>Testing</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Back to the Main website" href="./../../index.html" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-home small"></i><span>Back to Main Site</span></a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Main Content-->
+<main>
+
+<!-- First Section: Introduction -->
+<section id="introduction" class="section scrollspy">
+  <h3 class="page-title white-text teal">Template for theory</h3>
+  <div class="container flow-text">     
+    <p>
+      <b>Cross Site Scripting (XSS)</b> is a vulnerability that lets an attacker control some of the content of a web application. 
+      A vulnerable web app is what makes XSS attack possible. XSS vulnerabilities happen when a web app uses unfiltered user 
+      input to build the output content displayed to its end users. This lets an attacker cotrol the output HTML and JS code, 
+      thus attacking the application users. XSS involves injecting malicious code into the output of a web page. This 
+      malicious code is then rendered (or executed) by the browser of the visiting users.
+    </p>
+    <p>
+      To find an XSS you have to look at every user input, and test if it is somehow displayed on the output of the web application. 
+      After finding a reflection point, you have to understand if you can inject HTML code and see if it somehow gets to the output 
+      of the page; this lets you control the output page!
+      <br>
+      To exploit an XSS vulnerability that you find, you need to know the type of cross-site scripting attack you are carrying out. 
+      XSS vulnerabilities can be reflected, persistent or DOM Based.
+      <br>
+      - <b>Reflected attacks</b> happen when the malicious payload is carried inside the request that the browser of the victim sends 
+      to the vulnerable website. They could be triggered by posting a link on a social network or via a phishing campaign.
+      <br>
+      Some browsers have a reflected XSS filter built in but they can only filter trivial and known XSS attacks. There are advanced 
+      attacks that can bypass Anti-XSS filters. Reflected XSS vulnerabilities can often occur in search fields and results, as well 
+      as anywhere user input is included in error messages.
+      <br>
+      - <b>Stored (Persistent) XSS</b> attacks occur when the payload is sent to the vulnerable web server and then stored. When a 
+      web page of the vulnerable website pulls the stored malicious code and puts it within the HTML output, it will deliver the XSS 
+      payload. It is called persistent because the malicious code gets delivered each time a web browser hits the "injected" web page.
+      <br>
+      The web application then retrieves this payload and displays it to anyone who visits a vulnerable page. A single Stored XSS 
+      vulnerability can therefore attack all site users. Stored XSS vulnerabilities often exist in forum software, especially in 
+      comment sections, in product reviews, or wherever user content can be stored and reviewed later.
+      <br>
+      - <b>DOM-based XSS</b> takes place solely within the page's Document Object Model (DOM). While we won't cover too much detail 
+      for now, we should know that browsers parse a page's HTML content and then generate an internal DOM representation. This type 
+      of XSS occurs when a page's DOM is modified with user-controlled values. DOM-based XSS can be stored or reflected; the key is 
+      that DOM-based XSS attacks occur when a browser parses the page's content and inserted JavaScript is executed.
+    </p>
+  </div>
+</section>
+
+<!-- Second Section: Basic Example of XSS Attack -->
+<section id="basic-example" class="section scrollspy">
+  <h3 class="page-title white-text teal">Basic Example</h3>
+  <div class="container flow-text">     
+    <p>
+      Let's demonstrate basic XSS with a simple attack against the OffSec WordPress instance. The WordPress installation is running a 
+      plugin named Visitors that is vulnerable to stored XSS.1 The plugin's main feature is to log the website's visitor data, 
+      including the IP, source, and User-Agent fields.
+      <br>
+      The source code for the plugin can be downloaded from its <a href="https://downloads.wordpress.org/plugin/visitors-app.0.3.zip" target="_blank">
+      website</a>. If we inspect the database.php file, we can verify how the data is stored inside the WordPress database:
+      <div>
+        <img src="assets/img/xss-basic-example-1.png" class="img-modules" alt="xss example">
+      </div>
+      This PHP function is responsible for parsing various HTTP request headers, including the User-Agent, which is saved in 
+      the useragent record value.
+      <br>
+      Next, each time a WordPress administrator loads the Visitor plugin, the function will execute the following portion of 
+      code from start.php:
+      <div>
+        <img src="assets/img/xss-basic-example-2.png" class="img-modules" alt="xss example">
+      </div>
+    </p>
+    <p>
+      From the above code, we'll notice that the useragent record value is retrieved from the database and inserted plainly in 
+      the Table Data (td) HTML tag, without any sort of data sanitization.
+      <br>
+      As the User-Agent header is under user control, we could craft an XSS attack by inserting a script tag invoking the alert() 
+      method to generate a pop-up message. Given the immediate visual impact, this method is very commonly used to verify that an 
+      application is vulnerable to XSS.
+    </p>
+    <p>
+      With Burp configured as a proxy and Intercept disabled, we can start our attack by first browsing to http://offsecwp/ 
+      using Firefox.
+      <br>
+      We'll then go to Burp Proxy > HTTP History, right-click on the request, and select Send to Repeater.
+      <div>
+        <img src="assets/img/xss-basic-example-3.png" class="img-modules" alt="xss example">
+      </div>
+      Moving to the Repeater tab, we can replace the default User-Agent value with the a script tag that includes the alert method, 
+      then send the request.
+      <div>
+        <img src="assets/img/xss-basic-example-4.png" class="img-modules" alt="xss example">
+      </div>
+      If the server responds with a 200 OK message, we should be confident that our payload is now stored in the WordPress database.
+      <br>
+      To verify this, let's log in to the admin console at http://offsecwp/wp-login.php using the admin/password credentials.
+      <br>
+      If we navigate to the Visitors plugin console at http://offsecwp/wp-admin/admin.php?page=visitors-app%2Fadmin%2Fstart.php, we 
+      are greeted with a pop-up banner showing the number 42, proving that our code injection worked.
+      <div>
+        <img src="assets/img/xss-basic-example-5.png" class="img-modules" alt="xss example">
+      </div>
+    </p>
+    <p>
+      Excellent. We have injected an XSS payload into the web application's database and it will be served to any administrator that 
+      loads the plugin. A simple alert window is a somewhat trivial example of what can be done with XSS, so let's try something more 
+      interesting, like creating a new administrative account.
+    </p>
+  </div>
+</section>
+
+<!-- Third Section: Links to vulnerable websites -->
+<section id="vulnerable-websites" class="section scrollspy">
+  <h3 class="page-title white-text teal">Vulnerable websites for testing</h3>
+  <div class="container">
+  <div class="row">
+    <!-- First testing website -->
+    <div class="col s12 m4">
+      <div class="card medium">
+        <div class="card-image waves-effect waves-block waves-light">
+          <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
+          <a href="./vulnerable-basic-xss.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          class="activator" style="height:100%" /></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title teal-text hoverline">Basic XSS Attack</span>
+          <p>
+          Description underneath
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second testing website -->
+    <div class="col s12 m4">
+      <div class="card medium">
+        <div class="card-image waves-effect waves-block waves-light">
+          <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
+          <a href="./vulnerable-advanced-xss.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          class="activator" style="height:100%" /></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title teal-text hoverline">Advanced XSS Attack</span>
+          <p>
+          Description underneath
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <br><br><br><br>
+</section>
+
+</main>
+
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Materialize - Compiled and minified JavaScript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+<script>
+  // Materialize - Initializers
+  $(document).ready(function () {
+  $(".scrollspy").scrollSpy()
+  // Initialize collapse button
+  $(".button-collapse").sideNav({
+    menuWidth: 190, // Default is 240
+    edge: "left", // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  })
+  })
+</script>
+
+</body>
+</html>
