@@ -35,25 +35,25 @@
       </a>
     </li>
     <li class="bold">
+      <a aria-label="Back to the Main website" href="./../../index.html#third-module" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-home small"></i><span>Main Site</span></a>
+    </li>
+    <li class="bold">
       <a aria-label="Navigate to the Introduction section" href="#introduction" class="waves-effect waves-dark teal-text"><i
       class="mdi-action-language small"></i><span>Introduction</span></a>
     </li>
     <li class="bold">
       <a aria-label="Navigate to the Technology section" href="#technology" class="waves-effect waves-dark teal-text"><i
-      class="mdi-action-search small"></i><span>SQL</span></a>
+      class="mdi mdi-database-check small"></i><span>SQL</span></a>
     </li>
     <li class="bold">
       <a aria-label="Navigate to the Vulnerability section" href="#vulnerability"
       class="waves-effect waves-dark teal-text"><i
-      class="mdi-action-settings-ethernet small"></i><span>Vulnerability</span></a>
+      class="mdi mdi-needle small"></i><span>Injection</span></a>
     </li>
     <li class="bold">
       <a aria-label="Navigate to the Testing section" href="#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
       class="mdi-action-extension small"></i><span>Testing</span></a>
-    </li>
-    <li class="bold">
-      <a aria-label="Back to the Main website" href="./../../index.html" class="waves-effect waves-dark teal-text"><i
-      class="mdi-action-home small"></i><span>Back to Main Site</span></a>
     </li>
   </ul>
 </nav>
@@ -63,7 +63,7 @@
 
 <!-- First Section: Introduction -->
 <section id="introduction" class="section scrollspy">
-  <h3 class="page-title white-text teal">SQL Injection Attacks</h3>
+  <h3 class="page-title white-text teal">Introduction</h3>
   <div class="container flow-text">     
     <p>
       <b>SQL injection (SQLi)</b> is a web security vulnerability that allows an attacker to interfere with the queries that an application 
@@ -78,10 +78,10 @@
 
 <!-- Second Section: About the technology -->
 <section id="technology" class="section scrollspy">
-  <h3 class="page-title white-text teal">SQL</h3>
+  <h3 class="page-title white-text teal">SQL itself</h3>
   <div class="container flow-text">     
     <p>
-      Structured Query Language (SQL) has been developed specifically to manage and interact with data stored inside relational databases.1
+      <b>Structured Query Language (SQL)</b> has been developed specifically to manage and interact with data stored inside relational databases.1
       SQL can be employed to query, insert, modify, or even delete data and, in some cases, execute operating system commands. Since the SQL 
       instance offers so many administrative privileges, we'll soon observe how arbitrary SQL queries can pose a significant security risk.
       <br>
@@ -111,12 +111,13 @@
       examining the following backend PHP code portion that is responsible for verifying user-submitted credentials during login:
       <pre>
         <code>?php
-          $uname = $_POST['uname'];
-          $passwd =$_POST['password'];
-          
-          $sql_query = "SELECT * FROM users WHERE user_name= '$uname' AND password='$passwd'";
-          $result = mysqli_query($con, $sql_query);
-          ?</code>
+  $uname = $_POST['uname'];
+  $passwd =$_POST['password'];
+
+  $sql_query = "SELECT * FROM users WHERE user_name= '$uname' 
+  AND password='$passwd'";
+  $result = mysqli_query($con, $sql_query);
+?</code>
       </pre>
       Highlighted above is a semi-precompiled SQL query that searches the users table for the provided username and its respective password, 
       which are saved into the <cde>uname</cde> and <cde>passwd</cde> variables. The query string is then stored in sql_query and used to 

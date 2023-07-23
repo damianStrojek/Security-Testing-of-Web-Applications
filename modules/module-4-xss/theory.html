@@ -21,8 +21,8 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
   <!-- Custom Styles-->
   <link rel="stylesheet" href="./../../assets/css/style.css" />
-  <link rel="icon" href="./../../assets/img/theory.png" />
-  <title>Cross-Site Scripting</title>
+  <link rel="icon" href="./../../assets/img/xss.png" />
+  <title>XSS Attacks</title>
 </head>
 <body>
 <!-- Navigation Menu-->
@@ -31,8 +31,12 @@
     <li class="logo">
       <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
       class="brand-logo grey-blue-text">
-      <img src="./../../assets/img/theory.png" class="img-responsive nav-pic" alt="avatar">
+      <img src="./../../assets/img/xss.png" class="img-responsive nav-pic" alt="avatar">
       </a>
+    </li>
+    <li class="bold">
+      <a aria-label="Back to the Main website" href="./../../index.html#fourth-module" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-home small"></i><span>Main Site</span></a>
     </li>
     <li class="bold">
       <a aria-label="Navigate to the Introduction section" href="#introduction" class="waves-effect waves-dark teal-text"><i
@@ -46,10 +50,6 @@
       <a aria-label="Navigate to the Testing section" href="#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
       class="mdi-action-extension small"></i><span>Testing</span></a>
     </li>
-    <li class="bold">
-      <a aria-label="Back to the Main website" href="./../../index.html" class="waves-effect waves-dark teal-text"><i
-      class="mdi-action-home small"></i><span>Back to Main Site</span></a>
-    </li>
   </ul>
 </nav>
 
@@ -58,7 +58,7 @@
 
 <!-- First Section: Introduction -->
 <section id="introduction" class="section scrollspy">
-  <h3 class="page-title white-text teal">Template for theory</h3>
+  <h3 class="page-title white-text teal">Introduction</h3>
   <div class="container flow-text">     
     <p>
       <b>Cross Site Scripting (XSS)</b> is a vulnerability that lets an attacker control some of the content of a web application. 
