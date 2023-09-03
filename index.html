@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
     <!-- Font Awesome Icon - CSS-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <!-- Material Design Icons -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
     <!-- Custom Styles-->
     <link rel="stylesheet" href="/assets/css/style.css" />
@@ -54,24 +55,28 @@
         </li>
         <li class="bold">
           <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-              class="mdi-social-person small"></i><span>About</span></a>
+              class="mdi mdi-shield-account small"></i><span>About</span></a>
         </li>
         <li class="bold">
           <a aria-label="Navigate to the Tools section" href="#tools" class="waves-effect waves-dark teal-text"><i
-              class="mdi-hardware-memory small"></i><span>Tools</span></a>
+              class="mdi mdi-toolbox small"></i><span>Tools</span></a>
         </li>
         <li class="bold">
-          <a aria-label="Navigate to the First Module" href="#firstmodule"
+          <a aria-label="Navigate to the First Module" href="#first-module"
             class="waves-effect waves-dark teal-text"><i
-              class="mdi-notification-sync-problem small"></i><span>Brute-Force</span></a>
+              class="mdi mdi-chart-bell-curve-cumulative small"></i><span>Brute-Force</span></a>
         </li>
         <li class="bold">
-          <a aria-label="Navigate to the Second Module" href="#secondmodule" class="waves-effect waves-dark teal-text"><i
+          <a aria-label="Navigate to the Second Module" href="#second-module" class="waves-effect waves-dark teal-text"><i
               class="mdi-file-folder-open small"></i><span>Directory Traverse</span></a>
         </li>
         <li class="bold">
-          <a aria-label="Navigate to the Third Module" href="#thirdmodule" class="waves-effect waves-dark teal-text"><i
+          <a aria-label="Navigate to the Third Module" href="#third-module" class="waves-effect waves-dark teal-text"><i
               class="mdi mdi-needle small"></i><span>SQLi</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Fourth Module" href="#fourth-module" class="waves-effect waves-dark teal-text"><i
+              class="mdi mdi-xml small"></i><span>XSS</span></a>
         </li>
         <li class="bold">
           <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
@@ -85,7 +90,8 @@
       <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
         class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       <div class="name-title">
-        <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Security</a><span class="black-text">Web Applications</span>
+        <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Security</a>
+        <span class="black-text">Web Applications</span>
       </div>
     </nav>
 
@@ -101,17 +107,21 @@
               class="mdi-forklift small"></i><span>Tools</span></a>
         </li>
         <li class="bold">
-          <a aria-label="Navigate to the First Module" href="#firstmodule"
+          <a aria-label="Navigate to the First Module" href="#first-module"
             class="waves-effect waves-dark teal-text"><i
               class="mdi-action-trending-up small"></i><span>Brute-Force</span></a>
         </li>
         <li class="bold">
-          <a aria-label="Navigate to the Second Module" href="#secondmodule" class="waves-effect waves-dark teal-text"><i
+          <a aria-label="Navigate to the Second Module" href="#second-module" class="waves-effect waves-dark teal-text"><i
               class="mdi-av-my-library-books small"></i><span>Directory Traverse</span></a>
         </li>
         <li class="bold">
-          <a aria-label="Navigate to the Third Module" href="#thirdmodule" class="waves-effect waves-dark teal-text"><i
+          <a aria-label="Navigate to the Third Module" href="#third-module" class="waves-effect waves-dark teal-text"><i
               class="mdi mdi-needle small"></i><span>SQLi</span></a>
+        </li>
+        <li class="bold">
+          <a aria-label="Navigate to the Fourth Module" href="#fourth-module" class="waves-effect waves-dark teal-text"><i
+              class="mdi mdi-xml small"></i><span>XSS</span></a>
         </li>
         <li class="bold">
           <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
@@ -131,7 +141,8 @@
               <div class="caption">
                 <h2>Security of <span class="teal">Web Applications</span></h2>
                 <h5 style="color:#fff"><span class="typing" style="font-weight: 500; color:#1e2a35"></span></h5>
-                <h5>Environment that allows you to experiment with the security of web applications by emulating popular types of their vulnerabilities and interacting with them in a controlled manner.</h5>
+                <h5>Environment that allows you to experiment with the security of web applications by emulating popular types 
+                of their vulnerabilities and interacting with them in a controlled manner.</h5>
               </div>
               <div class="social">
                 <a href="https://github.com/damianStrojek/Security-Testing-of-Web-Applications" target="_blank">
@@ -154,10 +165,17 @@
         <h3 class="page-title white-text teal">About the project</h3>
         <div class="container flow-text">     
           <p>
-            This project is carried out by Damian Strojek and Patryk Sikora in the academic years 2023-2024 at the Gdańsk University of Technology in Poland. A didactic system for testing the security of web applications enables various types of security tests to be carried out. This system allows to simulate attacks on web applications and test their resistance to this type of attacks. This work aims to provide practical guidance and tools for web application security professionals. At the same time, it is an implementation part of the diploma thesis under the same title.
+            This project is carried out by Damian Strojek and Patryk Sikora in the academic years 2023-2024 at the Gdańsk 
+            University of Technology in Poland. A didactic system for testing the security of web applications enables 
+            various types of security tests to be carried out. This system allows to simulate attacks on web applications 
+            and test their resistance to this type of attacks. This work aims to provide practical guidance and tools for 
+            web application security professionals. At the same time, it is an implementation part of the diploma thesis 
+            under the same title.
           </p>
           <p>
-            Nowadays, web applications are one of the most important communication and information exchange tools on the web. However, with their increasing popularity, the risk of cyber attacks also increases, which in turn increases the need to ensure the security of web applications.
+            Nowadays, web applications are one of the most important communication and information exchange tools on the web.
+             However, with their increasing popularity, the risk of cyber attacks also increases, which in turn increases 
+             the need to ensure the security of web applications.
           </p>
         </div>
       </section>
@@ -208,11 +226,13 @@
 
       <!-- Fourth Section - Modules -->
       <!-- First Module -->
-      <section id="firstmodule" class="section scrollspy">
+      <section id="first-module" class="section scrollspy">
         <h3 class="page-title white-text teal">Brute-Force Attacks</h3>
         <div class="container flow-text">
           <p>
-            In cryptography, a <b>brute-force attack</b> consists of an attacker submitting many passwords or passphrases with the hope of eventually guessing correctly. The attacker systematically checks all possible passwords and passphrases until the correct one is found.
+            In cryptography, a <b>brute-force attack</b> consists of an attacker submitting many passwords or passphrases 
+            with the hope of eventually guessing correctly. The attacker systematically checks all possible passwords and 
+            passphrases until the correct one is found.
           </p>
         </div>
         <div class="container">
@@ -223,7 +243,8 @@
                   Following module contains theory behind exploiting a brute-force attack, as well as vulnerable login pages.
                 </div>
                 <div class="col s4 m6">
-                  <a class="module-link" href="./modules/module-1/theory.html"><img alt="Brute-Force" src="/assets/img/brute-force.png" class="responsive-img"/><br>Brute-Force</a>
+                  <a class="module-link" href="./modules/module-1-brute-force/theory.html"><img alt="Brute-Force" 
+                  src="/assets/img/brute-force.png" class="responsive-img"/><br>Brute-Force</a>
                 </div>
               </div>
             </div>
@@ -232,11 +253,14 @@
       </section>
 
       <!-- Second Module -->
-      <section id="secondmodule" class="section scrollspy">
+      <section id="second-module" class="section scrollspy">
         <h3 class="page-title white-text teal">Directory Traversal Attacks</h3>
         <div class="container flow-text">
           <p>
-            A <b>directory traversal (or path traversal)</b> is a form of insecure direct object reference where insufficient security validation or sanitization of user-supplied file names can be exploited, such that characters representing "traverse to parent directory" are passed through to the operating system's file system API. An affected application can be exploited to gain unauthorized access to the file system.
+            A <b>directory traversal (or path traversal)</b> is a form of insecure direct object reference where insufficient 
+            security validation or sanitization of user-supplied file names can be exploited, such that characters representing 
+            "traverse to parent directory" are passed through to the operating system's file system API. An affected application 
+            can be exploited to gain unauthorized access to the file system.
           </p>
         </div>
         <div class="container">
@@ -244,10 +268,12 @@
             <div class="card-content">
               <div class="row text-center">
                 <div class="col s4 m6" style="margin-top: 6%;">
-                  Following module contains several types of directory traversal exploits - each of them is unique and gives access to different type of data.
+                  Following module contains several types of Directory Traversal exploits - each of them is unique and gives 
+                  access to different type of data.
                 </div>
                 <div class="col s4 m6">
-                  <a class="module-link" href="./modules/module-2/theory.html"><img alt="Brute-Force" src="/assets/img/directory-traverse.png" class="responsive-img"/><br>Directory Traverse</a>
+                  <a class="module-link" href="./modules/module-2-directory-traversal/theory.html"><img alt="Brute-Force" 
+                  src="/assets/img/directory-traverse.png" class="responsive-img"/><br>Directory Traverse</a>
                 </div>
               </div>
             </div>
@@ -256,11 +282,14 @@
       </section>
 
       <!-- Third Module -->
-      <section id="thirdmodule" class="section scrollspy">
+      <section id="third-module" class="section scrollspy">
         <h3 class="page-title white-text teal">SQL Injection Attacks</h3>
         <div class="container flow-text">
           <p>
-            <b>SQL injection (SQLi)</b> is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. It generally allows an attacker to view data that they are not normally able to retrieve. In some situations, an attacker can escalate a SQL injection attack to compromise the underlying server or other back-end infrastructure, or perform a denial-of-service attack.
+            <b>SQL injection (SQLi)</b> is a web security vulnerability that allows an attacker to interfere with the queries 
+            that an application makes to its database. It generally allows an attacker to view data that they are not normally 
+            able to retrieve. In some situations, an attacker can escalate a SQL injection attack to compromise the underlying 
+            server or other back-end infrastructure, or perform a denial-of-service attack.
           </p>
         </div>
         <div class="container">
@@ -268,10 +297,41 @@
             <div class="card-content">
               <div class="row text-center">
                 <div class="col s4 m6" style="margin-top: 6%;">
-                  Following module contains several types of SQL Injection exploits - each of them is unique and uses different type of payload.
+                  Following module contains several types of SQL Injection exploits - each of them is unique and uses different 
+                  type of payload.
                 </div>
                 <div class="col s4 m6">
-                  <a class="module-link" href="./modules/module-3/theory.html"><img alt="SQLi" src="/assets/img/sqli.png" class="responsive-img"/><br>SQLi</a>
+                  <a class="module-link" href="./modules/module-3-sql-injection/theory.html"><img 
+                  alt="SQLi" src="/assets/img/sqli.png" class="responsive-img"/><br>SQLi</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fourth Module -->
+      <section id="fourth-module" class="section scrollspy">
+        <h3 class="page-title white-text teal">XSS Attacks</h3>
+        <div class="container flow-text">
+          <p>
+            <b>Cross-Site Scripting (XSS)</b> is a vulnerability that lets an attacker control some of the content of a web application. 
+            A vulnerable web app is what makes XSS attack possible. XSS vulnerabilities happen when a web app uses unfiltered user input 
+            to build the output content displayed to its end users. This lets an attacker cotrol the output HTML and JS code, thus 
+            attacking the application users.
+          </p>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <div class="row text-center">
+                <div class="col s4 m6" style="margin-top: 6%;">
+                  Following module contains several types of Cross-Site Scripting exploits - each of them is unique and uses different 
+                  type of payload.
+                </div>
+                <div class="col s4 m6">
+                  <a class="module-link" href="./modules/module-4-xss/theory.html"><img 
+                  alt="XSS" src="/assets/img/xss.png" class="responsive-img"/><br>Cross-Site Scripting</a>
                 </div>
               </div>
             </div>

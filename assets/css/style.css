@@ -52,6 +52,24 @@
   margin-right: 0 !important;
 }
 
+pre code {
+  background-color: #eee;
+  border: 0.1px solid #999;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-modules {
+  width: 80%;
+}
+
+/* style for codes in text */
+cde {
+  font-style: italic;
+  background-color: #eee;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 .social {
   margin: 0 auto;
