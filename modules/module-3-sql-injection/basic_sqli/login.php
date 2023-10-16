@@ -20,8 +20,8 @@
   <!-- Material Design Icons -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
   <!-- Custom Styles-->
-  <link rel="stylesheet" href="./../../assets/css/style.css" />
-  <link rel="icon" href="./../../assets/img/sqli.png" />
+  <link rel="stylesheet" href="./../../../assets/css/style.css" />
+  <link rel="icon" href="./../../../assets/img/sqli.png" />
   <title>Basic SQLi</title>
 </head>
 <body>
@@ -31,11 +31,11 @@
     <li class="logo">
       <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
       class="brand-logo grey-blue-text">
-      <img src="./../../assets/img/sqli.png" class="img-responsive nav-pic" alt="avatar">
+      <img src="./../../../assets/img/sqli.png" class="img-responsive nav-pic" alt="avatar">
       </a>
     </li>
     <li class="bold">
-      <a aria-label="Back to the Main website" href="./../../index.html#third-module" class="waves-effect waves-dark teal-text"><i
+      <a aria-label="Back to the Main website" href="./../../../index.html#third-module" class="waves-effect waves-dark teal-text"><i
       class="mdi-action-home small"></i><span>Main Site</span></a>
     </li>
     <li class="bold">
@@ -47,8 +47,21 @@
 
 <!-- Main Content-->
 <main>
-
-
+<?php
+  $username = $_POST['uname'];
+  $password = $_POST['passwd'];
+  $myPDO = new PDO('sqlite:./basic_sqli.db');
+  $query = "SELECT * FROM users WHERE login = '$username' AND password = '$password'";
+  echo $query;
+  echo "<br>";
+  $result = $myPDO->query($query);
+  echo "results";
+  echo "<br>";
+  foreach ($result as $row) {
+    echo $row['login'];
+    echo "<br>";
+  }
+?>
 </main>
 </body>
 </html>

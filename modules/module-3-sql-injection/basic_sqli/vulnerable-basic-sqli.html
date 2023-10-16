@@ -1,0 +1,66 @@
+<!-- 
+
+  Copyright (C) 2023 Damian Strojek, Patryk Sikora
+
+  Security Testing Environment for Web Applications
+  Realised as part of engineering degree for Gdansk University of Technology
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Material Design Icons -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="./../../../assets/css/style.css" />
+  <link rel="icon" href="./../../../assets/img/sqli.png" />
+  <title>Basic SQLi</title>
+</head>
+<body>
+<!-- Navigation Menu-->
+<nav class="hide-on-small-only">
+  <ul class="side-nav fixed section table-of-contents">
+    <li class="logo">
+      <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+      class="brand-logo grey-blue-text">
+      <img src="./../../../assets/img/sqli.png" class="img-responsive nav-pic" alt="avatar">
+      </a>
+    </li>
+    <li class="bold">
+      <a aria-label="Back to the Main website" href="./../../../index.html#third-module" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-home small"></i><span>Main Site</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Back to the Theory section" href="./theory.html#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
+      class="mdi-action-info-outline small"></i><span>Theory</span></a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Main Content-->
+<main>
+  <h3 class="page-title white-text teal">Basic SQL Injection</h3>
+  <div class="container flow-text">
+    <p>
+      This is a basic SQL Injection example. The goal is to log in as any user without knowing the password.<br>
+      To achieve this, you need to use the SQL Injection technique.<br>
+      Instead of normal username and password you can use the following:<br>
+      <b>login:</b>  <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' OR ''='</span><br>
+      <b>password:</b>  <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' OR ''='' LIMIT 1 OFFSET '0</span><br>
+      This will cause to select any user from the database.<br>
+    </p>
+  </div>
+  <div>
+    <embed type="text/html" src="login_form.html" width="40%" height="500px" style="margin: 10px">
+  </div>
+</main>
+</body>
+</html>
