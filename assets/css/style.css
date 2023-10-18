@@ -60,6 +60,24 @@ pre code {
   margin-right: auto;
 }
 
+.input-brute-force { 
+  margin-left:10px;
+  margin-top:10px;
+}
+
+.button-brute-force {
+  margin-left:10px;
+  background: #ef8911;
+  outline: none;
+  border: none;
+  opacity: 0.7;
+}
+
+.button-brute-force:hover {
+  transition: 0.5s;
+  opacity: 1;
+}
+
 .img-modules {
   width: 80%;
 }
@@ -172,12 +190,6 @@ cde {
 body {
   color: #333;
   font-size: 18px;
-}
-
-/* main a -- links */
-
-a {
-  color: #004d40;
 }
 
 /* main blockqoute */
