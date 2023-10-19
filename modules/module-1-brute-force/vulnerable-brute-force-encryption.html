@@ -22,7 +22,7 @@
   <!-- Custom Styles-->
   <link rel="stylesheet" href="./../../assets/css/style.css" />
   <link rel="icon" href="./../../assets/img/brute-force.png" />
-  <title>Brute-Force Encryption Keys</title>
+  <title>Brute-Force Files</title>
 </head>
 <body>
 <!-- Navigation Menu-->
@@ -90,8 +90,8 @@
   <div class="container flow-text">     
     <p>
       SSH keys are very common in practice - whether at university or in real work. They allow for many different activities and can do a lot of damage 
-      in undesirable hands. It is worth learning how to crack private SSH keys because, with a properly misconfigured host, you will be able to gain 
-      remote access to the machine you are interested in.
+      in undesirable hands. It is worth learning how to crack private SSH keys because, with a properly misconfigured host, <b>you will be able to gain 
+      remote access to the machine you are interested in</b>.
     </p>
     <p>
       Two different private SSH keys were found on the FTP server. The first one was located in a copy of the <i>C:\Users\Administrator\Documents</i> 
@@ -104,11 +104,14 @@
         2. Gather the hash of a file using ssh2john tool
         3. Crack the hash with rockyou.txt and basic john
       -->
-      File is available under:
+      File: 
       <a href="./assets/files/id_rsa_administrator" download="id_rsa_administrator">id_rsa_administrator</a>
       <input type="text" id="ssh1" class="input-module1">
       <br><br>
       <button id="ssh1-button" onclick="checkPassword('ssh1')" class="button-module1">Check</button>
+    </p>
+    <p>
+      In the case of second id_rsa file, a note from the security department was also found: "Adding poltechnikagdanska to the end of your password is not at all secure. Please change it as soon as possible."
     </p>
     <p>
       <!--
@@ -118,8 +121,7 @@
         Command to add custom rule: echo '[List.Rules:pg]' >> /etc/john/john.conf && echo 'Az"politechnikagdanska"' >> /etc/john/john.conf
         Command to crack: john --wordlist=/usr/share/wordlists/rockyou.txt --rules=pg id_rsa
       -->
-      In the case of second id_rsa file, a note from the security department was also found: "Adding poltechnikagdanska to the end of your password is not at all secure. Please change it as soon as possible."
-      <br>File is available under:
+      File:
       <a href="./assets/files/id_rsa_s184407" download="id_rsa_s184407">id_rsa_s184407</a>
       <input type="text" id="ssh2" class="input-module1">
       <br><br>
@@ -133,7 +135,20 @@
   <h3 class="page-title white-text teal">ZIP Directories</h3>
   <div class="container flow-text">     
     <p>
-      testestsetset
+      Compressed folders are a very common solution to transfer large amounts of files. Protecting them with a password is a solution, but if it is not strong enough, <b>it will unfortunately not be enough</b>.
+    </p>
+    <p>
+      Below you can find a compressed folder that has been password protected. If you are able to gain access to it, you will find interesting information inside.
+    </p>
+    <p>
+      <!--
+        Hint:
+        Use `zip2john password_protected_zip.zip > hash` and crack hash using john.
+        Answer is on the 4692 line of rockyou.txt wordlist 
+      -->
+      File:
+      <a href="./assets/files/password_protected_zip.zip" download="password_protected_zip">password_protected_zip</a>
+      <br><br>
     </p>
   </div>
 </section>
@@ -143,7 +158,27 @@
   <h3 class="page-title white-text teal">Shadow File</h3>
   <div class="container flow-text">     
     <p>
-      testestsetset
+      During penetration tests of Linux-based systems, you can sometimes come across additional permissions for interesting files. 
+      A couple files of particular interest on Linux systems are the <i>/etc/passwd</i> and <i>/etc/shadow</i> files. The passwd file contains basic information 
+      about each user account on the system, including the root user which has full administrative rights, system service accounts, and actual users. 
+      The shadow file <b>contains the encrypted passwords of users on the system</b>. 
+      While the passwd file is typically world-readable, the shadow is only readable by the root account.
+    </p>
+    <p>
+      If we have READ rights on the shadow file (or its copy), we can try to gain access to the root/users password.
+    </p>
+    <p>
+      <!--
+        Hint:
+        Gather the hashes in one place using `unshadow passwd shadow > unshadow` and crack all of the hashes using john
+        There are two easily crackable hashes - sha512crypt hash and md5crypt hash
+        You can also use hashcat with different modes (1800 and 500)
+      -->
+      File /etc/passwd:
+      <a href="./assets/files/passwd" download="passwd">passwd_backup</a>
+      <br>File /etc/shadow:
+      <a href="./assets/files/shadow" download="shadow">shadow_backup</a>
+      <br><br>
     </p>
   </div>
 </section>
