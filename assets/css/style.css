@@ -60,10 +60,12 @@ pre code {
   margin-right: auto;
 }
 
+
 .input-module1 { 
   margin-left:10px;
   margin-top:10px;
 }
+
 
 .button-module1 {
   margin-left:10px;
@@ -72,6 +74,7 @@ pre code {
   border: none;
   opacity: 0.7;
 }
+
 
 .button-module1:hover {
   transition: 0.5s;
