@@ -60,12 +60,12 @@ pre code {
   margin-right: auto;
 }
 
-.input-brute-force { 
+.input-module1 { 
   margin-left:10px;
   margin-top:10px;
 }
 
-.button-brute-force {
+.button-module1 {
   margin-left:10px;
   background: #ef8911;
   outline: none;
@@ -73,7 +73,7 @@ pre code {
   opacity: 0.7;
 }
 
-.button-brute-force:hover {
+.button-module1:hover {
   transition: 0.5s;
   opacity: 1;
 }

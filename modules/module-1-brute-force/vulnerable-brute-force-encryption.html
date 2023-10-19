@@ -35,12 +35,24 @@
       </a>
     </li>
     <li class="bold">
-      <a aria-label="Back to the Main website" href="./../../index.html#first-module" class="waves-effect waves-dark teal-text"><i
-      class="mdi-action-home small"></i><span>Main Site</span></a>
+      <a aria-label="Back to the Theory section" href="./theory.html#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-arrow-collapse-left small"></i><span>Go Back</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Back to the Theory section" href="./theory.html#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
-      class="mdi-action-info-outline small"></i><span>Theory</span></a>
+      <a aria-label="Scenario" href="#scenario" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-account-question small"></i><span>Scenario</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="SSH Encrypted Key" href="#ssh" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-ssh small"></i><span>SSH</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="ZIP Password Protected Directory" href="#zip" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-folder-zip small"></i><span>ZIP</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Shadow File" href="#pdf" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-lock-question small"></i><span>Shadow</span></a>
     </li>
   </ul>
 </nav>
@@ -48,6 +60,116 @@
 <!-- Main Content-->
 <main>
 
+<!-- First Section: Scenario -->
+<section id="scenario" class="section scrollspy">
+  <h3 class="page-title white-text teal">Scenario</h3>
+  <div class="container flow-text">     
+    <p>
+      Protecting important documents with a password, which are not accessible to everyone, is a very smart and widely used solution. Unfortunately, 
+      password-protecting something is not enough - just as password-protecting an account is not enough (always configure MFA!).
+      <br>
+      To carry out this task you need to extract the hash of the password-protected filed and then use john/hashcat to crack it.
+      <br><b>Scenario:</b><br>
+      One of the best universities in Poland was attacked by irate students who happen to be cybersecurity specialists. They managed to gain access 
+      to the files on the FTP server, but unfortunately they are password protected. Are you able to access them?
+    </p>
+    <p>
+      Tools that will be useful when carrying out this task:<br>
+      - <a href="https://www.openwall.com/john/" target="_blank">John The Ripper Suite (ssh2john, zip2john, pdf2john)</a><br>
+      - <a href="https://github.com/praetorian-inc/Hob0Rules/blob/master/wordlists/rockyou.txt.gz" target="_blank">Rockyou password list</a><br>
+    </p>
+    <p>
+      If you need any help, you can check the comments left by developers around a given section's source code.
+    </p>
+  </div>
+</section>
+
+<!-- Second Section: SSH Encrypted Keys -->
+<section id="ssh" class="section scrollspy">
+  <h3 class="page-title white-text teal">SSH Keys</h3>
+  <div class="container flow-text">     
+    <p>
+      SSH keys are very common in practice - whether at university or in real work. They allow for many different activities and can do a lot of damage 
+      in undesirable hands. It is worth learning how to crack private SSH keys because, with a properly misconfigured host, you will be able to gain 
+      remote access to the machine you are interested in.
+    </p>
+    <p>
+      Two different private SSH keys were found on the FTP server. The first one was located in a copy of the <i>C:\Users\Administrator\Documents</i> 
+      folder and the second one was in a copy of the <i>/home/s184407/.ssh/</i> folder.
+    </p>
+    <p>
+      <!--
+        Hint:
+        1. The id_rsa file that you will download has to have 600 permissions on Linux system
+        2. Gather the hash of a file using ssh2john tool
+        3. Crack the hash with rockyou.txt and basic john
+      -->
+      File is available under:
+      <a href="./assets/files/id_rsa_administrator" download="id_rsa_administrator">id_rsa_administrator</a>
+      <input type="text" id="ssh1" class="input-module1">
+      <br><br>
+      <button id="ssh1-button" onclick="checkPassword('ssh1')" class="button-module1">Check</button>
+    </p>
+    <p>
+      <!--
+        Hint:
+        This time you need to modify each record of rockyou.txt wordlist file so that it adds string 'politechnikagdanska' at the end. You can do this by using custom john rules.
+        More information: https://akimbocore.com/article/custom-rules-for-john-the-ripper/
+        Command to add custom rule: echo '[List.Rules:pg]' >> /etc/john/john.conf && echo 'Az"politechnikagdanska"' >> /etc/john/john.conf
+        Command to crack: john --wordlist=/usr/share/wordlists/rockyou.txt --rules=pg id_rsa
+      -->
+      In the case of second id_rsa file, a note from the security department was also found: "Adding poltechnikagdanska to the end of your password is not at all secure. Please change it as soon as possible."
+      <br>File is available under:
+      <a href="./assets/files/id_rsa_s184407" download="id_rsa_s184407">id_rsa_s184407</a>
+      <input type="text" id="ssh2" class="input-module1">
+      <br><br>
+      <button id="ssh2-button" onclick="checkPassword('ssh2')" class="button-module1">Check</button>
+    </p>
+  </div>
+</section>
+
+<!-- Third Section: ZIP Password Protected Dictionary -->
+<section id="zip" class="section scrollspy">
+  <h3 class="page-title white-text teal">ZIP Directories</h3>
+  <div class="container flow-text">     
+    <p>
+      testestsetset
+    </p>
+  </div>
+</section>
+
+<!-- Fourth Section: Shadow File -->
+<section id="shadow" class="section scrollspy">
+  <h3 class="page-title white-text teal">Shadow File</h3>
+  <div class="container flow-text">     
+    <p>
+      testestsetset
+    </p>
+  </div>
+</section>
+
+<script>
+  const passwordConstants = {
+    // Line 3318 from rockyou.txt year 2023
+    ssh1: "123456789123456",
+    // Line 14569 from rockyou.txt year 2023
+    // with additional 'politechnikagdanska' at the end
+    ssh2: "iloveyou4everpolitechnikagdanska"
+  };
+
+  function checkPassword(passwordID) {
+    const inputField = document.getElementById(passwordID);
+    const button = document.getElementById(passwordID + "-button");
+
+    if (inputField && passwordConstants[passwordID] === inputField.value) {
+      inputField.style.background = "lightgreen";
+      button.style.background = "green";
+    } else {
+      inputField.style.background = "lightcoral";
+      button.style.background = "red";
+    }
+  }
+</script>
 
 </main>
 </body>
