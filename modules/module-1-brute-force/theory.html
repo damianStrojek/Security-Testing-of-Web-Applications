@@ -211,12 +211,11 @@ Incorrect password" </code>
   <div class="container">
   <div class="row">
     <!-- First testing website -->
-    <!-- Brute forcing login page - the username is hidden in the source code of login page as comment for developers -->
+    <!-- Brute forcing passwords -->
     <div class="col s12 m4">
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
-          <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./vulnerable-brute-force-passwords.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          <a href="./vulnerable-brute-force-passwords.html"><img alt="web security testing" src="./assets/img/vulnerable-site-1-preview.png" 
           class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
@@ -229,36 +228,35 @@ Incorrect password" </code>
     </div>
 
     <!-- Second testing website -->
-    <!-- User has knowledge of encrypted SSH key (should work for the user in demo) and is trying to guess password using ssh2john tool-->
+    <!-- Encrypted SSH Keys, ZIP Directory, and passwd/shadow files -->
     <div class="col s12 m4">
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
-          <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./vulnerable-brute-force-encryption.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          <a href="./vulnerable-brute-force-encryption.html"><img alt="web security testing" src="./assets/img/vulnerable-site-2-preview.png" 
           class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
-          <span class="card-title teal-text hoverline">Brute-Force Encryption Keys</span>
+          <span class="card-title teal-text hoverline">Brute-Force Files</span>
           <p>
-            An SSH brute force attack exploits weak or default passwords that are commonly used on servers.
+            Brute force attack on files exploits weak or default passwords that are commonly used on servers.
           </p>
         </div>
       </div>
     </div>
 
     <!-- Third testing website -->
-    <!-- Usage of gobuster tool to find hidden websites -->
+    <!-- Breaking into login form using hydra -->
     <div class="col s12 m4">
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
           <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./vulnerable-brute-force-websites.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          <a href="./vulnerable-brute-force-login-forms.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
           class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
-          <span class="card-title teal-text hoverline">Brute-Force Websites</span>
+          <span class="card-title teal-text hoverline">Brute-Force Login Forms</span>
           <p>
-            The first step an attacker uses when attacking a website is to find the list of URLs and sub-domains. 
+            The last option left to the attacker is a brute-force attempt.
           </p>
         </div>
       </div>

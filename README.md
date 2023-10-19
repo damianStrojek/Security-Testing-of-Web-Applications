@@ -24,6 +24,10 @@ php -S localhost:80
 
 The system allows you to set up a web application security testing environment at any time and anywhere. The entire theory and tips on how to perform tasks are included in individual modules. We recommend setting up an environment on [Kali Linux](https://www.kali.org/).
 
+## Advisory
+
+All the scripts/theory/tools included in this repository should be used for authorized penetration testing and/or educational purposes only. Any misuse of this software will not be the responsibility of the author or of any other collaborator. Use it at your own networks and/or with the network owner's permission.
+
 ## Credits, Literature
 
 [1] Michał Sajdak, Michał Bentkowski, Gynvael Coldwind et al.: Security of web applications, SECURITUM Publishing House. Available at: [Securitum.pl](https://sklep.securitum.pl/ksiazka-bezpieczenstwo-aplikacji-webowych)
