@@ -7,6 +7,35 @@
 
 -->
 <!DOCTYPE html>
+<?php
+  $username = $_POST['uname'];
+  $password = $_POST['passwd'];
+  $myPDO = new PDO('sqlite:./basic_sqli.db');
+  $query = "SELECT * FROM users WHERE login = '$username' AND password = '$password'";
+
+  $count = 0;
+  $result = $myPDO->query($query);
+  $first_name = "";
+  $last_name = "";
+  $total_money = 0;
+  $total_loans = 0;
+  $user_id = -1;
+  
+  foreach ($result as $row) {
+    $count++;
+    $user_id = $row['id'];
+    $first_name = $row['first_name'];
+    $last_name = $row['last_name'];
+    $total_money = $row['total_money'];
+    $total_loans = $row['total_loans'];
+  }
+
+  if ($count != 1) {
+    header("Location: login_form.php?error=1");
+    exit();
+  }
+  
+?>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -47,21 +76,46 @@
 
 <!-- Main Content-->
 <main>
-<?php
-  $username = $_POST['uname'];
-  $password = $_POST['passwd'];
-  $myPDO = new PDO('sqlite:./basic_sqli.db');
-  $query = "SELECT * FROM users WHERE login = '$username' AND password = '$password'";
-  echo $query;
-  echo "<br>";
-  $result = $myPDO->query($query);
-  echo "results";
-  echo "<br>";
-  foreach ($result as $row) {
-    echo $row['login'];
-    echo "<br>";
-  }
-?>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <a style="display: block; float: right; margin-left: 10px; margin-bottom: 10px; margin-top: 10px" href="login_form.php" class="btn-floating halfway-fab waves-effect waves-light red"><i class="mdi-action-exit-to-app"></i></a>
+            <div class="card-content" style="display: block; float: left;">
+              <p>Logged in as: <b><?php echo $first_name . " " . $last_name; ?></b></p>
+              <p>Total money: <b><?php echo $total_money; ?></b></p>
+              <p>Total loans: <b><?php echo $total_loans; ?></b></p>
+            </div>
+            <div class="card-action" style="display: block; float: left; width: 100%">
+              <h5>Recent operations:</h5>
+              <table class="striped">
+                <thead>
+                  <tr>
+                    <th>Operation</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php
+                    $query = "SELECT * FROM operations WHERE user_id = '$user_id' ORDER BY date DESC LIMIT 10";
+                    $result = $myPDO->query($query);
+                    foreach ($result as $row) {
+                      echo "<tr>";
+                      echo "<td>" . $row['operation'] . "</td>";
+                      echo "<td" . ($row['amount'] < 0 ? " style='color: red;'" : " style='color: green;'") . ">" . $row['amount'] . "</td>";
+                      echo "<td>" . $row['date'] . "</td>";
+                      echo "</tr>";
+                    }
+                  ?>
+                </tbody>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 </body>
 </html>

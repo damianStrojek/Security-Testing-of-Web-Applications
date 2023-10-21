@@ -20,6 +20,15 @@
 <body onload="updateSQL()"></body>
   <main>
   <div style="width: 100%; overflow: hidden;">
+    <?php
+      $err_code = $_GET["error"];
+      if ($err_code == 1) {
+        echo "<h5 style='height: 20px; color: red; margin-left: 10px;'><b>Wrong username or password!</b></h5>";
+      }
+      else {
+        echo "<h5 style='height: 20px'></h5>";
+      }
+    ?>
     <form action="login.php" method="post" style="margin-left: 10px; margin-top: 10px; margin-bottom: 10px; border: 1px solid black; padding: 10px; border-radius: 5px;">
       <b>Login:</b> <input type="text" name="uname" id="uname" onkeyup="updateSQL()" onkeypress="updateSQL()"><br>
       <b>Password:</b> <input type="password" name="passwd" id="passwd" onkeyup="updateSQL()" onkeypress="updateSQL()"><br>
