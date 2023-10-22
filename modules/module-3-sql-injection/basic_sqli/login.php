@@ -30,8 +30,12 @@
     $total_loans = $row['total_loans'];
   }
 
-  if ($count != 1) {
+  if ($count == 0) {
     header("Location: login_form.php?error=1");
+    exit();
+  }
+  else if ($count > 1) {
+    header("Location: login_form.php?error=2");
     exit();
   }
   

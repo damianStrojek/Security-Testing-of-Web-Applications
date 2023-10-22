@@ -55,12 +55,50 @@
       Instead of normal username and password you can use the following:<br>
       <b>login:</b>  <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' OR ''='</span><br>
       <b>password:</b>  <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' OR ''='' LIMIT 1 OFFSET '0</span><br>
-      This will cause to select first user from the database.<br>
+      This will cause to select first user from the database.
     </p>
   </div>
   <div>
     <embed type="text/html" src="login_form.php" width="50%" height="500px" style="display: block; margin-left: auto; margin-right: auto;">
   </div>
+  <div class="container flow-text">
+    <p>
+      But what if you don't know the SQL that will be executed? What if you don't know if the input is vulnerable?<br>
+      In the SQL query everything after the "<b>--</b>" is a comment.<br>
+      You can try the following input to check if the application is vulnerable:<br>
+      <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' OR 1=1--</span><br>
+      You can type it as a <b>login</b> and see what happens.
+    </p>
+  </div>
+  <div>
+    <embed type="text/html" src="login_form.php" width="50%" height="500px" style="display: block; margin-left: auto; margin-right: auto;">
+  </div>
+  <div class="container flow-text">
+    <p>
+      If we get any unexpected result that is not a typical behaviour we can assume that the application is probably vulnerable.<br>
+    </p>
+  </div>
+
+  <!-- fixed things -->
+  <!-- button go to reset_database.php with GET parameter that is the going back link -->
+  <a href="./reset_database.php?location=vulnerable-basic-sqli.php">
+  <div style="position: fixed; top: 200px; right: 10px; background-color: #ffd900; border: 2px solid black; border-radius: 2px;">
+    
+      <b style="margin: 5px; font-size: 20px;">RESET DATABASE</b>
+      <?php
+      // check error code from get
+      $err_code = $_GET["error"];
+      if ($err_code == 3) {
+        echo "<br><b style='margin: 5px; font-size: 20px; color: red;'>reseting database failed</b>";
+      }
+      else if($err_code == 4) {
+        echo "<br><b style='margin: 5px; font-size: 20px; color: green;'>reset database ok</b>";
+      }
+      ?>
+    
+  </div>
+  </a>
+
 </main>
 </body>
 </html>

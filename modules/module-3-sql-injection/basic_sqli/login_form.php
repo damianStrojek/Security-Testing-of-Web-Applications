@@ -25,6 +25,9 @@
       if ($err_code == 1) {
         echo "<h5 style='height: 20px; color: red; margin-left: 10px;'><b>Wrong username or password!</b></h5>";
       }
+      else if ($err_code == 2) {
+        echo "<h5 style='height: 20px; color: red; margin-left: 10px;'><b>Error [2]</b></h5>";
+      }
       else {
         echo "<h5 style='height: 20px'></h5>";
       }
