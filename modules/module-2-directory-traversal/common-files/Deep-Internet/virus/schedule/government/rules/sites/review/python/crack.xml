@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<realm xmlns="http://xsd.tns.tibco.com/trinity/realm/2013" hashAlgorithm="PBKDF2WithHmacSHA256" repetitionCount="128">
+   <flag>
+        <name>CONGRATULATIONS</name>
+        <text>This is it. This is the flag. You were able to find it! Among other files with php, txt, xml extensions!</text>
+</flag>
+</realm>
