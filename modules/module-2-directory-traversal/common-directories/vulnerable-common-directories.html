@@ -46,10 +46,6 @@
       <a aria-label="Root Directory" href="#root" class="waves-effect waves-dark teal-text"><i
       class="mdi mdi-map-search-outline small"></i><span>Root Directory</span></a>
     </li>
-    <li class="bold">
-      <a aria-label="Deep Directories" href="#deep" class="waves-effect waves-dark teal-text"><i
-      class="mdi mdi-map-search small"></i><span>Deep Search</span></a>
-    </li>
   </ul>
 </nav>
 
@@ -90,22 +86,44 @@
   <div class="container flow-text">     
     <p>
       <!-- Hint: Using /seclists/Discovery/Web-Content/directory-list-2.3-medium.txt and gobuster is sufficient -->
-      
+      The root directory, also known as the document root, web root, or site root directory, is the publicly accessible base folder of a website. 
+      This folder contains the index file (index.php, index.html or default.html) and is often named public_html, htdocs, www or wwwroot. 
+      How the root folder of a specific website is named depends on the web host and the settings chosen.
+      <br>
+      The root directory is the folder that is accessed when internet users type the domain name of a website into the search bar of their browser. 
+      When a website with an index.html file in the root directory is called up, the index.html file is displayed in the browser.
+      <br>
+      <b>Your task</b> is to find a suspicious-looking directories and files inside the following document root directory:
+      <br><i>http://hackme.pg/modules/module-2-directory-traversal/common-directories/Internet/</i><br>
     </p>
-  </div>
-</section>
-
-<!-- Third section: Deep Search -->
-<section id="deep" class="section scrollspy">
-  <h3 class="page-title white-text teal">Deep Search</h3>
-  <div class="container flow-text">     
     <p>
-
+      There is no field to check the file that you found. <b>You will know it when you find it</b>. 
     </p>
+    <div>
+      <img src="./../assets/img/common-directories-1.png" class="img-modules" alt="find me">
+    </div>
   </div>
+  <br><br><br><br><br><br><br><br><br><br>
 </section>
-
 </main>
+
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Materialize - Compiled and minified JavaScript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+<script>
+  // Materialize - Initializers
+  $(document).ready(function () {
+  $(".scrollspy").scrollSpy()
+  // Initialize collapse button
+  $(".button-collapse").sideNav({
+    menuWidth: 190, // Default is 240
+    edge: "left", // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  })
+  })
+</script>
 
 </body>
 </html>

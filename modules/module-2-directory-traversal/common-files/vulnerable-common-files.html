@@ -22,7 +22,7 @@
   <!-- Custom Styles-->
   <link rel="stylesheet" href="./../../../assets/css/style.css" />
   <link rel="icon" href="./../../../assets/img/directory-traverse.png" />
-  <title>PHP and TXT Files</title>
+  <title>Common Files</title>
 </head>
 <body>
 <!-- Navigation Menu-->
@@ -69,9 +69,6 @@
       <br><b>127.0.0.1&emsp;&emsp;hackme.pg</b>
     </p>
     <p>
-      Website to test: <b>http://hackme.pg/modules/module-2-directory-traversal/common-directories/Deep-Internet/</b>
-    </p>
-    <p>
       Tools that will be useful when carrying out this task:<br>
       - <a href="https://github.com/danielmiessler/SecLists" target="_blank">SecLists</a><br>
       - <a href="https://github.com/OJ/gobuster" target="_blank">Gobuster</a><br>
@@ -85,10 +82,18 @@
 
 <!-- Second section: Php and Txt Files -->
 <section id="php" class="section scrollspy">
-  <h3 class="page-title white-text teal">PHP and TXT Files</h3>
+  <h3 class="page-title white-text teal">PHP, TXT, and XML Files</h3>
   <div class="container flow-text">     
     <p>
-
+      <!-- 
+      Hint: 
+      Using /seclists/Discovery/Web-Content/directory-list-2.3-medium.txt and dirbuster is sufficient 
+      What you need to add is the extensions of the files. I propose txt, php and xml file extensions :)
+      -->
+      <b>Your task</b> is to find a suspicious-looking directories and files inside the following document root directory: 
+      <br><i>http://hackme.pg/modules/module-2-directory-traversal/common-files/Deep-Internet/</i><br>
+      This time you need to search <b>recursively</b> and look at every folder... The "Tree View" in dirbuster should help you.
+      <br>From the note left by teacher we know that <b>there should be some files with txt, php and xml extensions...</b>
     </p>
   </div>
 </section>
@@ -98,12 +103,42 @@
   <h3 class="page-title white-text teal">LOG and BACKUP Files</h3>
   <div class="container flow-text">     
     <p>
-
+      <!-- 
+      Hint: 
+      Using /seclists/Discovery/Web-Content/directory-list-2.3-medium.txt and dirbuster is sufficient 
+      What you need to add is the extensions of the files. I propose log and bak file extensions :)
+      -->
+      <b>Your task</b> is to find a suspicious-looking directories and files inside the following document root directory: 
+      <br><i>http://hackme.pg/modules/module-2-directory-traversal/common-files/Deep-Database/</i><br>
+      This time you need to search <b>recursively</b> and look at every folder... The "Tree View" in dirbuster should help you.
+      <br>This time teacher was not able to properly secure his <b>log and backup (.bak) files...</b>
     </p>
+    <div>
+      <img src="./../assets/img/common-files-1.png" class="img-modules" alt="find me">
+    </div>
   </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </section>
 
 </main>
+
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Materialize - Compiled and minified JavaScript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+<script>
+  // Materialize - Initializers
+  $(document).ready(function () {
+  $(".scrollspy").scrollSpy()
+  // Initialize collapse button
+  $(".button-collapse").sideNav({
+    menuWidth: 190, // Default is 240
+    edge: "left", // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  })
+  })
+</script>
 
 </body>
 </html>
