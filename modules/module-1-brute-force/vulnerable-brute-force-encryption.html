@@ -51,7 +51,7 @@
       class="mdi mdi-folder-zip small"></i><span>ZIP</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Shadow File" href="#pdf" class="waves-effect waves-dark teal-text"><i
+      <a aria-label="Shadow File" href="#shadow" class="waves-effect waves-dark teal-text"><i
       class="mdi mdi-lock-question small"></i><span>Shadow</span></a>
     </li>
   </ul>
@@ -181,9 +181,28 @@
       <br><br>
     </p>
   </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </section>
 
+</main>
+
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Materialize - Compiled and minified JavaScript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
 <script>
+  // Materialize - Initializers
+  $(document).ready(function () {
+  $(".scrollspy").scrollSpy()
+  // Initialize collapse button
+  $(".button-collapse").sideNav({
+    menuWidth: 190, // Default is 240
+    edge: "left", // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  })
+  });
+
   const passwordConstants = {
     // Line 3318 from rockyou.txt year 2023
     ssh1: "123456789123456",
@@ -206,6 +225,5 @@
   }
 </script>
 
-</main>
 </body>
 </html>

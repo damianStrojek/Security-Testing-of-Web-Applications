@@ -82,7 +82,10 @@ pre code {
 }
 
 .img-modules {
-  width: 80%;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* style for codes in text */
@@ -193,6 +196,10 @@ cde {
 body {
   color: #333;
   font-size: 18px;
+}
+
+p {
+  text-align: justify;
 }
 
 /* main blockqoute */

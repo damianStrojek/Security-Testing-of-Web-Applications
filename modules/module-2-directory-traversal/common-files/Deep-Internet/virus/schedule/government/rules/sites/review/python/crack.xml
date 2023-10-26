@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<realm xmlns="http://xsd.tns.tibco.com/trinity/realm/2013" hashAlgorithm="PBKDF2WithHmacSHA256" repetitionCount="128">
+<flag>
+        <ascii>   ________  ________   ________  ________      ________  ________     ________  ________  ________      ________  _______   ________  ________         </ascii>
+        <ascii>  /        \/    /   \ /        \/        \    /        \/        \   /        \/    /   \/        \    /        \/       \ /        \/        \        </ascii>
+        <ascii> /        _/         /_/       //        _/   _/       //        _/  /        _/         /         /   /       __/        //         /       __/        </ascii>
+        <ascii> /       //         //         /-        /   /         /-        /   /       //         /        _/   /        _/        //         /       / /         </ascii>
+        <ascii> \_____// \___/____/ \________/\________/    \________/\________/    \______/ \___/____/\________/    \_______/ \________/\___/____/\________/          </ascii>
+        <ascii>This is the flag (spaces might collapse in browser :D )</ascii>
+        <text>Flag: 0A17645A77488852517031A97099C16AAFB35FAB93C51A273D347D632AF5A3A4</text>
+</flag>
+</realm>

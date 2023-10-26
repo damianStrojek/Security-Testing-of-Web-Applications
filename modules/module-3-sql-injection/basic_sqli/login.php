@@ -54,6 +54,7 @@
   $query = "SELECT * FROM users WHERE login = '$username' AND password = '$password'";
   echo $query;
   echo "<br>";
+
   $result = $myPDO->query($query);
   echo "results";
   echo "<br>";
@@ -62,6 +63,7 @@
     echo "<br>";
   }
 ?>
+
 </main>
 </body>
 </html>
