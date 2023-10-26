@@ -43,17 +43,16 @@
       class="mdi-action-language small"></i><span>Introduction</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Navigate to the Login Pages section" href="#login-pages" class="waves-effect waves-dark teal-text"><i
-      class="mdi mdi-lock-clock small"></i><span>Login Pages</span></a>
+      <a aria-label="Navigate to the Encrypted Passwords Section" href="#passwords" class="waves-effect waves-dark teal-text"><i 
+      class="mdi mdi-lock-reset small"></i><span>Passwords</span></a>
     </li>
     <li class="bold">
       <a aria-label="Navigate to the Encrypted Keys section" href="#keys" class="waves-effect waves-dark teal-text"><i
       class="mdi mdi-key-chain small"></i><span>Encrypted Keys</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Navigate to the Hidden Pages section" href="#hidden-pages"
-      class="waves-effect waves-dark teal-text"><i
-      class="mdi mdi-eye-off small"></i><span>Hidden Pages</span></a>
+      <a aria-label="Navigate to the Login Pages section" href="#login-pages" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-lock-clock small"></i><span>Login Pages</span></a>
     </li>
     <li class="bold">
       <a aria-label="Navigate to the Testing section" href="#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
@@ -94,7 +93,57 @@
   </div>
 </section>
 
-<!-- Second Section: Brute-Force Login Pages -->
+<!-- Second Section: Brute-Force Encrypted Passwords -->
+<section id="passwords" class="section scrollspy">
+  <h3 class="page-title white-text teal">Hacking Encrypted Password</h3>
+  <div class="container flow-text">     
+    <p>
+      Password cracking is the process of using an application program to identify an unknown or forgotten password to a computer or network resource. It can also be used to help a threat actor obtain unauthorized access to resources.<br>
+      With the information malicious actors gain using password cracking, they can undertake a range of criminal activities. Those include stealing banking credentials or using the information for identity theft and fraud.<br>
+      A password cracker recovers passwords using various techniques. The process can involve comparing a list of words to guess passwords or the use of an algorithm to repeatedly guess the password.<br>
+    </p>
+    <p>
+      The general process a password cracker follows involves these four steps:
+      <br>1. <b>Steal a password</b> via some nefarious means. That password has likely been encrypted before being stored using a hash Hashes are mathematical functions that change arbitrary-length inputs into an encrypted fixed-length output.
+      <br>2. <b>Choose a cracking methodology</b>, such as a brute-force or dictionary attack, and select a cracking tool.
+      <br>3. <b>Prepare the password hashes</b> for the cracking program. This is done by providing an input to the hash function to create a hash that can be authenticated.
+      <br>4. <b>Run the cracking tool</b>.
+    </p>
+  </div>
+</section>
+
+<!-- Third Section: Brute-Force Encrypted Keys -->
+<section id="keys" class="section scrollspy">
+  <h3 class="page-title white-text teal">Hacking Encrypted Files</h3>
+  <div class="container flow-text">     
+    <p>
+      When it comes to brute-forcing encrypted files, <b>John the Reaper</b> is a very useful tool. Alternatively, you can use 
+      <a href="https://hashcat.net/wiki/doku.php?id=example_hashes" target="_blank">hashcat</a> which comes in handy when you know 
+      what type of encryption you are dealing with.
+      <br>
+      Ssh2john is part of John The Reaper suite. This is a script that basically transforms [RSA/DSA/EC/OPENSSH (SSH private keys)] 
+      private key to john format for later cracking using JtR.
+    </p>
+    <p>
+      Obviously, if you want to crack something you first need to have it. After you have received an RSA private key you can use 
+      the <b>ssh2john</b> script and create a new file with the content of the output.
+      <div>
+        <img src="assets/img/ssh2john-example-1.png" class="img-modules" alt="ssh2john example">
+      </div>
+      Now that we created the new file named id_rsa.john, we need to run john against it. We will use rockyou.txt as the wordlist. 
+      The result is secretz101 as the password.
+      <div>
+        <img src="assets/img/ssh2john-example-2.png" class="img-modules" alt="ssh2john example">
+      </div>
+      Knowing already the username of the owner of this private key. We can try to SSH to our target machine. We will use an uncommon port (4655).
+      <div>
+        <img src="assets/img/ssh2john-example-3.png" class="img-modules" alt="ssh2john example">
+      </div>
+    </p>
+  </div>
+</section>
+
+<!-- Fourth Section: Brute-Force Login Pages -->
 <section id="login-pages" class="section scrollspy">
   <h3 class="page-title white-text teal">Hacking Login Pages</h3>
   <div class="container flow-text">     
@@ -139,76 +188,17 @@ Incorrect password" </code>
       </pre>
       After running the command, we uncover the password after just a couple minutes.
       <div>
-        <img src="assets/img/hydra-example-3.png" class="img-modules" alt="hydra example">
+        <img src="assets/img/hydra-example-3.png" class="img-modules" style="width: 90%;" alt="hydra example">
       </div>
     </p>
   </div>
 </section>
 
-<!-- Third Section: Brute-Force Encrypted Keys -->
-<section id="keys" class="section scrollspy">
-  <h3 class="page-title white-text teal">Hacking Encrypted Files</h3>
-  <div class="container flow-text">     
-    <p>
-      When it comes to brute-forcing encrypted files, <b>John the Reaper</b> is a very useful tool. Alternatively, you can use 
-      <a href="https://hashcat.net/wiki/doku.php?id=example_hashes" target="_blank">hashcat</a> which comes in handy when you know 
-      what type of encryption you are dealing with.
-      <br>
-      Ssh2john is part of John The Reaper suite. This is a script that basically transforms [RSA/DSA/EC/OPENSSH (SSH private keys)] 
-      private key to john format for later cracking using JtR.
-    </p>
-    <p>
-      Obviously, if you want to crack something you first need to have it. After you have received an RSA private key you can use 
-      the <b>ssh2john</b> script and create a new file with the content of the output.
-      <div>
-        <img src="assets/img/ssh2john-example-1.png" class="img-modules" alt="ssh2john example">
-      </div>
-      Now that we created the new file named id_rsa.john, we need to run john against it. We will use rockyou.txt as the wordlist. 
-      The result is secretz101 as the password.
-      <div>
-        <img src="assets/img/ssh2john-example-2.png" class="img-modules" alt="ssh2john example">
-      </div>
-      Knowing already the username of the owner of this private key. We can try to SSH to our target machine. We will use an uncommon port (4655).
-      <div>
-        <img src="assets/img/ssh2john-example-3.png" class="img-modules" alt="ssh2john example">
-      </div>
-    </p>
-  </div>
-</section>
-
-<!-- Fourth Section: Hidden Pages -->
-<section id="hidden-pages" class="section scrollspy">
-  <h3 class="page-title white-text teal">Finding a Hidden Web Page</h3>
-  <div class="container flow-text">     
-    <p>
-      <b>Gobuster</b> is one of the most powerful and speed brute-force tools that doesn't need a runtime. It uses a directory scanner programmed 
-      by Go language; it's faster and more flexible than interpreted script.
-      <br>
-      If you look at the help command, we can see that Gobuster has a few modes: dir — Directory enumeration mode, dns — Subdomain enumeration 
-      mode, fuzz — Fuzzing mode, s3 — S3 enumeration mode, vhost — Vhost enumeration mode.
-    </p>
-    <p>
-      Gobuster's directory mode (<b>dir</b>) helps us to look for hidden files and URL paths. This can include images, script files, and almost 
-      any file that is exposed to the internet.
-      <pre>
-        <code> $ gobuster dir -u [url] -w [wordlist] </code>
-      </pre>
-      Now let's try the dir mode. Here is the command to look for URLs with the common wordlist.
-      <pre>
-        <code> $ gobuster dir -u 10.10.171.247:80 -w /usr/share/wordlists/dirb/common.txt </code>
-      </pre>
-      And here is the result. We can see that there are some exposed files that we should take a closer look at.
-      <div>
-        <img src="assets/img/gobuster-example-1.png" class="img-modules" alt="ssh2john example">
-      </div>
-    </p>
-  </div>
-</section>
-
-<!-- Fourth Section: Links to vulnerable websites -->
+<!-- Fifth Section: Links to vulnerable websites -->
 <section id="vulnerable-websites" class="section scrollspy">
   <h3 class="page-title white-text teal">Vulnerable websites for testing</h3>
   <div class="container">
+
   <div class="row">
     <!-- First testing website -->
     <!-- Brute forcing passwords -->
@@ -245,18 +235,18 @@ Incorrect password" </code>
     </div>
 
     <!-- Third testing website -->
-    <!-- Breaking into login form using hydra -->
+    <!-- Breaking into login forms using hydra -->
     <div class="col s12 m4">
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
           <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./vulnerable-brute-force-login-forms.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
+          <a href="./brute-force-login-forms/vulnerable-brute-force-login-forms.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
           class="activator" style="height:100%" /></a>
         </div>
         <div class="card-content">
           <span class="card-title teal-text hoverline">Brute-Force Login Forms</span>
           <p>
-            The last option left to the attacker is a brute-force attempt.
+            The last option left to the attacker is a brute-force password attempt on a login form.
           </p>
         </div>
       </div>
@@ -264,7 +254,7 @@ Incorrect password" </code>
 
   </div>
   </div>
-  <br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </section>
 
 </main>
