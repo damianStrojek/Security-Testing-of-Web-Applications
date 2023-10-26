@@ -43,12 +43,12 @@
       class="mdi mdi-account-question small"></i><span>Scenario</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Php and Txt files" href="#php" class="waves-effect waves-dark teal-text"><i
-      class="mdi mdi-map-search-outline small"></i><span>PHP & TXT</span></a>
+      <a aria-label="php, txt, xml Files" href="#php" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-map-search-outline small"></i><span>PHP&TXT&XML</span></a>
     </li>
     <li class="bold">
       <a aria-label="Log and Backup Files" href="#log" class="waves-effect waves-dark teal-text"><i
-      class="mdi mdi-map-search small"></i><span>LOG & BACKUP</span></a>
+      class="mdi mdi-map-search small"></i><span>LOG&BACKUP</span></a>
     </li>
   </ul>
 </nav>
@@ -87,13 +87,22 @@
     <p>
       <!-- 
       Hint: 
-      Using /seclists/Discovery/Web-Content/directory-list-2.3-medium.txt and dirbuster is sufficient 
+      Using /seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt and dirbuster is sufficient 
       What you need to add is the extensions of the files. I propose txt, php and xml file extensions :)
       -->
       <b>Your task</b> is to find a suspicious-looking directories and files inside the following document root directory: 
       <br><i>http://hackme.pg/modules/module-2-directory-traversal/common-files/Deep-Internet/</i><br>
       This time you need to search <b>recursively</b> and look at every folder... The "Tree View" in dirbuster should help you.
       <br>From the note left by teacher we know that <b>there should be some files with txt, php and xml extensions...</b>
+    </p>
+    <div>
+      <img src="./../assets/img/common-files-1.png" class="img-modules" alt="find me">
+    </div>
+    <p style="text-align: left;">
+      Flag for <i>/Deep-Internet</i> section:
+      <input type="text" id="flag1" class="input-module1">
+      <br><br>
+      <button id="flag1-button" onclick="checkFlag('flag1')" class="button-module1">pehape?</button>
     </p>
   </div>
 </section>
@@ -105,7 +114,7 @@
     <p>
       <!-- 
       Hint: 
-      Using /seclists/Discovery/Web-Content/directory-list-2.3-medium.txt and dirbuster is sufficient 
+      Using /seclists/Discovery/Web-Content/common.txt and dirbuster is sufficient 
       What you need to add is the extensions of the files. I propose log and bak file extensions :)
       -->
       <b>Your task</b> is to find a suspicious-looking directories and files inside the following document root directory: 
@@ -113,9 +122,18 @@
       This time you need to search <b>recursively</b> and look at every folder... The "Tree View" in dirbuster should help you.
       <br>This time teacher was not able to properly secure his <b>log and backup (.bak) files...</b>
     </p>
-    <div>
-      <img src="./../assets/img/common-files-1.png" class="img-modules" alt="find me">
-    </div>
+    <p style="text-align: left;">
+      Flag for <i>.bak</i> file:
+      <input type="text" id="flag2" class="input-module1">
+      <br><br>
+      <button id="flag2-button" onclick="checkFlag('flag2')" class="button-module1">backup!!!</button>
+    </p>
+    <p style="text-align: left;">
+      Flag for <i>.log</i> file:
+      <input type="text" id="flag3" class="input-module1">
+      <br><br>
+      <button id="flag3-button" onclick="checkFlag('flag3')" class="button-module1">Logging everything.</button>
+    </p>
   </div>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </section>
@@ -137,7 +155,26 @@
     edge: "left", // Choose the horizontal origin
     closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
   })
-  })
+  });
+
+  const flagConstants = {
+    flag1: "0A17645A77488852517031A97099C16AAFB35FAB93C51A273D347D632AF5A3A4",
+    flag2: "666212C0CD11DDF471783C27E76C89FBC46B62BEEBF96203AD699D52EEFAEC0C",
+    flag3: "AFA58218487B0B70CECCB3666C3E2D21B649BC4C4162FEC5EE153185DB17431F",
+  };
+
+  function checkFlag(flagID) {
+    const inputField = document.getElementById(flagID);
+    const button = document.getElementById(flagID + "-button");
+
+    if (inputField && flagConstants[flagID] === inputField.value) {
+      inputField.style.background = "lightgreen";
+      button.style.background = "green";
+    } else {
+      inputField.style.background = "lightcoral";
+      button.style.background = "red";
+    }
+  }
 </script>
 
 </body>
