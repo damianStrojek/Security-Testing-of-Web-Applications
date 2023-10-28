@@ -38,14 +38,74 @@
       <a aria-label="Back to the Theory section" href="./../theory.html#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
       class="mdi mdi-arrow-collapse-left small"></i><span>Go Back</span></a>
     </li>
+    <li class="bold">
+      <a aria-label="Scenario" href="#getting_started" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-account-question small"></i><span>Getting Started</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Easy Form" href="#what_now" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-form-textbox small"></i><span>App is vulnerable</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Intermediate Form" href="#injecting" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-form-textbox-password small"></i><span>Injecting the SQL</span></a>
+    </li>
   </ul>
 </nav>
 
 <!-- Main Content-->
 <main>
-  <h3 class="page-title white-text teal">Basic SQL Injection</h3>
+<section id="getting_started" class="section scrollspy">
+  <h3 class="page-title white-text teal">Getting started</h3>
   <div class="container flow-text">
     <p>
+      First of all we need to know if the application is vulnerable to SQL Injection.<br>
+      But how to achive that? What if you don't know the SQL that will be executed?<br>
+      Well, there is a simple trick: In the SQL query everything after the "<b>--</b>" is a comment.<br>
+      You can try the following input to check if the application is vulnerable:<br>
+      <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' OR 1=1--</span><br>
+      You can type it as a <b>login</b> and see what happens.
+    </p>
+  </div>
+  <div>
+    <embed type="text/html" src="login_form.php" width="50%" height="500px" style="display: block; margin-left: auto; margin-right: auto;">
+  </div>
+  <div class="container flow-text">
+    <p>
+      If we get any unexpected result that is not a typical behaviour we can assume that the application is probably vulnerable.<br>
+    </p>
+  </div>
+</section>
+<section id="what_now" class="section scrollspy">
+  <h3 class="page-title white-text teal">Application is vulnerable - what now?</h3>
+  <div class="container flow-text">
+    <p>
+      Now that we know that the application is vulnerable we can try to exploit it.<br>
+      But there is a little problem - we don't know the SQL query that will be executed.<br>
+      The query depends on type of thing that the part of the application is responsible for.<br>
+      If we are trying to log in, the query may look something like this:<br>
+      <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">
+      SELECT * FROM users WHERE login = '$login' AND password = '$password'</span><br>
+      or like this:<br>
+      <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">
+      SELECT * FROM users WHERE login = '$login' AND password = MD5('$password') LIMIT 1</span><br>
+      or something completely different.<br>
+      Sometimes if the application is not written in the smartest way you can get the query from the error message.<br><br>
+      In general you can try to inject different SQL queries to get some information about the database.<br>
+      For example you can try inputing the following:<br>
+      <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' UNION SELECT 1--</span><br>
+      <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' UNION SELECT 1,2--</span><br>
+      <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' UNION SELECT 1,2,3--</span><br>
+      etc.<br>
+      to see how many columns are there in the table.<br>
+    </p>
+  </div>
+</section>
+<section id="injecting" class="section scrollspy">
+  <h3 class="page-title white-text teal">Injecting the SQL</h3>
+  <div class="container flow-text">
+    <p>
+      Let's do some fun stuff and become a hacker for a moment.<br>
       This is a basic SQL Injection example. The goal is to log in as any user without knowing the password.<br>
       To achieve this, you need to use the SQL Injection technique.<br>
       Instead of normal username and password you can use the following:<br>
@@ -59,19 +119,10 @@
   </div>
   <div class="container flow-text">
     <p>
-      But what if you don't know the SQL that will be executed? What if you don't know if the input is vulnerable?<br>
-      In the SQL query everything after the "<b>--</b>" is a comment.<br>
-      You can try the following input to check if the application is vulnerable:<br>
-      <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' OR 1=1--</span><br>
-      You can type it as a <b>login</b> and see what happens.
-    </p>
-  </div>
-  <div>
-    <embed type="text/html" src="login_form.php" width="50%" height="500px" style="display: block; margin-left: auto; margin-right: auto;">
-  </div>
-  <div class="container flow-text">
-    <p>
-      If we get any unexpected result that is not a typical behaviour we can assume that the application is probably vulnerable.<br>
+      If that works, you can try to log in as any user you want just by changing the offset.<br>
+      <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' OR ''='' LIMIT 1 OFFSET '1</span><br>
+      <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' OR ''='' LIMIT 1 OFFSET '2</span><br>
+      etc.<br>
     </p>
   </div>
 
@@ -96,5 +147,22 @@
   </a>
 
 </main>
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Materialize - Compiled and minified JavaScript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+<script>
+  // Materialize - Initializers
+  $(document).ready(function () {
+  $(".scrollspy").scrollSpy()
+  // Initialize collapse button
+  $(".button-collapse").sideNav({
+    menuWidth: 190, // Default is 240
+    edge: "left", // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  })
+  })
+</script>
 </body>
 </html>
