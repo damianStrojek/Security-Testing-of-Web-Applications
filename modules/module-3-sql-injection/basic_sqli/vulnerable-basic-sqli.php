@@ -35,20 +35,21 @@
       </a>
     </li>
     <li class="bold">
-      <a aria-label="Back to the Theory section" href="./../theory.html#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
-      class="mdi mdi-arrow-collapse-left small"></i><span>Go Back</span></a>
+      <a aria-label="Back to the Theory section" href="./../theory.html#vulnerable-websites" class="waves-effect waves-dark teal-text">
+        <i class="mdi mdi-arrow-collapse-left small"></i><span>Go Back</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Scenario" href="#getting_started" class="waves-effect waves-dark teal-text"><i
-      class="mdi mdi-account-question small"></i><span>Getting Started</span></a>
+      <a aria-label="Scenario" href="#getting_started" class="waves-effect waves-dark teal-text">
+        <!-- <i class="mdi mdi-account-question small"></i><span>Getting Started</span></a> -->
+        <i class="mdi mdi mdi-database-arrow-up-outline small"></i><span>Getting Started</span></a>
     </li>
     <li class="bold">
       <a aria-label="Easy Form" href="#what_now" class="waves-effect waves-dark teal-text"><i
-      class="mdi mdi-form-textbox small"></i><span>App is vulnerable</span></a>
+      class="mdi mdi-table-question small"></i><span>App is vulnerable</span></a>
     </li>
     <li class="bold">
       <a aria-label="Intermediate Form" href="#injecting" class="waves-effect waves-dark teal-text"><i
-      class="mdi mdi-form-textbox-password small"></i><span>Injecting the SQL</span></a>
+      class="mdi mdi-database-edit-outline small"></i><span>Injecting the SQL</span></a>
     </li>
   </ul>
 </nav>

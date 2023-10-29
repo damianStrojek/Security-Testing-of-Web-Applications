@@ -137,10 +137,29 @@
   <h3 class="page-title white-text teal">SQL Injection</h3>
   <div class="container flow-text">     
     <p>
-      -
+      SQL Injection is a web application vulnerability that allows the user to inject a string of characters that will later be used by the
+      SQL interpreter. This string is intended to "escape" from being treated as a string in SQL.<br>
     </p>
     <p>
-      -
+      We can achieve this most often by adding the <b>'</b> or <b>"</b> character in the right place in the form.
+      Such an action can cause the SQL interpreter to treat part of our string of characters that occur after the <b>'</b> or
+      <b>"</b> character as SQL code that will be executed by the interpreter.<br><br>
+      An example may be a login form where we enter a login and password. If we enter in the login field:<br>
+      <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">'--</span><br>
+      we can cause that the executed query will be:<br>
+      <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">SELECT * FROM users WHERE user_name=''--' AND password=''</span><br>
+      which will cause the part of the query after the <b>--</b> characters to be ignored (because for the SQL interpreter <b>--</b> is the beginning of the comment).<br>
+    </p>
+    <p>
+      It is worth reminding that for the SQL language there are several expressions that are often used to execute malicious SQL code:
+      <ul>
+        <li><b>1=1</b> - always true (numeric comparison)</li>
+        <li><b>''=''</b> - always true (string comparison)</li>
+        <li><b>[statement] OR 1=1</b> - always true</li>
+        <li><b>--</b> - comment, everything after this character is ignored</li>
+        <li><b>LIMIT 1</b> - limit the number of results to 1 (we will use it, among others, when logging in)</li>
+        <li><b>UNION</b> - combining query results - allows us to execute additional database commands</li>
+      </ul>
     </p>
   </div>
 </section>
@@ -156,13 +175,13 @@
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
           <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./basic_sqli/vulnerable-basic-sqli.php"><img alt="web security testing" src="./../../../assets/img/cybersecurity.jpg" 
-          class="activator" style="height:100%" /></a>
+          <a href="./basic_sqli/vulnerable-basic-sqli.php"><img alt="web security testing" src="./../../../assets/img/sqli_basic_module.png" 
+          class="activator" style="max-width: 250px; max-height: 250px; margin-left: auto; margin-right: auto; display: block;" /></a>
         </div>
         <div class="card-content">
           <span class="card-title teal-text hoverline">Basic SQL Injection</span>
           <p>
-          Description underneath
+            Getting started with SQL Injection, logging in without knowing the password.
           </p>
         </div>
       </div>
@@ -174,13 +193,13 @@
       <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
           <!-- [TODO] Images for the vulnerable websites should present how does the landing page look right now -->
-          <a href="./vulnerable-advanced-sqli.html"><img alt="web security testing" src="./../../assets/img/cybersecurity.jpg" 
-          class="activator" style="height:100%" /></a>
+          <a href="./vulnerable-advanced-sqli.html"><img alt="web security testing" src="./../../../assets/img/sqli_advanced_module.png" 
+            class="activator" style="max-width: 250px; max-height: 250px; margin-left: auto; margin-right: auto; display: block;" /></a>
         </div>
         <div class="card-content">
           <span class="card-title teal-text hoverline">Advanced SQL Injection</span>
           <p>
-          Description underneath
+            Hey kids, wanna do some bad bad things?
           </p>
         </div>
       </div>
