@@ -8,16 +8,20 @@ The environment allows for the implementation of various methods of attack, defe
 
 ## Local Deployment
 
-To deploy the environment locally you need to `clone` this repository and host it using one of many ways.
+To deploy the environment locally you need to `clone` this repository and host it using one of many ways. 
 
 ```bash
+# Get the latest version of docker
+sudo apt-get install docker.io
+
+# Hosting HTTP server on port 80 of localhost using docker container
 git clone https://github.com/damianStrojek/Security-Testing-of-Web-Applications.git
+cd Security-Testing-of-Web-Applications
+docker build -t stewa .
+docker run -dp 127.0.0.1:80:80 stewa
 
-# Hosting HTTP server on port 80
-python3 -m http.server 80
-
-# Hosting PHP server on port 80
-php -S localhost:80
+# Check status of your container
+docker ps
 ```
 
 ## Usage

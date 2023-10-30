@@ -7,14 +7,15 @@ The basic implementation technologies are to be HTML, PHP, JavaScript, MySQL. Th
 ```c
 front-end/
 backend/
-module1/
-module1_index/
-module1_specific_logs/
-module2/
-[...]
-moduleX/
+modules/
 main_index.html
 requirements.txt
+../module1/
+../module1_index/
+../module1_specific_logs/
+../module2/
+../[...]
+../moduleX/
 ```
 
 We do not exclude the possibility of creating more than one web application. It is possible that, to show some vulnerabilities, we will need to implement a different type of back-end than the one on which the default application is based.
