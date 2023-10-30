@@ -1,0 +1,666 @@
+{"log":"[Mon Oct 30 21:40:21 2023] PHP 8.2.12 Development Server (http://0.0.0.0:80) started\n","stream":"stderr","time":"2023-10-30T21:40:21.225636849Z"}
+{"log":"[Mon Oct 30 21:40:41 2023] 172.17.0.1:36734 Accepted\n","stream":"stderr","time":"2023-10-30T21:40:41.260801023Z"}
+{"log":"[Mon Oct 30 21:40:41 2023] 172.17.0.1:36734 [200]: GET /\n","stream":"stderr","time":"2023-10-30T21:40:41.261617618Z"}
+{"log":"[Mon Oct 30 21:40:41 2023] 172.17.0.1:36734 Closing\n","stream":"stderr","time":"2023-10-30T21:40:41.261629125Z"}
+{"log":"[Mon Oct 30 21:40:41 2023] 172.17.0.1:36744 Accepted\n","stream":"stderr","time":"2023-10-30T21:40:41.263387702Z"}
+{"log":"[Mon Oct 30 21:40:41 2023] 172.17.0.1:36744 [200]: GET /c084d36b-e4cb-41e1-a049-695584085222\n","stream":"stderr","time":"2023-10-30T21:40:41.263455185Z"}
+{"log":"[Mon Oct 30 21:40:41 2023] 172.17.0.1:36744 Closing\n","stream":"stderr","time":"2023-10-30T21:40:41.263460829Z"}
+{"log":"[Mon Oct 30 21:40:52 2023] 172.17.0.1:40694 Accepted\n","stream":"stderr","time":"2023-10-30T21:40:52.463114268Z"}
+{"log":"[Mon Oct 30 21:40:52 2023] 172.17.0.1:40694 [200]: GET /module-1-brute-force/\n","stream":"stderr","time":"2023-10-30T21:40:52.463733421Z"}
+{"log":"[Mon Oct 30 21:40:52 2023] 172.17.0.1:40694 Closing\n","stream":"stderr","time":"2023-10-30T21:40:52.46374135Z"}
+{"log":"[Mon Oct 30 21:40:52 2023] 172.17.0.1:40710 Accepted\n","stream":"stderr","time":"2023-10-30T21:40:52.464408258Z"}
+{"log":"[Mon Oct 30 21:40:52 2023] 172.17.0.1:40710 [200]: GET /module-1-brute-force/614e55e4-67c1-4d52-a888-13f692cd0922\n","stream":"stderr","time":"2023-10-30T21:40:52.464751216Z"}
+{"log":"[Mon Oct 30 21:40:52 2023] 172.17.0.1:40710 Closing\n","stream":"stderr","time":"2023-10-30T21:40:52.46505607Z"}
+{"log":"[Mon Oct 30 21:41:08 2023] 172.17.0.1:41268 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:08.83597038Z"}
+{"log":"[Mon Oct 30 21:41:08 2023] 172.17.0.1:41268 [200]: GET /module-1-brute-force/\n","stream":"stderr","time":"2023-10-30T21:41:08.836785174Z"}
+{"log":"[Mon Oct 30 21:41:08 2023] 172.17.0.1:41268 Closing\n","stream":"stderr","time":"2023-10-30T21:41:08.83726425Z"}
+{"log":"[Mon Oct 30 21:41:08 2023] 172.17.0.1:41270 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:08.837972318Z"}
+{"log":"[Mon Oct 30 21:41:08 2023] 172.17.0.1:41270 [200]: GET /module-1-brute-force/43ddfa40-ded7-4a2c-90e8-04186893825a\n","stream":"stderr","time":"2023-10-30T21:41:08.838105088Z"}
+{"log":"[Mon Oct 30 21:41:08 2023] 172.17.0.1:41270 Closing\n","stream":"stderr","time":"2023-10-30T21:41:08.838113869Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58160 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.482098727Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58160 [200]: GET /\n","stream":"stderr","time":"2023-10-30T21:41:21.486803063Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58160 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.486956824Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58168 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.582873274Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58168 [200]: GET /assets/css/style.css\n","stream":"stderr","time":"2023-10-30T21:41:21.590025012Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58168 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.590039226Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58176 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.592296991Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58176 [200]: GET /assets/img/icon.png\n","stream":"stderr","time":"2023-10-30T21:41:21.593151201Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58176 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.59315906Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58180 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.594068273Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58180 [200]: GET /assets/img/nmap-logo.png\n","stream":"stderr","time":"2023-10-30T21:41:21.594728937Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58180 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.594736715Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58190 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.595662819Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58190 [200]: GET /assets/img/burp-suite-logo.png\n","stream":"stderr","time":"2023-10-30T21:41:21.596145443Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58190 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.596152691Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58202 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.596727256Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58202 [200]: GET /assets/img/gobuster.svg\n","stream":"stderr","time":"2023-10-30T21:41:21.596989098Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58202 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.596996125Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58214 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.597633302Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58214 [200]: GET /assets/img/john.png\n","stream":"stderr","time":"2023-10-30T21:41:21.597851909Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58214 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.597858815Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58230 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.598280984Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58230 [200]: GET /assets/img/owasp-logo.png\n","stream":"stderr","time":"2023-10-30T21:41:21.598504233Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58230 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.598511149Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58240 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.599856273Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58240 [200]: GET /assets/img/brute-force.png\n","stream":"stderr","time":"2023-10-30T21:41:21.60011218Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58240 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.600119218Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58248 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.601389521Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58248 [200]: GET /assets/img/directory-traverse.png\n","stream":"stderr","time":"2023-10-30T21:41:21.601836118Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58248 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.601844178Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58250 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.60247139Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58250 [200]: GET /assets/img/sqli.png\n","stream":"stderr","time":"2023-10-30T21:41:21.602738435Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58250 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.602745421Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58260 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.604618068Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58260 [200]: GET /assets/img/xss.png\n","stream":"stderr","time":"2023-10-30T21:41:21.604889803Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58260 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.60489696Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58262 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.605524654Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58262 [200]: GET /assets/vendor/typed.js/typed.min.js\n","stream":"stderr","time":"2023-10-30T21:41:21.605808549Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58262 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.605815665Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58274 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:21.753436345Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58274 [200]: GET /assets/img/bg.png\n","stream":"stderr","time":"2023-10-30T21:41:21.758831256Z"}
+{"log":"[Mon Oct 30 21:41:21 2023] 172.17.0.1:58274 Closing\n","stream":"stderr","time":"2023-10-30T21:41:21.758845571Z"}
+{"log":"[Mon Oct 30 21:41:22 2023] 172.17.0.1:58278 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:22.739375886Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58278 [200]: GET /modules/module-2-directory-traversal/theory.html\n","stream":"stderr","time":"2023-10-30T21:41:24.401759027Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58278 Closing\n","stream":"stderr","time":"2023-10-30T21:41:24.401798814Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58288 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:24.584412017Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58288 [200]: GET /assets/css/style.css\n","stream":"stderr","time":"2023-10-30T21:41:24.585117068Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58288 Closing\n","stream":"stderr","time":"2023-10-30T21:41:24.58512621Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58304 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:24.585941346Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58316 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:24.586567827Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58330 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:24.587346074Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58304 [200]: GET /assets/img/directory-traverse.png\n","stream":"stderr","time":"2023-10-30T21:41:24.588054452Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58304 Closing\n","stream":"stderr","time":"2023-10-30T21:41:24.588062311Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58316 [200]: GET /modules/module-2-directory-traversal/assets/img/directory-traversal-example-1.svg\n","stream":"stderr","time":"2023-10-30T21:41:24.588723055Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58316 Closing\n","stream":"stderr","time":"2023-10-30T21:41:24.588730634Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58330 [200]: GET /modules/module-2-directory-traversal/assets/img/gobuster-example-1.png\n","stream":"stderr","time":"2023-10-30T21:41:24.591169705Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58330 Closing\n","stream":"stderr","time":"2023-10-30T21:41:24.591181764Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58342 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:24.595721423Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58346 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:24.5968106Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58346 [200]: GET /modules/module-2-directory-traversal/assets/img/common-files-1-view.png\n","stream":"stderr","time":"2023-10-30T21:41:24.597250381Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58346 Closing\n","stream":"stderr","time":"2023-10-30T21:41:24.597257659Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58342 [200]: GET /modules/module-2-directory-traversal/assets/img/common-directories-1-view.png\n","stream":"stderr","time":"2023-10-30T21:41:24.597806582Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58342 Closing\n","stream":"stderr","time":"2023-10-30T21:41:24.597814221Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58358 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:24.612436979Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58358 [200]: GET /assets/img/bg.png\n","stream":"stderr","time":"2023-10-30T21:41:24.612817727Z"}
+{"log":"[Mon Oct 30 21:41:24 2023] 172.17.0.1:58358 Closing\n","stream":"stderr","time":"2023-10-30T21:41:24.612825185Z"}
+{"log":"[Mon Oct 30 21:41:25 2023] 172.17.0.1:58368 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:25.55700042Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:58368 [200]: GET /modules/module-2-directory-traversal/common-directories/vulnerable-common-directories.html\n","stream":"stderr","time":"2023-10-30T21:41:27.335365011Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:58368 Closing\n","stream":"stderr","time":"2023-10-30T21:41:27.335387866Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:40232 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:27.482492701Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:40238 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:27.483229879Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:40232 [200]: GET /assets/css/style.css\n","stream":"stderr","time":"2023-10-30T21:41:27.483238169Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:40232 Closing\n","stream":"stderr","time":"2023-10-30T21:41:27.483322633Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:40238 [200]: GET /assets/img/directory-traverse.png\n","stream":"stderr","time":"2023-10-30T21:41:27.484307769Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:40238 Closing\n","stream":"stderr","time":"2023-10-30T21:41:27.484343264Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:40248 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:27.485309024Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:40248 [200]: GET /modules/module-2-directory-traversal/assets/img/common-directories-1.png\n","stream":"stderr","time":"2023-10-30T21:41:27.485573281Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:40248 Closing\n","stream":"stderr","time":"2023-10-30T21:41:27.486403594Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:40262 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:27.513037868Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:40262 [200]: GET /assets/img/bg.png\n","stream":"stderr","time":"2023-10-30T21:41:27.514743186Z"}
+{"log":"[Mon Oct 30 21:41:27 2023] 172.17.0.1:40262 Closing\n","stream":"stderr","time":"2023-10-30T21:41:27.514752799Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40268 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.800488947Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40268 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/ - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.800506069Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40268 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.800743642Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40282 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.801258354Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40282 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/70ecd4ce-2cc8-41ae-91a6-7722cc111495 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.801852457Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40282 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.801860536Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40296 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.812850722Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40302 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.812863362Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40314 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.813121114Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40320 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.813574728Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40336 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.814006249Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40350 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.815080089Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40296 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/images - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.815324187Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40302 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/index - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.815330924Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40314 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/download - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.81533322Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40320 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/2006 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.815335124Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40358 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.815336768Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40296 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.8159223Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40302 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.815936003Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40314 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.815938068Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40320 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.815939752Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40350 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/12 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.815941166Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40360 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.815942739Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40350 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.815944173Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40358 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/crack - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.815945697Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40374 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.81594727Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40360 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/serial - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.815948703Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40358 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.815950217Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40384 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.815951591Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40360 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.815952995Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40374 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/warez - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.815954397Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40374 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.815955911Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40384 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/full - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.815957355Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40384 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.815958889Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40390 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.827527373Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40400 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.827546429Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40408 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.827548885Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40418 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.82755069Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40422 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.827552354Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40434 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.827554128Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40400 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/contact - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.827599416Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40408 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/about - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.827602875Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40418 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/search - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.827604569Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40422 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/spacer - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.827606173Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40434 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/privacy - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.827615697Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40390 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/logo - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.827617632Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40400 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.827619215Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40408 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.827620678Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40418 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.827622052Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40422 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.827623445Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40434 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.827624818Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40450 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.827626212Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40390 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.827627596Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40454 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.827628978Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40450 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/new - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.827630422Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40464 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.827631906Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40454 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/11 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.827633289Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40450 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.827634782Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40454 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.827636186Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40464 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/blog - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.827961882Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40336 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/news - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.827970843Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40464 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.827973649Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40336 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.827975293Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40472 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.829981382Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40486 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.829993531Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40502 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.829995917Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40506 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.829997511Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40510 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.829999245Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40526 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.830000699Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40538 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.830002192Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40552 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.830003655Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40564 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.830005099Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40572 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.830006683Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40526 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/rss - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.830662856Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40564 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/sitemap - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.830671557Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40572 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/products - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.830674403Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40502 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/cgi-bin - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.830676128Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40506 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/home - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.830677912Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40510 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/img - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.830679476Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40526 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.83068101Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40538 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/2005 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.830682533Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40552 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/default - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.830684067Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40564 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.830685621Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40572 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.830687606Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40472 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/faq - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.83068932Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40486 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/10 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.830690854Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40502 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.830692397Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40506 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.830693801Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40510 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.830695214Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40538 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.830696597Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40552 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.83069796Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40472 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.830699404Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40486 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.830701119Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40576 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.833355685Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40586 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.833543588Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40592 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.833549693Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40600 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.833784238Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40606 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.833787126Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40592 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/1 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.833800037Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40576 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/login - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.833802312Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40586 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/archives - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.833803916Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40592 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.833805731Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40600 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/09 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.833807164Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40618 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.833808708Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40576 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.833810111Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40586 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.833811514Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40600 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.833812968Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40630 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.833814341Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40618 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/06 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.833815815Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40644 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.833817328Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40630 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/01 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.833818712Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40618 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.833820245Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40650 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.833821669Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40630 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.833827092Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40644 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/08 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.833828756Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40652 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.833830359Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40644 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.833831763Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40650 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/2 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.833833418Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40652 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/07 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.833834971Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40650 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.833934034Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40652 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.833945212Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40606 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/links - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.834129837Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40606 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.834137576Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40656 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.834911202Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40660 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.834919031Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40656 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/05 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.834921316Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40672 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.834926187Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40656 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.835152463Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40660 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/articles - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.835159381Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40682 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.835161305Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40660 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.835899395Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40672 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/support - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.835906813Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40690 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.835909248Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40682 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/keygen - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.835910933Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40672 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.835912597Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40696 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.835914051Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40682 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.835915503Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40690 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/04 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.835916907Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40702 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.835918461Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40690 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.835919845Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40696 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/article - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.835921328Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40704 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.835923142Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40702 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/03 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.835924966Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40696 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.83592655Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40712 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.835928045Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40702 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.835929809Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40704 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/help - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.835931452Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40704 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.835933257Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40712 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/events - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.83593471Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40712 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.835941647Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40724 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.836322966Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40724 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/archive - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.83938419Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40724 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.839394705Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40726 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.83939682Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40740 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839398655Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40752 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839400199Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40754 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839401652Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40768 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839403085Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40726 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/forum - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.839404529Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40726 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.839406103Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40784 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839407526Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40796 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839408929Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40740 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/02 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.839410413Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40752 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/register - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.839411987Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40754 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/en - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.839413561Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40768 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/category - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.839415104Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40810 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839416648Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40740 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.839418062Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40752 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.839419475Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40754 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.839420888Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40768 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.839422332Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40796 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/3 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.839423745Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40818 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839425299Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40796 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.839426732Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40810 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/downloads - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.839428597Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40820 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839430532Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40818 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/security - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.839437729Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40810 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.839439684Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40826 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839441157Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40818 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.839442621Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40820 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/13 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.839444074Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40820 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.839445628Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40826 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/4 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.839447261Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40826 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.839448825Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40832 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839700382Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40784 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/software - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.839706838Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40848 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839708823Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40784 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.839710356Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40854 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839712011Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40862 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.839713504Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40872 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842736505Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40854 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/press - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842744826Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40832 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/main - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842747101Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40848 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/14 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842748795Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40862 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/15 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842750328Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40884 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842751842Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40854 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842753275Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40832 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842754699Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40848 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842756102Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40862 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842757485Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40872 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/templates - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842758929Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40892 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842760462Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40872 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842767429Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40884 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/media - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842769324Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40908 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842770918Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40892 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/content - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842772673Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40884 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842774216Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40920 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842775649Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40892 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842777083Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40908 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/icons - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842778486Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40926 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.84278003Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40908 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842781443Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40920 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/services - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842783298Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40938 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842784882Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40926 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/resources - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842786325Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40920 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842787859Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40950 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842789282Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40926 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842790696Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40938 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/info - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842792119Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40956 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842793683Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40938 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842795107Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40950 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/profile - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842797823Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40964 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842799427Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40956 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/2004 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842800921Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40950 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842802473Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40980 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842803887Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40956 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842805301Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40964 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/16 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842806725Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40982 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842810503Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40964 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842811947Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40980 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/18 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.84281336Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40984 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842814895Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40982 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/docs - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842816317Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40980 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842817841Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40990 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842819245Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40982 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842820658Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40984 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/html - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842822312Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41006 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842823876Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40984 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842825299Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40990 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/contactus - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842826763Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41018 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842828306Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41006 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/files - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.84282971Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:40990 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842831223Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41028 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842832627Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41006 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.84283407Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41018 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/features - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.842835744Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41040 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.842837268Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41018 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.842838692Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41028 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/20 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.843357237Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41044 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.843365036Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41040 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/21 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.843371171Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41028 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.843584184Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41058 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.843590189Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41040 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.843816795Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41044 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/5 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.843830358Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41064 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.843832673Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41044 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.843834247Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41058 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/22 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.843835741Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41066 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.843837275Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41064 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/page - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.843842066Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41058 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.843993522Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41072 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.843999236Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41064 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.845446807Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41066 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/6 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.845454205Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41082 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.84545643Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41066 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.845458124Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41072 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/19 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.845459617Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41092 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.845461191Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41082 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/misc - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.845462665Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41072 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.845464279Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41106 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.845465672Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41082 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.845467085Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41092 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/partners - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.845468469Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41118 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.845470012Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41092 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.845471415Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41106 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/24 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.845472839Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41124 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.845474363Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41118 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/terms - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.845475796Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41106 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.84547732Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41138 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.845478733Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41118 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.845485219Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41124 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/2007 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.845487053Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41140 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.845488597Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41124 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.84549004Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41138 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/i - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.845491674Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41154 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.845493509Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41140 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/23 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.845494993Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41138 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.845496527Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41164 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.845497939Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41140 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.845499393Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41154 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/17 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.845500817Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41176 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.845502341Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41154 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.845503764Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41164 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/27 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.845505177Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41178 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.845506711Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41176 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/top - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.845508115Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41164 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.845509908Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41194 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.845511372Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41176 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.845951424Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41178 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/26 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.845964886Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41200 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.845967111Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41178 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.846216262Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41194 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/9 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.846222437Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41212 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.846224261Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41200 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/legal - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.846619675Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41194 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.846626813Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41226 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.846632827Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41200 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.846634621Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41212 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/banners - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.846882879Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41232 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.846894427Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41212 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.846896302Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41226 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/30 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.847068598Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41240 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.847075424Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41232 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/xml - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.847077149Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41226 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.847078732Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41232 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.847082211Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41244 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.847715999Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41240 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/29 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.847889452Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41246 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.847948114Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41244 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/28 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.848258753Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41240 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.848429595Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41254 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.848497609Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41244 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.848755476Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41246 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/7 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.848762784Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41262 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.848797262Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41254 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/projects - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.848967553Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41246 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.849056688Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41266 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.849115018Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41262 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/25 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.849173299Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41254 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.849248681Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41276 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.849304686Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41262 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.849375958Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41266 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/0 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.849459449Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41288 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.849495856Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41276 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/user - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.849546358Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41266 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.84962186Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41302 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.849677786Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41288 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/feed - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.849732999Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41276 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.849806847Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41306 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.84986229Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41288 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.849950082Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41302 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/themes - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.850210039Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41302 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.850216967Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41322 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.850970473Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41338 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.850977921Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41322 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/tools - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.850980447Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41352 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.850982231Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41322 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.850983946Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41358 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.85098543Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41370 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.850986892Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41378 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.850988296Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41382 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.850989709Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41386 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.851206823Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41358 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/business - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.85121386Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41338 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/forums - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.851215725Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41352 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/jobs - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.851361064Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41370 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/8 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.852499862Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41378 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/video - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.8525077Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41382 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/email - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.852514608Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41390 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.852516763Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41358 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.852518317Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41338 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.85251974Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41352 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.852521213Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41370 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.852522587Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41378 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.852524111Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41382 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.852525534Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41386 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/books - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.852526997Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41394 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.852528561Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41386 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.852529975Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41390 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/banner - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.853003822Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41408 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.853011751Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41394 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/reviews - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.853014047Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41390 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.853015921Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41412 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.853017695Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41394 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.853019129Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41408 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/research - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.853020583Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41422 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.853022197Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41408 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.853711239Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41412 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/view - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.853717684Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41430 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.853719628Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41422 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/graphics - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.853721453Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41412 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.853723057Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41444 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.853724681Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41422 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.853726114Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41430 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/print - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.853938321Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41458 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.853952064Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41306 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/linux - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.854464059Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41430 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.854471898Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41444 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/feedback - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.854474013Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41472 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.854475727Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41458 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/pdf - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.854477552Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41306 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.854479226Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41444 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.85448072Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41458 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.854482173Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41472 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/ads - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.854716418Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41472 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.854724006Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41484 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.8555757Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41494 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.855583037Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41484 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/2003 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.855585062Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41484 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.855586717Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41500 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.856243821Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41494 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/modules - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.856251891Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41506 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.856254597Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41500 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/company - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.856256322Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41494 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.856258046Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41520 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.856262376Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41500 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.856296458Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41506 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/comments - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.856516018Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41534 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.856522444Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41520 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/site - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.856524288Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41506 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.856734194Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41550 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.856745953Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41534 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/blank - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.856748028Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41520 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.856751817Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41554 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.857074199Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41534 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.857081647Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41550 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/pub - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.857083812Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41580 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.857085606Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41554 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/games - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.857088514Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41550 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.857277059Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41566 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.857397579Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41580 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/copyright - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.857403112Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41554 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.85741034Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41590 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.857412205Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41580 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.857415953Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41566 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/people - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.857621859Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41590 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/common - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.857628406Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41566 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.85775047Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41590 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.858762606Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41592 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.858770736Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41604 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.858773032Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41592 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/product - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.858774775Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41612 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.858776499Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41592 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.858778034Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41604 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/aboutus - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.858779808Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41604 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.858781362Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41612 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/sports - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.858782774Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41612 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.858790152Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41626 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.859765561Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41642 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.859774091Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41626 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/31 - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.859776206Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41650 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.85977799Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41626 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.859779514Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41642 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/logos - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.86001858Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41660 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.860024164Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41642 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.860025978Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41650 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/buttons - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.860350691Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41674 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.860356766Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41660 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/english - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.86035856Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41650 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.860360264Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41686 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.860361827Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41660 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.860367913Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41674 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/story - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.860690982Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41692 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.860697457Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41674 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.860699101Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41686 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/image - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.860700936Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41696 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.860705186Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41692 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/uploads - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.860874224Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41686 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.860880249Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41712 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.861064703Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41692 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.861069665Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41696 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/subscribe - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.861071299Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41716 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.861072933Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41696 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.861379242Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41712 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/gallery - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.861391822Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41716 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/blogs - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.861394077Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41712 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.861395651Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41716 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.861608826Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41726 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.86285041Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41732 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.862861045Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41734 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.862961358Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41744 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.862970409Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41748 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.862973607Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41756 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.862975552Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41766 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.862977497Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41792 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.864498585Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41748 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/careers - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.864506474Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41756 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/pages - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.86450891Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41766 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/publications - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.864510664Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41802 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.864512398Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41748 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.864513882Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41756 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.864515476Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41766 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.864516939Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41782 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.864518333Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41782 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/technology - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.864520057Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41782 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.8645217Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41804 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.866232427Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41792 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/stories - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.866305112Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41804 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/photos - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.866343625Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41792 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.866402748Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41804 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.866457901Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41820 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.867517697Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41836 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.867534807Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41820 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/data - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.867863812Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41820 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.867869656Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41836 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/community - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.86787132Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41836 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.867873023Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41842 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.868723154Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41846 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.868729288Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41842 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/arrow - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.868730963Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41842 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.868778017Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41846 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/history - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.868822404Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41846 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.868873818Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41848 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.869620659Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41860 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.869676834Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41848 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/www - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.8705501Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41848 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.870557518Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41870 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.872017991Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41880 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.872523811Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41880 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/papers - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.872529624Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41880 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.872531618Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41882 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.872533223Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41870 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/web - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.872534977Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41870 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.872536551Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41882 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/s - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.872537945Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41882 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.872539448Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41802 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/calendar - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.873466654Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41802 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.87348189Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41898 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.87531432Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41732 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/newsletter - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.875320104Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41732 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.875321889Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41734 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/stats - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.875323673Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41734 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.875325236Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41744 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/music - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.87532674Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41744 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.875328424Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41726 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/atom - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.875330148Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41726 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.875333295Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41898 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/education - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.875334749Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41898 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.875336303Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41900 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.875337767Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41904 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.875339331Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41920 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.875340774Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41904 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/wiki - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.875342268Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41904 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.875343872Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41920 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/header - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.875345275Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41920 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.875346788Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41900 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/library - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.875348252Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41900 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.875349756Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41860 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/submit - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.875792042Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41860 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.875800012Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41922 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.876105548Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41932 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.876469055Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41948 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.876599379Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41960 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.876605404Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41948 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/a - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.876617423Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41964 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.876619448Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41948 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.876621082Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41960 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/advertise - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.876925997Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41974 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.876932633Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41960 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.876934448Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41964 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/internet - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.876936081Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41988 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.876937655Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41974 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/go - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.876939139Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41964 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.876940973Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:42002 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.876942588Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41974 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.876946427Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41988 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/in - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.877145677Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:42004 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.877151801Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:41988 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.877153456Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:42002 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/spam - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.877393284Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:42006 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.877399068Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:42004 [404]: GET /modules/module-2-directory-traversal/common-directories/Internet/nav - No such file or directory\n","stream":"stderr","time":"2023-10-30T21:41:36.877400713Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:42002 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.877402316Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:42012 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.877562793Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:42004 Closing\n","stream":"stderr","time":"2023-10-30T21:41:36.877569589Z"}
+{"log":"[Mon Oct 30 21:41:36 2023] 172.17.0.1:42016 Accepted\n","stream":"stderr","time":"2023-10-30T21:41:36.877571244Z"}
