@@ -18,7 +18,7 @@ sudo apt-get install docker.io
 git clone https://github.com/damianStrojek/Security-Testing-of-Web-Applications.git
 cd Security-Testing-of-Web-Applications
 docker build -t stewa .
-docker run -dp 127.0.0.1:80:80 stewa
+docker run --log-driver=json-file --log-opt max-size=100m --log-opt max-file=3 -dp 127.0.0.1:80:80 stewa
 
 # Check status of your container
 docker ps
