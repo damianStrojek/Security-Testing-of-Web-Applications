@@ -43,15 +43,15 @@
       class="mdi mdi-account-question small"></i><span>Scenario</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Easy Form" href="#easyform" class="waves-effect waves-dark teal-text"><i
+      <a aria-label="Easy Form" href="#simpleform" class="waves-effect waves-dark teal-text"><i
       class="mdi mdi-form-textbox small"></i><span>Simple Login</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Intermediate Form" href="#intermediateform" class="waves-effect waves-dark teal-text"><i
+      <a aria-label="Intermediate Form" href="#basicauth" class="waves-effect waves-dark teal-text"><i
       class="mdi mdi-form-textbox-password small"></i><span>Basic Auth</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Hard Form" href="#hardform" class="waves-effect waves-dark teal-text"><i
+      <a aria-label="Hard Form" href="#cookies" class="waves-effect waves-dark teal-text"><i
       class="mdi mdi-form-textbox-lock small"></i><span>Cookies</span></a>
     </li>
   </ul>
@@ -79,7 +79,7 @@
   
 <!-- Second Section: Easy Form -->
 <!-- Simple form with requests login=^USER^&password=^PASS^-->
-<section id="easyform" class="section scrollspy">
+<section id="simpleform" class="section scrollspy">
   <h3 class="page-title white-text teal">Simple Login Form</h3>
   <div class="container flow-text">     
     <!--
@@ -105,17 +105,29 @@
 
 <!-- Third Section: Intermediate Form -->
 <!-- Website using basic authentication -->
-<section id="intermediateform" class="section scrollspy">
+<section id="basicauth" class="section scrollspy">
   <h3 class="page-title white-text teal">Basic Authentication</h3>
   <div class="container flow-text">     
+    <!--
+      Hint:
+      Use hydra with -l wpadmin and -P rockyou.txt.
+
+      Credentials: wpadmin:sassygirl (line 431 of rockyou.txt)
+    -->
     <p>
-    </p>
+      <b>Scenario:</b><br>
+      You are not able to even see what's inside website that is in-scope of your penetration test. First off, you need to authenticate using basic authentication.<br>
+      From the source code of different site you were able to gather username <b>wpadmin</b>... Can you see what's behind the login form?
+      </p>
+      <p>
+        It's available under <a href="./basic-auth/index.php">Basic Authentication Form</a>.
+      </p>
   </div>
 </section>
 
 <!-- Fourth Section: Hard Form -->
 <!-- Cookies? -->
-<section id="hardform" class="section scrollspy">
+<section id="cookies" class="section scrollspy">
   <h3 class="page-title white-text teal">Login with Cookies</h3>
   <div class="container flow-text">     
     <p>
