@@ -1,11 +1,15 @@
 <?php
 
+// Copyright (C) 2023 Damian Strojek, Patryk Sikora
+// Security Testing Environment for Web Applications
+// Realised as part of engineering degree for Gdansk University of Technology
+
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Function to open the SQLite database
 function openDatabase() {
-    $db = new SQLite3('./../../assets/files/easy-form-db.db');
+    $db = new SQLite3('./../../assets/files/simple-form.db');
 
     return $db;
 }

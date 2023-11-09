@@ -35,7 +35,7 @@
       </a>
     </li>
     <li class="bold">
-      <a aria-label="Back to the Theory section" href="./../theory.html#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
+      <a aria-label="Back to the Theory section" href="./../index.html#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
       class="mdi mdi-arrow-collapse-left small"></i><span>Go Back</span></a>
     </li>
     <li class="bold">
@@ -82,17 +82,29 @@
 <section id="easyform" class="section scrollspy">
   <h3 class="page-title white-text teal">Simple Login Form</h3>
   <div class="container flow-text">     
+    <!--
+      Hint:
+      Use hydra with -l beautifuladmin and -P rockyou.txt. You should use http-form-post and provide the same input as you can see in, e.g. BurpSuite POST Request. 
+
+
+      For testing purposes, the complete hydra command:
+      hydra -L users -P passwords localhost http-form-post "/modules/module-1-brute-force/brute-force-login-forms/easy-form/ef-login.php:username=^USER^&password=^PASS^:Authorization failed."
+      and the credentials: beautifuladmin:barbiedoll (line 7039 of rockyou.txt)
+    -->
     <p>
-      In this section you are presented with a simple login form that uses <i>username</i> and <i>password</i> in the POST request.
+    <b>Scenario:</b><br>
+    You are presented with a simple login form that uses <i>username</i> and <i>password</i> attributes in the POST request.<br>
+    Using OSINT (you can read more about it at <a href="https://en.wikipedia.org/wiki/Open-source_intelligence" target="_blank">Wikipedia</a>)
+    you found out that the login to the admin panel for the company for which you are performing the penetration test is <b>beautifuladmin</b>. Can you crack the password?
     </p>
     <p>
-      It's available under <a href="./easy-form/ef-login.html">Easy Login Form</a>.
+      It's available under <a href="./simple-form/index.html">Simple Login Form</a>.
     </p>
   </div>
 </section>
 
 <!-- Third Section: Intermediate Form -->
-<!-- Maybe link to basic authentication? -->
+<!-- Website using basic authentication -->
 <section id="intermediateform" class="section scrollspy">
   <h3 class="page-title white-text teal">Basic Authentication</h3>
   <div class="container flow-text">     

@@ -81,6 +81,10 @@ pre code {
   opacity: 1;
 }
 
+.form-label {
+  font-size: 30px;
+}
+
 .img-modules {
   width: 60%;
   display: block;
