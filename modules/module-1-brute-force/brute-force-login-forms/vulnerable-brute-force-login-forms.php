@@ -83,7 +83,10 @@
   <h3 class="page-title white-text teal">Simple Login Form</h3>
   <div class="container flow-text">     
     <p>
-      <a href="./easy-form/login.html">Testing</a>
+      In this section you are presented with a simple login form that uses <i>username</i> and <i>password</i> in the POST request.
+    </p>
+    <p>
+      It's available under <a href="./easy-form/ef-login.html">Easy Login Form</a>.
     </p>
   </div>
 </section>
