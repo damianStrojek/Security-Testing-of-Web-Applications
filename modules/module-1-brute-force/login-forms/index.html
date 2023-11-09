@@ -43,15 +43,15 @@
       class="mdi mdi-account-question small"></i><span>Scenario</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Easy Form" href="#easyform" class="waves-effect waves-dark teal-text"><i
+      <a aria-label="Easy Form" href="#simpleform" class="waves-effect waves-dark teal-text"><i
       class="mdi mdi-form-textbox small"></i><span>Simple Login</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Intermediate Form" href="#intermediateform" class="waves-effect waves-dark teal-text"><i
+      <a aria-label="Intermediate Form" href="#basicauth" class="waves-effect waves-dark teal-text"><i
       class="mdi mdi-form-textbox-password small"></i><span>Basic Auth</span></a>
     </li>
     <li class="bold">
-      <a aria-label="Hard Form" href="#hardform" class="waves-effect waves-dark teal-text"><i
+      <a aria-label="Hard Form" href="#cookies" class="waves-effect waves-dark teal-text"><i
       class="mdi mdi-form-textbox-lock small"></i><span>Cookies</span></a>
     </li>
   </ul>
@@ -77,19 +77,16 @@
   </div>
 </section>
   
-<!-- Second Section: Easy Form -->
+<!-- Second Section: Simple Login Form -->
 <!-- Simple form with requests login=^USER^&password=^PASS^-->
-<section id="easyform" class="section scrollspy">
+<section id="simpleform" class="section scrollspy">
   <h3 class="page-title white-text teal">Simple Login Form</h3>
   <div class="container flow-text">     
     <!--
       Hint:
       Use hydra with -l beautifuladmin and -P rockyou.txt. You should use http-form-post and provide the same input as you can see in, e.g. BurpSuite POST Request. 
 
-
-      For testing purposes, the complete hydra command:
-      hydra -L users -P passwords localhost http-form-post "/modules/module-1-brute-force/brute-force-login-forms/easy-form/ef-login.php:username=^USER^&password=^PASS^:Authorization failed."
-      and the credentials: beautifuladmin:barbiedoll (line 7039 of rockyou.txt)
+      Credentials: beautifuladmin:barbiedoll (line 7039 of rockyou.txt)
     -->
     <p>
     <b>Scenario:</b><br>
@@ -98,24 +95,44 @@
     you found out that the login to the admin panel for the company for which you are performing the penetration test is <b>beautifuladmin</b>. Can you crack the password?
     </p>
     <p>
-      It's available under <a href="./simple-form/index.html">Simple Login Form</a>.
+      It's available under following link:
+        <div>
+          <a href="./simple-form/index.html"><img src="./../assets/img/simple-form.webp" class="img-modules" alt="simple form"></a>
+        </div>
     </p>
   </div>
 </section>
 
-<!-- Third Section: Intermediate Form -->
+<!-- Third Section: Basic Auth Form -->
 <!-- Website using basic authentication -->
-<section id="intermediateform" class="section scrollspy">
+<section id="basicauth" class="section scrollspy">
   <h3 class="page-title white-text teal">Basic Authentication</h3>
   <div class="container flow-text">     
+    <!--
+      Hint:
+      Use hydra with -l wpadmin and -P rockyou.txt. You should use http-get and provide the same input as you can see in, e.g. BurpSuite Request.
+      To clear your history you can use CTRL+SHIFT+DEL in firefox.
+
+      Credentials: wpadmin:sassygirl (line 431 of rockyou.txt)
+    -->
     <p>
-    </p>
+      <b>Scenario:</b><br>
+      You are not able to even see what's inside website that is in-scope of your penetration test. First off, you need to authenticate using basic authentication.<br>
+      From the source code of different site you were able to gather username <b>wpadmin</b>... Can you see what's behind the login form?
+      </p>
+      <p>
+        It's available under following link:
+        <div>
+          <a href="./basic-auth/index.php"><img src="./../assets/img/basic-auth.png" class="img-modules" alt="basic auth"></a>
+        </div>
+      </p>
+      
   </div>
 </section>
 
 <!-- Fourth Section: Hard Form -->
 <!-- Cookies? -->
-<section id="hardform" class="section scrollspy">
+<section id="cookies" class="section scrollspy">
   <h3 class="page-title white-text teal">Login with Cookies</h3>
   <div class="container flow-text">     
     <p>
