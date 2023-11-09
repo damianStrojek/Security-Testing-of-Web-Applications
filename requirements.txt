@@ -1,4 +1,5 @@
 docker.io
+docker-compose
 php
 php-sqlite3
 python3
