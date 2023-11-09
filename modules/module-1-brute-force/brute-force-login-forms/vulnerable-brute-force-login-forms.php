@@ -83,6 +83,7 @@
   <h3 class="page-title white-text teal">Simple Login Form</h3>
   <div class="container flow-text">     
     <p>
+      <a href="./easy-form/login.html">Testing</a>
     </p>
   </div>
 </section>
