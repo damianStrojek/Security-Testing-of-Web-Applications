@@ -1,0 +1,105 @@
+<!-- 
+
+  Copyright (C) 2023 Damian Strojek, Patryk Sikora
+
+  Security Testing Environment for Web Applications
+  Realised as part of engineering degree for Gdansk University of Technology
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Material Design Icons -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="./../../../../assets/css/style.css" />
+  <link rel="icon" href="./../../../../assets/img/brute-force.png" />
+  <title>Brute-Force Simple Login Form</title>
+</head>
+<body>
+<!-- Navigation Menu-->
+<nav class="hide-on-small-only">
+  <ul class="side-nav fixed section table-of-contents">
+    <li class="bold">
+      <a aria-label="Go back" href="./../index.html#simpleform" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-arrow-collapse-left small"></i><span>Go Back</span></a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Main Content-->
+<main>
+
+<!-- First Section: Login form -->
+<section id="login-form" class="section scrollspy">
+  <h3 class="page-title white-text teal">Login Form</h3>
+  <div class="container flow-text">    
+        <!-- Someone said that administrators are using beautifuladmin as their username...-->
+        <div id="message"></div>
+        <form action="login.php" method="post">
+                
+                <label for="username" class="form-label">Username:</label>
+                <input type="text" name="username" required><br>
+
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" name="password" required><br>
+
+                <input type="submit" value="Login">
+        </form>
+        <br><br><br><br><br><br><br><br>
+  </div>
+</section>
+
+</main>
+
+<script>
+
+  // JavaScript to handle form submission
+  document.querySelector('form').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Get form data
+  const formData = new FormData(this);
+
+  // Client-side validation
+  const username = formData.get('username');
+  const password = formData.get('password');
+
+  if (username.trim() === '' || password.trim() === '') {
+      // If username or password is empty, display an error message
+      const messageDiv = document.getElementById('message');
+      messageDiv.innerHTML = "Both username and password are required.";
+  } else {
+      // Send the form data to the server
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', 'login.php', true);
+      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+              // Handle the server's response here
+              const messageDiv = document.getElementById('message');
+              const response = JSON.parse(xhr.responseText);
+              if (response.success) {
+                  // Authentication succeeded, you can redirect or perform other actions
+                  window.location.href = 'administrator-panel.php';
+              } else {
+                  // Authentication failed, display the error message
+                  messageDiv.innerHTML = response.message;
+              }
+          }
+      };
+      xhr.send(`username=${username}&password=${password}`);
+  }
+});
+</script>
+
+</body>
+</html>
