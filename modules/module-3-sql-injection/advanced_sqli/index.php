@@ -197,7 +197,7 @@
   </div>
 </section>
   <!-- button go to reset_database.php with GET parameter that is the going back link -->
-  <a href="./reset_database.php?location=vulnerable-advanced-sqli.php">
+  <a href="./reset_database.php?location=index.php">
   <div style="position: fixed; top: 200px; right: 10px; background-color: #ffd900; border: 2px solid black; border-radius: 2px;">
     
       <b style="margin: 5px; font-size: 20px;">RESET DATABASE</b>
