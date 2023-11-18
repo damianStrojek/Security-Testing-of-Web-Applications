@@ -77,20 +77,40 @@
 </section>
 <section id="is_it" class="section scrollspy">
   <h3 class="page-title white-text teal">Is the app that much vulnerable?</h3>
-  <div style="width: 70%;"><div class="container flow-text">
-    <p>
-      Well, it is always good to check if the app is that much vulnerable, if the "database user" that executes the queries has the database permissions to do what we want to do.<br>
-      First thing we can try is the sleep function.<br>
-      If the app is vulnerable, we can use the sleep function to delay the response from the server.<br>
-      Let's try the following injection:<br>
-      <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' OR SLEEP(3);--</span><br>
-      <!-- NOT WORKING, TODO -->
-      <h1> NIE DZIAŁA DLA SQLITE, trzeba jeszcze pomyśleć</h1>
-    </p>
+  <div style="width: 70%;">
+    <div class="container flow-text">
+      <p>
+        Well, it is always good to check if the app is that much vulnerable, if the "database user" that executes the queries has the database permissions to do what we want to do.<br>
+        First thing we can try is the sleep function.<br>
+        If the app is vulnerable, we can use the sleep function to delay the response from the server.<br>
+        Let's try the following injection:<br>
+        <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' OR SLEEP(3);--</span><br>
+      </p>
+    </div>
+    <div>
+      <embed type="text/html" src="login_form.php" width="50%" height="700px" style="display: block; margin-left: auto; margin-right: auto;">
+    </div>
+    <div class="container flow-text">
+      <p>
+        This did not work? Well, it is possible that the database user does not have the permissions to use the sleep function.<br>
+        Or there is some kind of protection in the application<br>
+        OOORRR the DBMS has no implementation of the sleep function.<br>
+        As you can see from the error message it may be the last option.<br>
+        Let's try to use other injection:<br>
+        <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">' OR randomblob(100000000);--</span><br>
+      </p>
+    </div>
+    <div>
+      <embed type="text/html" src="login_form.php" width="50%" height="700px" style="display: block; margin-left: auto; margin-right: auto;">
+    </div>
+    <div class="container flow-text">
+      <p>
+        As you can see (or if you don't try to increse the argument of the randomblob function) the execution of the query took a little bit longer.<br>
+        This is a good sign for us - the hackers :D<br>
+        There is one more very important information that we have obtained. The SLEEP function did not work and the randomblob function worked.<br>
+        This can say a lot about the type of database used.<br>
+      </p>
   </div>
-  <div>
-    <embed type="text/html" src="login_form.php" width="50%" height="700px" style="display: block; margin-left: auto; margin-right: auto;">
-  </div></div>
 </section>
 <section id="injecting" class="section scrollspy">
   <h3 class="page-title white-text teal">Let's try our possibilities</h3>
