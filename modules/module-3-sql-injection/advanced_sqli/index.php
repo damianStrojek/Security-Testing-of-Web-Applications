@@ -35,7 +35,7 @@
       </a>
     </li>
     <li class="bold">
-      <a aria-label="Back to the Theory section" href="./../theory.html#vulnerable-websites" class="waves-effect waves-dark teal-text">
+      <a aria-label="Back to the Theory section" href="./../index.html#vulnerable-websites" class="waves-effect waves-dark teal-text">
         <i class="mdi mdi-arrow-collapse-left small"></i><span>Go Back</span></a>
     </li>
     <li class="bold">
@@ -70,8 +70,7 @@
       <b>2.</b> <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">'; DROP DATABASE;--</span><br></span><br>
       <b>3.</b> <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">'; UPDATE users SET password = md5('1234');--</span><br></span><br>
       <b>etc.</b><br>
-      Dzięki temu możemy wykonać dowolne zapytanie, które zmodyfikuje bazę danych, np. dodanie nowego użytkownika,
-      zmiana haseł, usuwanie tabel lub całych baz danych.<br>
+      Thanks to this, we can perform any query that modifies the database, e.g. adding a new user, changing passwords, deleting tables or entire databases.<br>
     </p>
   </div></div>
 </section>
@@ -197,7 +196,6 @@
     </div>
   </div>
 </section>
-  <!-- fixed things -->
   <!-- button go to reset_database.php with GET parameter that is the going back link -->
   <a href="./reset_database.php?location=vulnerable-advanced-sqli.php">
   <div style="position: fixed; top: 200px; right: 10px; background-color: #ffd900; border: 2px solid black; border-radius: 2px;">
@@ -241,6 +239,5 @@
   })
 </script>
 </body>
-</html>
-
 <!-- ',(SELECT group_concat(name, "_") FROM sqlite_sequence), '0', '0')-- -->
+</html>
