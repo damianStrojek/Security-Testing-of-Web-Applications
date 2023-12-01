@@ -6,8 +6,6 @@ The aim of the project was to create an environment that will allow conducting e
 
 The environment allows for the implementation of various methods of attack, defense and detection of vulnerabilities. The created product is to be characterized by an extensible architecture, allowing for the addition of new modules enabling the emulation of new vulnerabilities and the use of new detection, attack and defense tools.
 
-
-
 ## Local Deployment
 
 To deploy the environment locally you need to `clone` this repository and host it using one of many ways. 
@@ -32,6 +30,8 @@ python3 -m http.server 80
 ## Usage
 
 The system allows you to set up a web application security testing environment at any time and anywhere. The entire theory and tips on how to perform tasks are included in individual modules. We recommend setting up an environment on [Kali Linux](https://www.kali.org/).
+
+https://github.com/damianStrojek/Security-Testing-of-Web-Applications/assets/67586060/a51d10c5-c089-4450-9e8b-c8f8d43f39e2
 
 ## Advisory
 
