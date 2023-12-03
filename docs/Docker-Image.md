@@ -7,24 +7,20 @@ Docker makes it relatively straightforward to containerize web applications and 
 Create a Dockerfile in the root directory of your website project. This file defines the steps to build a Docker image for your web application. Here's a dockerfile for STEWA (Security Testing of Web Applications) project:
 
 ```dockerfile
-# Use an official Python runtime as a parent image
-FROM python:3.8
+# Use an official PHP runtime as a parent image
+FROM php:alpine
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /stewa
 
-# Copy the current directory contents into the container at /app
-COPY . /app
+# Copy the current directory contents into the container at /stewa
+COPY . /stewa
 
-# Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt
-
-# Make port 80 available to the world outside this container
+# Make port 80 available 
 EXPOSE 80
 
-# Define the command to run your application
-# Replace "app.py" with the command needed to run your Python web server.
-CMD ["python", "app.py"]
+# Run application
+CMD ["php", "-S", "0.0.0.0:80"]
 ```
 
 To deploy the environment locally you need to `clone` this repository and host it using one of many ways. 
@@ -33,14 +29,17 @@ To deploy the environment locally you need to `clone` this repository and host i
 # Get the latest version of docker
 sudo apt-get install docker.io
 
-# Hosting HTTP server on port 80 of localhost using docker container
+# Hosting PHP server on port 80 of localhost using docker container
 git clone https://github.com/damianStrojek/Security-Testing-of-Web-Applications.git
 cd Security-Testing-of-Web-Applications
 docker build -t stewa .
-docker run -dp 127.0.0.1:80:80 stewa
+docker run --log-driver=json-file --log-opt max-size=100m --log-opt max-file=3 -dp 127.0.0.1:80:80 stewa
 
 # Check status of your container
 docker ps
+
+# Hosting HTTP server on port 80 using python3
+python3 -m http.server 80
 ```
 
 ## Adding MySQL Support
