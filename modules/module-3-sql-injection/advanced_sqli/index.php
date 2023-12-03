@@ -159,7 +159,7 @@
         <br>
         If you haven't noticed yet, in our familiar login window we can get information about an error related to a query to the database.<br>
         If not, you can try such an injection:<br>
-        <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">'; DRO<b>R</b> TABLE users;--</span><br>
+        <span style="padding-left: 10px; padding-right: 10px; background-color: #e4e4e4; border: 1px solid black;">'; DRO<b>P</b> TABLE users;--</span><br>
       </p>
     </div>
     <div>
