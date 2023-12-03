@@ -31,7 +31,7 @@ python3 -m http.server 80
 
 The system allows you to set up a web application security testing environment at any time and anywhere. The entire theory and tips on how to perform tasks are included in individual modules. We recommend setting up an environment on [Kali Linux](https://www.kali.org/).
 
-https://github.com/damianStrojek/Security-Testing-of-Web-Applications/assets/67586060/a51d10c5-c089-4450-9e8b-c8f8d43f39e2
+https://github.com/damianStrojek/Security-Testing-of-Web-Applications/assets/67586060/99a952b9-2a8e-400b-aab0-51047e26fd7e
 
 ## Advisory
 
