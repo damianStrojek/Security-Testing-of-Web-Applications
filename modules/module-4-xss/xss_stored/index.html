@@ -1,0 +1,86 @@
+<!-- 
+
+  Copyright (C) 2023 Damian Strojek, Patryk Sikora
+
+  Security Testing Environment for Web Applications
+  Realised as part of engineering degree for Gdansk University of Technology
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Material Design Icons -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="../../../assets/css/style.css" />
+  <link rel="icon" href="../../../assets/img/xss.png" />
+  <title>Stored XSS Attack</title>
+</head>
+<body>
+<!-- Navigation Menu-->
+<nav class="hide-on-small-only">
+  <ul class="side-nav fixed section table-of-contents">
+    <li class="logo">
+      <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+      class="brand-logo grey-blue-text">
+      <img src="../../../assets/img/xss.png" class="img-responsive nav-pic" alt="avatar">
+      </a>
+    </li>
+    <li class="bold">
+      <a aria-label="Back to the Theory section" href="../index.html#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-arrow-collapse-left small"></i><span>Go Back</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Start" href="#getting_started" class="waves-effect waves-dark teal-text">
+        <i class="mdi mdi-cat small"></i><span>Start</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Start" href="#com_cats" class="waves-effect waves-dark teal-text">
+        <i class="mdi mdi-cat small"></i><span>Commenting cats</span></a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Main Content-->
+<main>
+  <section id="getting_started" class="section scrollspy">
+    <h3 class="page-title white-text teal">XSS Stored</h3>
+    <div class="container flow-text">
+      <p>
+        In this module you will be able to see how Stored XSS attack works and what are its consequences.<br>
+        <hr/>
+        Stored XSS is an attack that consists of injecting JavaScript code into the database. Unlike SQL Injection attack,
+        XSS attack is not executed on the server, but on the user's page, the attacker does not try to change the SQL query, but only to send JavaScript code,
+        which can later be sent to users visiting the page.<br>
+        <hr/>
+        Properly prepared JavaScript code can perform many dangerous actions, such as stealing user data and
+        sending them to the attacker (e.g. via e-mail), redirecting the user to the attacker's page or even taking over the user's session.<br>
+        <br>
+      </p>
+    </div>
+  </section>
+  <section id="com_cats" class="section scrollspy">
+    <h3 class="page-title white-text teal">Commenting cats</h3>
+    <div class="container flow-text">
+      <p>
+        Below is an example page that is vulnerable to Stored XSS attack.<br>
+        At first glance, the page looks like a regular page with comments, but the ability to add comments allows the attacker
+        communicate with other users of the page. What if the attacker does not publish a regular comment, but a comment containing JavaScript code?<br>
+        <hr/>
+      </p>
+      <div>
+        <embed type="text/html" src="com_cats.php" width="60%" height="700px" style="display: block; margin-left: auto; margin-right: auto;">
+      </div>
+    </div>
+
+</main>
+</body>
+</html>
