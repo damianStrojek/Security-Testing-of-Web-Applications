@@ -38,13 +38,55 @@
       <a aria-label="Back to the Theory section" href="../index.html#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
       class="mdi mdi-arrow-collapse-left small"></i><span>Go Back</span></a>
     </li>
+    <li class="bold">
+      <a aria-label="Start" href="#dom_xss_explain" class="waves-effect waves-dark teal-text">
+        <i class="mdi mdi-lightbulb small"></i><span>DOM-based XSS</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Start" href="#dom_xss_example" class="waves-effect waves-dark teal-text">
+        <i class="mdi mdi-domino-mask small"></i><span>Example</span></a>
+    </li>
   </ul>
 </nav>
 
 <!-- Main Content-->
 <main>
-
-
+  <section id="dom_xss_explain" class="section scrollspy">
+    <h3 class="page-title white-text teal">DOM-based XSS</h3>
+    <div class="container flow-text">
+      <p>
+        In this module you will be able to see how (and understand why) DOM-based XSS attack work and what are its consequences.<br>
+        <hr/>
+        DOM-based XSS is an attack that consists of injecting JavaScript code into the DOM (Document Object Model). Unlike Stored XSS attack,
+        DOM-based XSS does not require the server to store the malicious code. The code is executed on the client side, which makes it
+        harder to detect.
+        <hr/>
+        Let's go straight to the example.
+      </p>
+    </div>
+  </section>
+  <section id="dom_xss_example" class="section scrollspy">
+    <h3 class="page-title white-text teal">Example</h3>
+    <div class="container flow-text">
+      <p>
+        Below is an application that is vulnerable to DOM-based XSS.<br>
+        Part of its code is shown in the figure below.
+        <hr/>
+        <img src="../assets/img/xss_dom_code_1.png" alt="xss_dom_code_1">
+        <hr/>
+        This script retrieves an element from the link and generates HTML code based on it, generates a DOM object.<br>
+        This is a place vulnerable to DOM-based XSS attack, because the attacker is able to edit the link element in any way, and the script does not filter it in any way.
+        <hr/>
+        Let's look at this application.
+        <embed type="text/html" src="xss_dom_ex_1.html" width="100%" height="350px" style="display: block"/>
+        <hr/>
+        Let's see what happens if the content of the added comment contains JavaScript code.
+        Let's add a comment: <code>&lt;script&gt;alert("XSS")&lt;/script&gt;</code>
+        <embed type="text/html" src="xss_dom_ex_1.html" width="100%" height="350px" style="display: block"/>
+        <hr/>
+      </p>
+    </div>
+  </section>
 </main>
 </body>
 </html>
