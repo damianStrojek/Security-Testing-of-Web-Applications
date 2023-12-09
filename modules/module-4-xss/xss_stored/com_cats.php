@@ -22,7 +22,7 @@
   <!-- Custom Styles-->
   <link rel="stylesheet" href="./../../../assets/css/style.css" />
   <link rel="icon" href="./../../../assets/img/sqli.png" />
-  <title>Basic SQLi</title>
+  <title>Com cats</title>
 </head>
 <body>
 <!-- Main Content-->
