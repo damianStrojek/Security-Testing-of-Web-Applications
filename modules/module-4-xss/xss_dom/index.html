@@ -46,6 +46,14 @@
       <a aria-label="Start" href="#dom_xss_example" class="waves-effect waves-dark teal-text">
         <i class="mdi mdi-domino-mask small"></i><span>Example</span></a>
     </li>
+    <li class="bold">
+      <a aria-label="Threats" href="#threats" class="waves-effect waves-dark teal-text">
+        <i class="mdi mdi-spider-thread small"></i><span>Threats</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Countermeasures" href="#countermeasures" class="waves-effect waves-dark teal-text">
+        <i class="mdi mdi-shield small"></i><span>Countermeasures</span></a>
+    </li>
   </ul>
 </nav>
 
@@ -77,16 +85,74 @@
         This script retrieves an element from the link and generates HTML code based on it, generates a DOM object.<br>
         This is a place vulnerable to DOM-based XSS attack, because the attacker is able to edit the link element in any way, and the script does not filter it in any way.
         <hr/>
-        Let's look at this application.
+        Let's look at this application.<br>
+        Let's add a comment:<br>
+        <code style="background-color: #e8e6e6; border-radius: 5px; padding: 5px; border: 2px solid #dcdcdc;">
+          &lt;script&gt;alert("XSS")&lt;/script&gt;
+        </code>
         <embed type="text/html" src="xss_dom_ex_1.html" width="100%" height="350px" style="display: block"/>
         <hr/>
-        Let's see what happens if the content of the added comment contains JavaScript code.
-        Let's add a comment: <code>&lt;script&gt;alert("XSS")&lt;/script&gt;</code>
-        <embed type="text/html" src="xss_dom_ex_1.html" width="100%" height="350px" style="display: block"/>
+        To help you understand what happened, let's get over the attack step by step:<br>
+        1. The attacker finds a vulnerable place in the application - an unfiltered link element that is used to generate a DOM object.<br>
+        2. The attacker creates a link that contains the malicious code - for example, a script that does "something".<br>
+        3. The attacker sends the link to the victim.<br>
+        4. The victim clicks on the link.<br>
+        5. The victim's browser downloads the page and executes the script (which is part of the link) - the "something" that the script does may be for example taking over the victim's session.<br>
+        6. The attacker has benefited from the attack.<br>
+        <img src="../assets/img/xss_dom_explain.png" alt="xss_dom_explain" style="display: block; margin-left: auto; margin-right: auto;"/>
+        <hr/>
+        As you can see, the attacker does not need to store the malicious code on the server (as in the case of Stored XSS attack), which makes it even harder to detect.<br>
+        <hr/>
+      </p>
+    </div>
+  </section>
+  <section id="threats" class="section scrollspy">
+    <h3 class="page-title white-text teal">Threats</h3>
+    <div class="container flow-text">
+      <p>
+        Pretty much the same as in the case of Stored XSS attack the attacker can do a lot of harm to the victim:<br>
+        - Stealing user data and sending them to the attacker (e.g. via e-mail)<br>
+        - Redirecting the user to the attacker's page<br>
+        - Taking over the user's session<br>
+        ETC.<br>
+        <b>The thing that changed is the way the attack is performed - the attacker may omit the server thus making it harder to detect the attack.</b><br>
+        <hr/>
+      </p>
+    </div>
+  </section>
+  <section id="countermeasures" class="section scrollspy">
+    <h3 class="page-title white-text teal">Countermeasures</h3>
+    <div class="container flow-text">
+      <p>
+        The countermeasures are pretty much the same as in the case of Stored XSS attack - <b><i>DO NOT TRUST USER INPUT.</i></b><br>
+        <hr/>
+        - Input validation<br>
+        - Output encoding<br>
+        - Sanitization<br>
+        - Content Security Policy<br>
+        <hr/>
+        <b>However, the most important thing is to remember that the DOM-based XSS attack is performed on the client side, so the countermeasures should be implemented on the client side as well.</b><br>
         <hr/>
       </p>
     </div>
   </section>
 </main>
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Materialize - Compiled and minified JavaScript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+<script>
+  // Materialize - Initializers
+  $(document).ready(function () {
+  $(".scrollspy").scrollSpy()
+  // Initialize collapse button
+  $(".button-collapse").sideNav({
+    menuWidth: 190, // Default is 240
+    edge: "left", // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  })
+  })
+</script>
 </body>
 </html>
