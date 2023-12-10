@@ -1,0 +1,175 @@
+<!-- 
+
+  Copyright (C) 2023 Damian Strojek, Patryk Sikora
+
+  Security Testing Environment for Web Applications
+  Realised as part of engineering degree for Gdansk University of Technology
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Material Design Icons -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="../../../assets/css/style.css" />
+  <link rel="icon" href="../../../assets/img/xss.png" />
+  <title>Stored XSS Attack</title>
+</head>
+<body>
+<!-- Navigation Menu-->
+<nav class="hide-on-small-only">
+  <ul class="side-nav fixed section table-of-contents">
+    <li class="logo">
+      <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+      class="brand-logo grey-blue-text">
+      <img src="../../../assets/img/xss.png" class="img-responsive nav-pic" alt="avatar">
+      </a>
+    </li>
+    <li class="bold">
+      <a aria-label="Back to the Theory section" href="../index.html#vulnerable-websites" class="waves-effect waves-dark teal-text"><i
+      class="mdi mdi-arrow-collapse-left small"></i><span>Go Back</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Start" href="#getting_started" class="waves-effect waves-dark teal-text">
+        <i class="mdi mdi-cat small"></i><span>Start</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Commenting cats" href="#com_cats" class="waves-effect waves-dark teal-text">
+        <i class="mdi mdi-forum small"></i><span>Commenting cats</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Threats" href="#threats" class="waves-effect waves-dark teal-text">
+        <i class="mdi mdi-spider-thread small"></i><span>Threats</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Countermeasures" href="#countermeasures" class="waves-effect waves-dark teal-text">
+        <i class="mdi mdi-shield small"></i><span>Countermeasures</span></a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Main Content-->
+<main>
+  <section id="getting_started" class="section scrollspy">
+    <h3 class="page-title white-text teal">XSS Stored</h3>
+    <div class="container flow-text">
+      <p>
+        In this module you will be able to see how Stored XSS attack works and what are its consequences.<br>
+        <hr/>
+        Stored XSS is an attack that consists of injecting JavaScript code into the database. Unlike SQL Injection attack,
+        XSS attack is not executed on the server, but on the user's page, the attacker does not try to change the SQL query, but only to send JavaScript code,
+        which can later be sent to users visiting the page.<br>
+        <hr/>
+        Properly prepared JavaScript code can perform many dangerous actions, such as stealing user data and
+        sending them to the attacker (e.g. via e-mail), redirecting the user to the attacker's page or even taking over the user's session.<br>
+        <br>
+      </p>
+    </div>
+  </section>
+  <section id="com_cats" class="section scrollspy">
+    <h3 class="page-title white-text teal">Commenting cats</h3>
+    <div class="container flow-text">
+      <p>
+        Below is an example page that is vulnerable to Stored XSS attack.<br>
+        At first glance, the page looks like a regular page with comments, but the ability to add comments allows the attacker
+        communicate with other users of the page. What if the attacker does not publish a regular comment, but a comment containing JavaScript code?<br>
+        <hr/>
+        Go ahead and try to add a comment containing JavaScript code. You can use the following code:<br>
+        <code style="background-color: #e8e6e6; border-radius: 5px; padding: 5px; border: 2px solid #dcdcdc;">
+          &lt;script&gt;alert("Hello World!")&lt;/script&gt;
+        </code><br>
+      </p>
+      <div>
+        <embed type="text/html" src="com_cats.php" width="60%" height="700px" style="display: block; margin-left: auto; margin-right: auto;"/>
+      </div>
+      <hr/>
+      <p style="text-align: center; font-size: 20px;">
+        <b><i>(You can restore the database by clicking the button to the right of the subpage above)</i></b><br>
+      </p>
+      <hr/>
+      <p>
+        As you can see, the code was executed on the user's page, moreover, this javascript code will be executed in the browser of every user that visits it.<br>
+        Why? Well, that's what happens:<br>
+        1. The attacker adds a comment containing JavaScript code.<br>
+        2. The comment is saved in the database.<br>
+        3. Every user who visits the page will cause the server to load the comment (containing JavaScript code) from the database into the served page.<br>
+        4. The user's browser receives the page that was generated by the server. The browser is not that smart, it sees the JavaScript code -> it executes it.<br>
+        <img src="../assets/img/xss_stored_explain.png" alt="attack" style="display: block; margin-left: auto; margin-right: auto;"/>
+        <hr/>
+      </p>
+    </div>
+  </section>
+  <section id="threats" class="section scrollspy">
+    <h3 class="page-title white-text teal">Threats</h3>
+    <div class="container flow-text">
+      <p>
+        As you can see, the attacker can execute JavaScript code on the user's page. This allows him to perform many dangerous actions, such as:<br>
+        - Stealing user data and sending them to the attacker (e.g. via e-mail)<br>
+        - Redirecting the user to the attacker's page<br>
+        - Taking over the user's session<br>
+        <hr/>
+        Let's see how it works in practice. Try to add the following code as a comment:<br>
+        <code style="background-color: #e8e6e6; border-radius: 5px; padding: 5px; border: 2px solid #dcdcdc;">
+          &lt;script&gt;window.location.href = "steal.php?cookie=" + document.cookie;&lt;/script&gt;
+        </code><br>
+        <div>
+          <embed type="text/html" src="com_cats.php" width="60%" height="700px" style="display: block; margin-left: auto; margin-right: auto;"/>
+        </div>
+        <hr/>
+        <p style="text-align: center; font-size: 20px;">
+          <b><i>(You can restore the database by clicking the button to the right of the subpage above)</i></b><br>
+        </p>
+        <hr/>
+        This was a simple example of the injected code, but it shows how dangerous XSS attack can be.<br>
+        In real life, the attacker can prepare a much more sophisticated code, for example, he can extract locally stored passwords, cookies, session data, etc. and send them to himself.<br>
+        
+      </p>
+    </div>
+  </section>
+  <section id="countermeasures" class="section scrollspy">
+    <h3 class="page-title white-text teal">Countermeasures</h3>
+    <div class="container flow-text">
+      <p>
+        <hr/>
+        <b>Remember!</b><br>
+        <b>Never trust user input!</b><br>
+        <hr/>
+        <br>
+        Filtering user input is the most important thing you can do to protect your application from XSS attack.<br>
+        There is a lot of methods to do it. <br>
+        We advise you to use the following methods:<br>
+        - <b>htmlspecialchars()</b> - converts special characters to HTML entities<br>
+        - <b>strip_tags()</b> - strips HTML and PHP tags from a string<br>
+        - <b>htmlentities()</b> - converts all applicable characters to HTML entities<br>
+        - <b>filter_var()</b> - filters a variable with a specified filter<br>
+        It's also better and easier to use filtering functions provided by the framework than to write your own, do not reinvent the wheel, a wheel that most likely will be a square.<br>
+        <br>
+</main>
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Materialize - Compiled and minified JavaScript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+<script>
+  // Materialize - Initializers
+  $(document).ready(function () {
+  $(".scrollspy").scrollSpy()
+  // Initialize collapse button
+  $(".button-collapse").sideNav({
+    menuWidth: 190, // Default is 240
+    edge: "left", // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  })
+  })
+</script>
+</body>
+</html>
