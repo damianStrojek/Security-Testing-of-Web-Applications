@@ -22,14 +22,13 @@ docker run --log-driver=json-file --log-opt max-size=100m --log-opt max-file=3 -
 
 # Check status of your container
 docker ps
-
-# Hosting HTTP server on port 80 using python3
-python3 -m http.server 80
 ```
 
 ## Usage
 
 The system allows you to set up a web application security testing environment at any time and anywhere. The entire theory and tips on how to perform tasks are included in individual modules. We recommend setting up an environment on [Kali Linux](https://www.kali.org/).
+
+Below is a recording of working system. The main page has been updated in the available release 1.1.
 
 https://github.com/damianStrojek/Security-Testing-of-Web-Applications/assets/67586060/99a952b9-2a8e-400b-aab0-51047e26fd7e
 
